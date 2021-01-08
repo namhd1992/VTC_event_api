@@ -1,0 +1,1150 @@
+2019-11-20 10:55:00 AM [main] INFO  com.vtc.event.VtcEventApplication - logStarting
+2019-11-20 10:55:00 AM [main] INFO  com.vtc.event.VtcEventApplication - logStartupProfileInfo
+2019-11-20 10:55:01 AM [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - registerRepositoriesIn
+2019-11-20 10:55:01 AM [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - registerRepositoriesIn
+2019-11-20 10:55:02 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 10:55:02 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 10:55:02 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 10:55:02 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 10:55:02 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 10:55:02 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 10:55:03 AM [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - initialize
+2019-11-20 10:55:03 AM [main] INFO  o.a.coyote.http11.Http11NioProtocol - log
+2019-11-20 10:55:03 AM [main] INFO  o.a.catalina.core.StandardService - log
+2019-11-20 10:55:03 AM [main] INFO  o.a.catalina.core.StandardEngine - log
+2019-11-20 10:55:03 AM [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - log
+2019-11-20 10:55:03 AM [main] INFO  o.s.web.context.ContextLoader - prepareWebApplicationContext
+2019-11-20 10:55:03 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - getConnection
+2019-11-20 10:55:03 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - getConnection
+2019-11-20 10:55:03 AM [main] INFO  o.h.jpa.internal.util.LogHelper - logPersistenceUnitInformation
+2019-11-20 10:55:03 AM [main] INFO  org.hibernate.Version - logVersion
+2019-11-20 10:55:03 AM [main] INFO  org.hibernate.cfg.Environment - <clinit>
+2019-11-20 10:55:04 AM [main] INFO  o.h.annotations.common.Version - <clinit>
+2019-11-20 10:55:04 AM [main] INFO  org.hibernate.dialect.Dialect - <init>
+2019-11-20 10:55:05 AM [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - initiateService
+2019-11-20 10:55:05 AM [main] ERROR o.h.internal.SessionFactoryImpl - <init>
+org.hibernate.hql.internal.ast.QuerySyntaxException: TblLuckySpinBuyTurnHistory is not mapped [SELECT t FROM TblLuckySpinBuyTurnHistory t]
+	at org.hibernate.hql.internal.ast.QuerySyntaxException.generateQueryException(QuerySyntaxException.java:79)
+	at org.hibernate.QueryException.wrapWithQueryString(QueryException.java:103)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:219)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:143)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:119)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:80)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:153)
+	at org.hibernate.query.spi.NamedQueryRepository.checkNamedQueries(NamedQueryRepository.java:157)
+	at org.hibernate.internal.SessionFactoryImpl.checkNamedQueries(SessionFactoryImpl.java:574)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:321)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:467)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:939)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.vtc.event.VtcEventApplication.main(VtcEventApplication.java:22)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.maven.AbstractRunMojo$LaunchRunner.run(AbstractRunMojo.java:558)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.hibernate.hql.internal.ast.QuerySyntaxException: TblLuckySpinBuyTurnHistory is not mapped
+	at org.hibernate.hql.internal.ast.util.SessionFactoryHelper.requireClassPersister(SessionFactoryHelper.java:169)
+	at org.hibernate.hql.internal.ast.tree.FromElementFactory.addFromElement(FromElementFactory.java:91)
+	at org.hibernate.hql.internal.ast.tree.FromClause.addFromElement(FromClause.java:79)
+	at org.hibernate.hql.internal.ast.HqlSqlWalker.createFromElement(HqlSqlWalker.java:331)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromElement(HqlSqlBaseWalker.java:3695)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromElementList(HqlSqlBaseWalker.java:3584)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromClause(HqlSqlBaseWalker.java:720)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:576)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:313)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:261)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:271)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:191)
+	... 38 common frames omitted
+2019-11-20 10:55:05 AM [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - refresh
+2019-11-20 10:55:05 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - close
+2019-11-20 10:55:05 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - close
+2019-11-20 10:55:05 AM [main] INFO  o.a.catalina.core.StandardService - log
+2019-11-20 10:55:05 AM [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - logMessage
+2019-11-20 10:55:05 AM [main] ERROR o.s.boot.SpringApplication - reportFailure
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.HibernateException: Errors in named queries: 
+TblLuckySpinBuyTurnHistory.findAll failed because of: org.hibernate.hql.internal.ast.QuerySyntaxException: TblLuckySpinBuyTurnHistory is not mapped [SELECT t FROM TblLuckySpinBuyTurnHistory t]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.vtc.event.VtcEventApplication.main(VtcEventApplication.java:22)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.maven.AbstractRunMojo$LaunchRunner.run(AbstractRunMojo.java:558)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.HibernateException: Errors in named queries: 
+TblLuckySpinBuyTurnHistory.findAll failed because of: org.hibernate.hql.internal.ast.QuerySyntaxException: TblLuckySpinBuyTurnHistory is not mapped [SELECT t FROM TblLuckySpinBuyTurnHistory t]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:402)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	... 22 common frames omitted
+Caused by: org.hibernate.HibernateException: Errors in named queries: 
+TblLuckySpinBuyTurnHistory.findAll failed because of: org.hibernate.hql.internal.ast.QuerySyntaxException: TblLuckySpinBuyTurnHistory is not mapped [SELECT t FROM TblLuckySpinBuyTurnHistory t]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:335)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:467)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:939)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390)
+	... 26 common frames omitted
+2019-11-20 10:59:04 AM [main] INFO  com.vtc.event.VtcEventApplication - logStarting
+2019-11-20 10:59:04 AM [main] INFO  com.vtc.event.VtcEventApplication - logStartupProfileInfo
+2019-11-20 10:59:05 AM [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - registerRepositoriesIn
+2019-11-20 10:59:06 AM [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - registerRepositoriesIn
+2019-11-20 10:59:06 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 10:59:06 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 10:59:06 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 10:59:06 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 10:59:07 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 10:59:07 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 10:59:07 AM [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - initialize
+2019-11-20 10:59:07 AM [main] INFO  o.a.coyote.http11.Http11NioProtocol - log
+2019-11-20 10:59:07 AM [main] INFO  o.a.catalina.core.StandardService - log
+2019-11-20 10:59:07 AM [main] INFO  o.a.catalina.core.StandardEngine - log
+2019-11-20 10:59:07 AM [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - log
+2019-11-20 10:59:07 AM [main] INFO  o.s.web.context.ContextLoader - prepareWebApplicationContext
+2019-11-20 10:59:07 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - getConnection
+2019-11-20 10:59:08 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - getConnection
+2019-11-20 10:59:08 AM [main] INFO  o.h.jpa.internal.util.LogHelper - logPersistenceUnitInformation
+2019-11-20 10:59:08 AM [main] INFO  org.hibernate.Version - logVersion
+2019-11-20 10:59:08 AM [main] INFO  org.hibernate.cfg.Environment - <clinit>
+2019-11-20 10:59:08 AM [main] INFO  o.h.annotations.common.Version - <clinit>
+2019-11-20 10:59:08 AM [main] INFO  org.hibernate.dialect.Dialect - <init>
+2019-11-20 10:59:10 AM [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - initiateService
+2019-11-20 10:59:10 AM [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - buildNativeEntityManagerFactory
+2019-11-20 10:59:11 AM [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - refresh
+2019-11-20 10:59:11 AM [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - destroy
+2019-11-20 10:59:11 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - close
+2019-11-20 10:59:11 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - close
+2019-11-20 10:59:11 AM [main] INFO  o.a.catalina.core.StandardService - log
+2019-11-20 10:59:11 AM [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - logMessage
+2019-11-20 10:59:11 AM [main] ERROR o.s.boot.SpringApplication - reportFailure
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'conditionTurnover': Unsatisfied dependency expressed through field 'luckySpinHistoryService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'luckySpinHistoryService': Unsatisfied dependency expressed through field 'repo'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'luckySpinHistoryRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Validation failed for query for method public abstract int com.vtc.event.common.dao.repository.LuckySpinHistoryRepository.countByItemType(com.vtc.event.common.dao.entity.LuckySpin,java.lang.String,java.lang.Long)!
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.vtc.event.VtcEventApplication.main(VtcEventApplication.java:22)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.maven.AbstractRunMojo$LaunchRunner.run(AbstractRunMojo.java:558)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'luckySpinHistoryService': Unsatisfied dependency expressed through field 'repo'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'luckySpinHistoryRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Validation failed for query for method public abstract int com.vtc.event.common.dao.repository.LuckySpinHistoryRepository.countByItemType(com.vtc.event.common.dao.entity.LuckySpin,java.lang.String,java.lang.Long)!
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1247)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'luckySpinHistoryRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Validation failed for query for method public abstract int com.vtc.event.common.dao.repository.LuckySpinHistoryRepository.countByItemType(com.vtc.event.common.dao.entity.LuckySpin,java.lang.String,java.lang.Long)!
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1247)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 38 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Validation failed for query for method public abstract int com.vtc.event.common.dao.repository.LuckySpinHistoryRepository.countByItemType(com.vtc.event.common.dao.entity.LuckySpin,java.lang.String,java.lang.Long)!
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.validateQuery(SimpleJpaQuery.java:93)
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.<init>(SimpleJpaQuery.java:63)
+	at org.springframework.data.jpa.repository.query.JpaQueryFactory.fromMethodWithQueryString(JpaQueryFactory.java:76)
+	at org.springframework.data.jpa.repository.query.JpaQueryFactory.fromQueryAnnotation(JpaQueryFactory.java:56)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$DeclaredQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:142)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:209)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:79)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lookupQuery(RepositoryFactorySupport.java:566)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lambda$mapMethodsToQuery$1(RepositoryFactorySupport.java:559)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Collections$UnmodifiableCollection$1.forEachRemaining(Collections.java:1052)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.mapMethodsToQuery(RepositoryFactorySupport.java:561)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lambda$new$0(RepositoryFactorySupport.java:551)
+	at java.base/java.util.Optional.map(Optional.java:265)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.<init>(RepositoryFactorySupport.java:551)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:324)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:297)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:211)
+	at org.springframework.data.util.Lazy.get(Lazy.java:94)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:300)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:121)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	... 48 common frames omitted
+Caused by: java.lang.IllegalArgumentException: org.hibernate.hql.internal.ast.QuerySyntaxException: SpinHistory is not mapped [select count(s.id) from SpinHistory s where spinEvent = ?1  and s.item.type = ?2 and (s.item.value = ?3 or ?3 = null )]
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:138)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:181)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:188)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:723)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:104)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:350)
+	at com.sun.proxy.$Proxy149.createQuery(Unknown Source)
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.validateQuery(SimpleJpaQuery.java:87)
+	... 77 common frames omitted
+Caused by: org.hibernate.hql.internal.ast.QuerySyntaxException: SpinHistory is not mapped [select count(s.id) from SpinHistory s where spinEvent = ?1  and s.item.type = ?2 and (s.item.value = ?3 or ?3 = null )]
+	at org.hibernate.hql.internal.ast.QuerySyntaxException.generateQueryException(QuerySyntaxException.java:79)
+	at org.hibernate.QueryException.wrapWithQueryString(QueryException.java:103)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:219)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:143)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:119)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:80)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:153)
+	at org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:605)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:714)
+	... 85 common frames omitted
+Caused by: org.hibernate.hql.internal.ast.QuerySyntaxException: SpinHistory is not mapped
+	at org.hibernate.hql.internal.ast.util.SessionFactoryHelper.requireClassPersister(SessionFactoryHelper.java:169)
+	at org.hibernate.hql.internal.ast.tree.FromElementFactory.addFromElement(FromElementFactory.java:91)
+	at org.hibernate.hql.internal.ast.tree.FromClause.addFromElement(FromClause.java:79)
+	at org.hibernate.hql.internal.ast.HqlSqlWalker.createFromElement(HqlSqlWalker.java:331)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromElement(HqlSqlBaseWalker.java:3695)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromElementList(HqlSqlBaseWalker.java:3584)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromClause(HqlSqlBaseWalker.java:720)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:576)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:313)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:261)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:271)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:191)
+	... 91 common frames omitted
+2019-11-20 11:05:49 AM [main] INFO  com.vtc.event.VtcEventApplication - logStarting
+2019-11-20 11:05:49 AM [main] INFO  com.vtc.event.VtcEventApplication - logStartupProfileInfo
+2019-11-20 11:05:50 AM [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - registerRepositoriesIn
+2019-11-20 11:05:51 AM [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - registerRepositoriesIn
+2019-11-20 11:05:51 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 11:05:52 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 11:05:52 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 11:05:52 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 11:05:52 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 11:05:52 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 11:05:52 AM [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - initialize
+2019-11-20 11:05:52 AM [main] INFO  o.a.coyote.http11.Http11NioProtocol - log
+2019-11-20 11:05:52 AM [main] INFO  o.a.catalina.core.StandardService - log
+2019-11-20 11:05:52 AM [main] INFO  o.a.catalina.core.StandardEngine - log
+2019-11-20 11:05:52 AM [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - log
+2019-11-20 11:05:52 AM [main] INFO  o.s.web.context.ContextLoader - prepareWebApplicationContext
+2019-11-20 11:05:52 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - getConnection
+2019-11-20 11:05:53 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - getConnection
+2019-11-20 11:05:53 AM [main] INFO  o.h.jpa.internal.util.LogHelper - logPersistenceUnitInformation
+2019-11-20 11:05:53 AM [main] INFO  org.hibernate.Version - logVersion
+2019-11-20 11:05:53 AM [main] INFO  org.hibernate.cfg.Environment - <clinit>
+2019-11-20 11:05:53 AM [main] INFO  o.h.annotations.common.Version - <clinit>
+2019-11-20 11:05:53 AM [main] INFO  org.hibernate.dialect.Dialect - <init>
+2019-11-20 11:05:54 AM [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - refresh
+2019-11-20 11:05:54 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - close
+2019-11-20 11:05:54 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - close
+2019-11-20 11:05:54 AM [main] INFO  o.a.catalina.core.StandardService - log
+2019-11-20 11:05:54 AM [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - logMessage
+2019-11-20 11:05:54 AM [main] ERROR o.s.boot.SpringApplication - reportFailure
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: com.vtc.event.common.dao.entity.LuckySpinItem.spint in com.vtc.event.common.dao.entity.LuckySpin.spinItems
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.vtc.event.VtcEventApplication.main(VtcEventApplication.java:22)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.maven.AbstractRunMojo$LaunchRunner.run(AbstractRunMojo.java:558)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: com.vtc.event.common.dao.entity.LuckySpinItem.spint in com.vtc.event.common.dao.entity.LuckySpin.spinItems
+	at org.hibernate.cfg.annotations.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:785)
+	at org.hibernate.cfg.annotations.CollectionBinder$1.secondPass(CollectionBinder.java:736)
+	at org.hibernate.cfg.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:54)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1696)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1664)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:287)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:904)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	... 22 common frames omitted
+2019-11-20 11:06:58 AM [main] INFO  com.vtc.event.VtcEventApplication - logStarting
+2019-11-20 11:06:58 AM [main] INFO  com.vtc.event.VtcEventApplication - logStartupProfileInfo
+2019-11-20 11:07:00 AM [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - registerRepositoriesIn
+2019-11-20 11:07:01 AM [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - registerRepositoriesIn
+2019-11-20 11:07:02 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 11:07:02 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 11:07:02 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 11:07:02 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 11:07:02 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 11:07:02 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 11:07:02 AM [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - initialize
+2019-11-20 11:07:02 AM [main] INFO  o.a.coyote.http11.Http11NioProtocol - log
+2019-11-20 11:07:02 AM [main] INFO  o.a.catalina.core.StandardService - log
+2019-11-20 11:07:02 AM [main] INFO  o.a.catalina.core.StandardEngine - log
+2019-11-20 11:07:03 AM [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - log
+2019-11-20 11:07:03 AM [main] INFO  o.s.web.context.ContextLoader - prepareWebApplicationContext
+2019-11-20 11:07:03 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - getConnection
+2019-11-20 11:07:03 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - getConnection
+2019-11-20 11:07:03 AM [main] INFO  o.h.jpa.internal.util.LogHelper - logPersistenceUnitInformation
+2019-11-20 11:07:04 AM [main] INFO  org.hibernate.Version - logVersion
+2019-11-20 11:07:04 AM [main] INFO  org.hibernate.cfg.Environment - <clinit>
+2019-11-20 11:07:04 AM [main] INFO  o.h.annotations.common.Version - <clinit>
+2019-11-20 11:07:04 AM [main] INFO  org.hibernate.dialect.Dialect - <init>
+2019-11-20 11:07:04 AM [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - refresh
+2019-11-20 11:07:04 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - close
+2019-11-20 11:07:04 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - close
+2019-11-20 11:07:04 AM [main] INFO  o.a.catalina.core.StandardService - log
+2019-11-20 11:07:04 AM [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - logMessage
+2019-11-20 11:07:04 AM [main] ERROR o.s.boot.SpringApplication - reportFailure
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: com.vtc.event.common.dao.entity.LuckySpinItem.spint in com.vtc.event.common.dao.entity.LuckySpin.spinItems
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.vtc.event.VtcEventApplication.main(VtcEventApplication.java:22)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.maven.AbstractRunMojo$LaunchRunner.run(AbstractRunMojo.java:558)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: com.vtc.event.common.dao.entity.LuckySpinItem.spint in com.vtc.event.common.dao.entity.LuckySpin.spinItems
+	at org.hibernate.cfg.annotations.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:785)
+	at org.hibernate.cfg.annotations.CollectionBinder$1.secondPass(CollectionBinder.java:736)
+	at org.hibernate.cfg.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:54)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1696)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1664)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:287)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:904)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	... 22 common frames omitted
+2019-11-20 11:07:56 AM [main] INFO  com.vtc.event.VtcEventApplication - logStarting
+2019-11-20 11:07:56 AM [main] INFO  com.vtc.event.VtcEventApplication - logStartupProfileInfo
+2019-11-20 11:07:57 AM [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - registerRepositoriesIn
+2019-11-20 11:07:57 AM [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - registerRepositoriesIn
+2019-11-20 11:07:58 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 11:07:58 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 11:07:58 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 11:07:58 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 11:07:58 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 11:07:58 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 11:07:59 AM [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - initialize
+2019-11-20 11:07:59 AM [main] INFO  o.a.coyote.http11.Http11NioProtocol - log
+2019-11-20 11:07:59 AM [main] INFO  o.a.catalina.core.StandardService - log
+2019-11-20 11:07:59 AM [main] INFO  o.a.catalina.core.StandardEngine - log
+2019-11-20 11:07:59 AM [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - log
+2019-11-20 11:07:59 AM [main] INFO  o.s.web.context.ContextLoader - prepareWebApplicationContext
+2019-11-20 11:07:59 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - getConnection
+2019-11-20 11:08:00 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - getConnection
+2019-11-20 11:08:00 AM [main] INFO  o.h.jpa.internal.util.LogHelper - logPersistenceUnitInformation
+2019-11-20 11:08:00 AM [main] INFO  org.hibernate.Version - logVersion
+2019-11-20 11:08:00 AM [main] INFO  org.hibernate.cfg.Environment - <clinit>
+2019-11-20 11:08:00 AM [main] INFO  o.h.annotations.common.Version - <clinit>
+2019-11-20 11:08:00 AM [main] INFO  org.hibernate.dialect.Dialect - <init>
+2019-11-20 11:08:01 AM [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - refresh
+2019-11-20 11:08:01 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - close
+2019-11-20 11:08:01 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - close
+2019-11-20 11:08:01 AM [main] INFO  o.a.catalina.core.StandardService - log
+2019-11-20 11:08:01 AM [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - logMessage
+2019-11-20 11:08:01 AM [main] ERROR o.s.boot.SpringApplication - reportFailure
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: com.vtc.event.common.dao.entity.LuckySpinItem.spint in com.vtc.event.common.dao.entity.LuckySpin.spinItems
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.vtc.event.VtcEventApplication.main(VtcEventApplication.java:22)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.maven.AbstractRunMojo$LaunchRunner.run(AbstractRunMojo.java:558)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: com.vtc.event.common.dao.entity.LuckySpinItem.spint in com.vtc.event.common.dao.entity.LuckySpin.spinItems
+	at org.hibernate.cfg.annotations.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:785)
+	at org.hibernate.cfg.annotations.CollectionBinder$1.secondPass(CollectionBinder.java:736)
+	at org.hibernate.cfg.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:54)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1696)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1664)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:287)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:904)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	... 22 common frames omitted
+2019-11-20 11:10:29 AM [main] INFO  com.vtc.event.VtcEventApplication - logStarting
+2019-11-20 11:10:29 AM [main] INFO  com.vtc.event.VtcEventApplication - logStartupProfileInfo
+2019-11-20 11:10:30 AM [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - registerRepositoriesIn
+2019-11-20 11:10:30 AM [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - registerRepositoriesIn
+2019-11-20 11:10:31 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 11:10:31 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 11:10:31 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 11:10:31 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 11:10:31 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 11:10:31 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 11:10:32 AM [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - initialize
+2019-11-20 11:10:32 AM [main] INFO  o.a.coyote.http11.Http11NioProtocol - log
+2019-11-20 11:10:32 AM [main] INFO  o.a.catalina.core.StandardService - log
+2019-11-20 11:10:32 AM [main] INFO  o.a.catalina.core.StandardEngine - log
+2019-11-20 11:10:32 AM [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - log
+2019-11-20 11:10:32 AM [main] INFO  o.s.web.context.ContextLoader - prepareWebApplicationContext
+2019-11-20 11:10:32 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - getConnection
+2019-11-20 11:10:33 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - getConnection
+2019-11-20 11:10:33 AM [main] INFO  o.h.jpa.internal.util.LogHelper - logPersistenceUnitInformation
+2019-11-20 11:10:33 AM [main] INFO  org.hibernate.Version - logVersion
+2019-11-20 11:10:33 AM [main] INFO  org.hibernate.cfg.Environment - <clinit>
+2019-11-20 11:10:33 AM [main] INFO  o.h.annotations.common.Version - <clinit>
+2019-11-20 11:10:34 AM [main] INFO  org.hibernate.dialect.Dialect - <init>
+2019-11-20 11:10:35 AM [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - initiateService
+2019-11-20 11:10:35 AM [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - buildNativeEntityManagerFactory
+2019-11-20 11:10:36 AM [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - refresh
+2019-11-20 11:10:36 AM [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - destroy
+2019-11-20 11:10:36 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - close
+2019-11-20 11:10:36 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - close
+2019-11-20 11:10:36 AM [main] INFO  o.a.catalina.core.StandardService - log
+2019-11-20 11:10:36 AM [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - logMessage
+2019-11-20 11:10:36 AM [main] ERROR o.s.boot.SpringApplication - reportFailure
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'conditionTurnover': Unsatisfied dependency expressed through field 'luckySpinHistoryService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'luckySpinHistoryService': Unsatisfied dependency expressed through field 'repo'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'luckySpinHistoryRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.Optional com.vtc.event.common.dao.repository.LuckySpinHistoryRepository.findByUserInfoAndSpinEventAndCreateOnBetween(com.vtc.event.common.dao.entity.UserInfo,com.vtc.event.common.dao.entity.LuckySpin,java.util.Date,java.util.Date)! No property spinEvent found for type LuckySpinHistory!
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.vtc.event.VtcEventApplication.main(VtcEventApplication.java:22)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.maven.AbstractRunMojo$LaunchRunner.run(AbstractRunMojo.java:558)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'luckySpinHistoryService': Unsatisfied dependency expressed through field 'repo'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'luckySpinHistoryRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.Optional com.vtc.event.common.dao.repository.LuckySpinHistoryRepository.findByUserInfoAndSpinEventAndCreateOnBetween(com.vtc.event.common.dao.entity.UserInfo,com.vtc.event.common.dao.entity.LuckySpin,java.util.Date,java.util.Date)! No property spinEvent found for type LuckySpinHistory!
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1247)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'luckySpinHistoryRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.Optional com.vtc.event.common.dao.repository.LuckySpinHistoryRepository.findByUserInfoAndSpinEventAndCreateOnBetween(com.vtc.event.common.dao.entity.UserInfo,com.vtc.event.common.dao.entity.LuckySpin,java.util.Date,java.util.Date)! No property spinEvent found for type LuckySpinHistory!
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1247)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 38 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.Optional com.vtc.event.common.dao.repository.LuckySpinHistoryRepository.findByUserInfoAndSpinEventAndCreateOnBetween(com.vtc.event.common.dao.entity.UserInfo,com.vtc.event.common.dao.entity.LuckySpin,java.util.Date,java.util.Date)! No property spinEvent found for type LuckySpinHistory!
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:84)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:106)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:211)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:79)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lookupQuery(RepositoryFactorySupport.java:566)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lambda$mapMethodsToQuery$1(RepositoryFactorySupport.java:559)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Collections$UnmodifiableCollection$1.forEachRemaining(Collections.java:1052)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.mapMethodsToQuery(RepositoryFactorySupport.java:561)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lambda$new$0(RepositoryFactorySupport.java:551)
+	at java.base/java.util.Optional.map(Optional.java:265)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.<init>(RepositoryFactorySupport.java:551)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:324)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:297)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:211)
+	at org.springframework.data.util.Lazy.get(Lazy.java:94)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:300)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:121)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	... 48 common frames omitted
+Caused by: org.springframework.data.mapping.PropertyReferenceException: No property spinEvent found for type LuckySpinHistory!
+	at org.springframework.data.mapping.PropertyPath.<init>(PropertyPath.java:94)
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:382)
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:358)
+	at org.springframework.data.mapping.PropertyPath.lambda$from$0(PropertyPath.java:311)
+	at java.base/java.util.concurrent.ConcurrentMap.computeIfAbsent(ConcurrentMap.java:330)
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:293)
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:276)
+	at org.springframework.data.repository.query.parser.Part.<init>(Part.java:81)
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.lambda$new$0(PartTree.java:250)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.<init>(PartTree.java:251)
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.lambda$new$0(PartTree.java:380)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.<init>(PartTree.java:381)
+	at org.springframework.data.repository.query.parser.PartTree.<init>(PartTree.java:96)
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:78)
+	... 74 common frames omitted
+2019-11-20 11:14:31 AM [main] INFO  com.vtc.event.VtcEventApplication - logStarting
+2019-11-20 11:14:31 AM [main] INFO  com.vtc.event.VtcEventApplication - logStartupProfileInfo
+2019-11-20 11:14:32 AM [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - registerRepositoriesIn
+2019-11-20 11:14:33 AM [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - registerRepositoriesIn
+2019-11-20 11:14:33 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 11:14:33 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 11:14:33 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 11:14:33 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 11:14:33 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 11:14:33 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 11:14:34 AM [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - initialize
+2019-11-20 11:14:34 AM [main] INFO  o.a.coyote.http11.Http11NioProtocol - log
+2019-11-20 11:14:34 AM [main] INFO  o.a.catalina.core.StandardService - log
+2019-11-20 11:14:34 AM [main] INFO  o.a.catalina.core.StandardEngine - log
+2019-11-20 11:14:34 AM [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - log
+2019-11-20 11:14:34 AM [main] INFO  o.s.web.context.ContextLoader - prepareWebApplicationContext
+2019-11-20 11:14:34 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - getConnection
+2019-11-20 11:14:35 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - getConnection
+2019-11-20 11:14:35 AM [main] INFO  o.h.jpa.internal.util.LogHelper - logPersistenceUnitInformation
+2019-11-20 11:14:35 AM [main] INFO  org.hibernate.Version - logVersion
+2019-11-20 11:14:35 AM [main] INFO  org.hibernate.cfg.Environment - <clinit>
+2019-11-20 11:14:35 AM [main] INFO  o.h.annotations.common.Version - <clinit>
+2019-11-20 11:14:35 AM [main] INFO  org.hibernate.dialect.Dialect - <init>
+2019-11-20 11:14:37 AM [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - initiateService
+2019-11-20 11:14:37 AM [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - buildNativeEntityManagerFactory
+2019-11-20 11:14:38 AM [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - refresh
+2019-11-20 11:14:38 AM [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - destroy
+2019-11-20 11:14:38 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - close
+2019-11-20 11:14:38 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - close
+2019-11-20 11:14:38 AM [main] INFO  o.a.catalina.core.StandardService - log
+2019-11-20 11:14:38 AM [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - logMessage
+2019-11-20 11:14:38 AM [main] ERROR o.s.boot.SpringApplication - reportFailure
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'conditionTurnover': Unsatisfied dependency expressed through field 'luckySpinHistoryService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'luckySpinHistoryService': Unsatisfied dependency expressed through field 'repo'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'luckySpinHistoryRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.Optional com.vtc.event.common.dao.repository.LuckySpinHistoryRepository.findByUserInfoAndSpinEventAndCreateOnBetween(com.vtc.event.common.dao.entity.UserInfo,com.vtc.event.common.dao.entity.LuckySpin,java.util.Date,java.util.Date)! No property spinEvent found for type LuckySpinHistory!
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.vtc.event.VtcEventApplication.main(VtcEventApplication.java:22)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.maven.AbstractRunMojo$LaunchRunner.run(AbstractRunMojo.java:558)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'luckySpinHistoryService': Unsatisfied dependency expressed through field 'repo'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'luckySpinHistoryRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.Optional com.vtc.event.common.dao.repository.LuckySpinHistoryRepository.findByUserInfoAndSpinEventAndCreateOnBetween(com.vtc.event.common.dao.entity.UserInfo,com.vtc.event.common.dao.entity.LuckySpin,java.util.Date,java.util.Date)! No property spinEvent found for type LuckySpinHistory!
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1247)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'luckySpinHistoryRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.Optional com.vtc.event.common.dao.repository.LuckySpinHistoryRepository.findByUserInfoAndSpinEventAndCreateOnBetween(com.vtc.event.common.dao.entity.UserInfo,com.vtc.event.common.dao.entity.LuckySpin,java.util.Date,java.util.Date)! No property spinEvent found for type LuckySpinHistory!
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1247)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 38 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.Optional com.vtc.event.common.dao.repository.LuckySpinHistoryRepository.findByUserInfoAndSpinEventAndCreateOnBetween(com.vtc.event.common.dao.entity.UserInfo,com.vtc.event.common.dao.entity.LuckySpin,java.util.Date,java.util.Date)! No property spinEvent found for type LuckySpinHistory!
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:84)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:106)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:211)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:79)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lookupQuery(RepositoryFactorySupport.java:566)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lambda$mapMethodsToQuery$1(RepositoryFactorySupport.java:559)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Collections$UnmodifiableCollection$1.forEachRemaining(Collections.java:1052)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.mapMethodsToQuery(RepositoryFactorySupport.java:561)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lambda$new$0(RepositoryFactorySupport.java:551)
+	at java.base/java.util.Optional.map(Optional.java:265)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.<init>(RepositoryFactorySupport.java:551)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:324)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:297)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:211)
+	at org.springframework.data.util.Lazy.get(Lazy.java:94)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:300)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:121)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	... 48 common frames omitted
+Caused by: org.springframework.data.mapping.PropertyReferenceException: No property spinEvent found for type LuckySpinHistory!
+	at org.springframework.data.mapping.PropertyPath.<init>(PropertyPath.java:94)
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:382)
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:358)
+	at org.springframework.data.mapping.PropertyPath.lambda$from$0(PropertyPath.java:311)
+	at java.base/java.util.concurrent.ConcurrentMap.computeIfAbsent(ConcurrentMap.java:330)
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:293)
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:276)
+	at org.springframework.data.repository.query.parser.Part.<init>(Part.java:81)
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.lambda$new$0(PartTree.java:250)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.<init>(PartTree.java:251)
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.lambda$new$0(PartTree.java:380)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.<init>(PartTree.java:381)
+	at org.springframework.data.repository.query.parser.PartTree.<init>(PartTree.java:96)
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:78)
+	... 74 common frames omitted
+2019-11-20 11:19:15 AM [main] INFO  com.vtc.event.VtcEventApplication - logStarting
+2019-11-20 11:19:15 AM [main] INFO  com.vtc.event.VtcEventApplication - logStartupProfileInfo
+2019-11-20 11:19:16 AM [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - registerRepositoriesIn
+2019-11-20 11:19:16 AM [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - registerRepositoriesIn
+2019-11-20 11:19:17 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 11:19:17 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 11:19:17 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 11:19:17 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 11:19:17 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 11:19:17 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 11:19:18 AM [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - initialize
+2019-11-20 11:19:18 AM [main] INFO  o.a.coyote.http11.Http11NioProtocol - log
+2019-11-20 11:19:18 AM [main] INFO  o.a.catalina.core.StandardService - log
+2019-11-20 11:19:18 AM [main] INFO  o.a.catalina.core.StandardEngine - log
+2019-11-20 11:19:18 AM [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - log
+2019-11-20 11:19:18 AM [main] INFO  o.s.web.context.ContextLoader - prepareWebApplicationContext
+2019-11-20 11:19:18 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - getConnection
+2019-11-20 11:19:19 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - getConnection
+2019-11-20 11:19:19 AM [main] INFO  o.h.jpa.internal.util.LogHelper - logPersistenceUnitInformation
+2019-11-20 11:19:19 AM [main] INFO  org.hibernate.Version - logVersion
+2019-11-20 11:19:19 AM [main] INFO  org.hibernate.cfg.Environment - <clinit>
+2019-11-20 11:19:19 AM [main] INFO  o.h.annotations.common.Version - <clinit>
+2019-11-20 11:19:19 AM [main] INFO  org.hibernate.dialect.Dialect - <init>
+2019-11-20 11:19:21 AM [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - initiateService
+2019-11-20 11:19:21 AM [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - buildNativeEntityManagerFactory
+2019-11-20 11:19:22 AM [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - refresh
+2019-11-20 11:19:22 AM [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - destroy
+2019-11-20 11:19:22 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - close
+2019-11-20 11:19:22 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - close
+2019-11-20 11:19:22 AM [main] INFO  o.a.catalina.core.StandardService - log
+2019-11-20 11:19:22 AM [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - logMessage
+2019-11-20 11:19:22 AM [main] ERROR o.s.boot.SpringApplication - reportFailure
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'conditionTurnover': Unsatisfied dependency expressed through field 'luckySpinHistoryService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'luckySpinHistoryService': Unsatisfied dependency expressed through field 'repo'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'luckySpinHistoryRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract int com.vtc.event.common.dao.repository.LuckySpinHistoryRepository.countByUserInfoAndSpinEvent(com.vtc.event.common.dao.entity.UserInfo,com.vtc.event.common.dao.entity.LuckySpin)! No property spinEvent found for type LuckySpinHistory!
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.vtc.event.VtcEventApplication.main(VtcEventApplication.java:22)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.maven.AbstractRunMojo$LaunchRunner.run(AbstractRunMojo.java:558)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'luckySpinHistoryService': Unsatisfied dependency expressed through field 'repo'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'luckySpinHistoryRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract int com.vtc.event.common.dao.repository.LuckySpinHistoryRepository.countByUserInfoAndSpinEvent(com.vtc.event.common.dao.entity.UserInfo,com.vtc.event.common.dao.entity.LuckySpin)! No property spinEvent found for type LuckySpinHistory!
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1247)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'luckySpinHistoryRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract int com.vtc.event.common.dao.repository.LuckySpinHistoryRepository.countByUserInfoAndSpinEvent(com.vtc.event.common.dao.entity.UserInfo,com.vtc.event.common.dao.entity.LuckySpin)! No property spinEvent found for type LuckySpinHistory!
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1247)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 38 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Failed to create query for method public abstract int com.vtc.event.common.dao.repository.LuckySpinHistoryRepository.countByUserInfoAndSpinEvent(com.vtc.event.common.dao.entity.UserInfo,com.vtc.event.common.dao.entity.LuckySpin)! No property spinEvent found for type LuckySpinHistory!
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:84)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:106)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:211)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:79)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lookupQuery(RepositoryFactorySupport.java:566)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lambda$mapMethodsToQuery$1(RepositoryFactorySupport.java:559)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Collections$UnmodifiableCollection$1.forEachRemaining(Collections.java:1052)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.mapMethodsToQuery(RepositoryFactorySupport.java:561)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lambda$new$0(RepositoryFactorySupport.java:551)
+	at java.base/java.util.Optional.map(Optional.java:265)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.<init>(RepositoryFactorySupport.java:551)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:324)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:297)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:211)
+	at org.springframework.data.util.Lazy.get(Lazy.java:94)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:300)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:121)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	... 48 common frames omitted
+Caused by: org.springframework.data.mapping.PropertyReferenceException: No property spinEvent found for type LuckySpinHistory!
+	at org.springframework.data.mapping.PropertyPath.<init>(PropertyPath.java:94)
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:382)
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:358)
+	at org.springframework.data.mapping.PropertyPath.lambda$from$0(PropertyPath.java:311)
+	at java.base/java.util.concurrent.ConcurrentMap.computeIfAbsent(ConcurrentMap.java:330)
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:293)
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:276)
+	at org.springframework.data.repository.query.parser.Part.<init>(Part.java:81)
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.lambda$new$0(PartTree.java:250)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.<init>(PartTree.java:251)
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.lambda$new$0(PartTree.java:380)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.<init>(PartTree.java:381)
+	at org.springframework.data.repository.query.parser.PartTree.<init>(PartTree.java:96)
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:78)
+	... 74 common frames omitted
+2019-11-20 11:21:58 AM [main] INFO  com.vtc.event.VtcEventApplication - logStarting
+2019-11-20 11:21:58 AM [main] INFO  com.vtc.event.VtcEventApplication - logStartupProfileInfo
+2019-11-20 11:21:59 AM [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - registerRepositoriesIn
+2019-11-20 11:21:59 AM [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - registerRepositoriesIn
+2019-11-20 11:22:00 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 11:22:00 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 11:22:00 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 11:22:00 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 11:22:00 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 11:22:00 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 11:22:01 AM [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - initialize
+2019-11-20 11:22:01 AM [main] INFO  o.a.coyote.http11.Http11NioProtocol - log
+2019-11-20 11:22:01 AM [main] INFO  o.a.catalina.core.StandardService - log
+2019-11-20 11:22:01 AM [main] INFO  o.a.catalina.core.StandardEngine - log
+2019-11-20 11:22:01 AM [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - log
+2019-11-20 11:22:01 AM [main] INFO  o.s.web.context.ContextLoader - prepareWebApplicationContext
+2019-11-20 11:22:01 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - getConnection
+2019-11-20 11:22:01 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - getConnection
+2019-11-20 11:22:01 AM [main] INFO  o.h.jpa.internal.util.LogHelper - logPersistenceUnitInformation
+2019-11-20 11:22:01 AM [main] INFO  org.hibernate.Version - logVersion
+2019-11-20 11:22:01 AM [main] INFO  org.hibernate.cfg.Environment - <clinit>
+2019-11-20 11:22:02 AM [main] INFO  o.h.annotations.common.Version - <clinit>
+2019-11-20 11:22:02 AM [main] INFO  org.hibernate.dialect.Dialect - <init>
+2019-11-20 11:22:03 AM [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - initiateService
+2019-11-20 11:22:03 AM [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - buildNativeEntityManagerFactory
+2019-11-20 11:22:04 AM [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - refresh
+2019-11-20 11:22:04 AM [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - destroy
+2019-11-20 11:22:04 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - close
+2019-11-20 11:22:04 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - close
+2019-11-20 11:22:04 AM [main] INFO  o.a.catalina.core.StandardService - log
+2019-11-20 11:22:04 AM [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - logMessage
+2019-11-20 11:22:04 AM [main] ERROR o.s.boot.SpringApplication - reportFailure
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'conditionTurnover': Unsatisfied dependency expressed through field 'luckySpinHistoryService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'luckySpinHistoryService': Unsatisfied dependency expressed through field 'luckySpinService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'luckySpinService': Unsatisfied dependency expressed through field 'userTurnSpinRepo'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userTurnSpinRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.Optional com.vtc.event.common.dao.repository.UserTurnSpinRepository.findByUserInfoAndSpinEvent(com.vtc.event.common.dao.entity.UserInfo,com.vtc.event.common.dao.entity.LuckySpin)! No property spinEvent found for type UserTurnSpin!
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.vtc.event.VtcEventApplication.main(VtcEventApplication.java:22)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.maven.AbstractRunMojo$LaunchRunner.run(AbstractRunMojo.java:558)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'luckySpinHistoryService': Unsatisfied dependency expressed through field 'luckySpinService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'luckySpinService': Unsatisfied dependency expressed through field 'userTurnSpinRepo'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userTurnSpinRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.Optional com.vtc.event.common.dao.repository.UserTurnSpinRepository.findByUserInfoAndSpinEvent(com.vtc.event.common.dao.entity.UserInfo,com.vtc.event.common.dao.entity.LuckySpin)! No property spinEvent found for type UserTurnSpin!
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1247)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'luckySpinService': Unsatisfied dependency expressed through field 'userTurnSpinRepo'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userTurnSpinRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.Optional com.vtc.event.common.dao.repository.UserTurnSpinRepository.findByUserInfoAndSpinEvent(com.vtc.event.common.dao.entity.UserInfo,com.vtc.event.common.dao.entity.LuckySpin)! No property spinEvent found for type UserTurnSpin!
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1247)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 38 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userTurnSpinRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.Optional com.vtc.event.common.dao.repository.UserTurnSpinRepository.findByUserInfoAndSpinEvent(com.vtc.event.common.dao.entity.UserInfo,com.vtc.event.common.dao.entity.LuckySpin)! No property spinEvent found for type UserTurnSpin!
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1247)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 51 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.Optional com.vtc.event.common.dao.repository.UserTurnSpinRepository.findByUserInfoAndSpinEvent(com.vtc.event.common.dao.entity.UserInfo,com.vtc.event.common.dao.entity.LuckySpin)! No property spinEvent found for type UserTurnSpin!
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:84)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:106)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:211)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:79)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lookupQuery(RepositoryFactorySupport.java:566)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lambda$mapMethodsToQuery$1(RepositoryFactorySupport.java:559)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Collections$UnmodifiableCollection$1.forEachRemaining(Collections.java:1052)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.mapMethodsToQuery(RepositoryFactorySupport.java:561)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lambda$new$0(RepositoryFactorySupport.java:551)
+	at java.base/java.util.Optional.map(Optional.java:265)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.<init>(RepositoryFactorySupport.java:551)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:324)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:297)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:211)
+	at org.springframework.data.util.Lazy.get(Lazy.java:94)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:300)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:121)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	... 61 common frames omitted
+Caused by: org.springframework.data.mapping.PropertyReferenceException: No property spinEvent found for type UserTurnSpin!
+	at org.springframework.data.mapping.PropertyPath.<init>(PropertyPath.java:94)
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:382)
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:358)
+	at org.springframework.data.mapping.PropertyPath.lambda$from$0(PropertyPath.java:311)
+	at java.base/java.util.concurrent.ConcurrentMap.computeIfAbsent(ConcurrentMap.java:330)
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:293)
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:276)
+	at org.springframework.data.repository.query.parser.Part.<init>(Part.java:81)
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.lambda$new$0(PartTree.java:250)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.<init>(PartTree.java:251)
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.lambda$new$0(PartTree.java:380)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.<init>(PartTree.java:381)
+	at org.springframework.data.repository.query.parser.PartTree.<init>(PartTree.java:96)
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:78)
+	... 87 common frames omitted
+2019-11-20 11:24:25 AM [main] INFO  com.vtc.event.VtcEventApplication - logStarting
+2019-11-20 11:24:25 AM [main] INFO  com.vtc.event.VtcEventApplication - logStartupProfileInfo
+2019-11-20 11:24:27 AM [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - registerRepositoriesIn
+2019-11-20 11:24:27 AM [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - registerRepositoriesIn
+2019-11-20 11:24:28 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 11:24:28 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 11:24:28 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 11:24:28 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 11:24:28 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 11:24:28 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2019-11-20 11:24:29 AM [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - initialize
+2019-11-20 11:24:29 AM [main] INFO  o.a.coyote.http11.Http11NioProtocol - log
+2019-11-20 11:24:29 AM [main] INFO  o.a.catalina.core.StandardService - log
+2019-11-20 11:24:29 AM [main] INFO  o.a.catalina.core.StandardEngine - log
+2019-11-20 11:24:29 AM [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - log
+2019-11-20 11:24:29 AM [main] INFO  o.s.web.context.ContextLoader - prepareWebApplicationContext
+2019-11-20 11:24:29 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - getConnection
+2019-11-20 11:24:29 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - getConnection
+2019-11-20 11:24:30 AM [main] INFO  o.h.jpa.internal.util.LogHelper - logPersistenceUnitInformation
+2019-11-20 11:24:30 AM [main] INFO  org.hibernate.Version - logVersion
+2019-11-20 11:24:30 AM [main] INFO  org.hibernate.cfg.Environment - <clinit>
+2019-11-20 11:24:30 AM [main] INFO  o.h.annotations.common.Version - <clinit>
+2019-11-20 11:24:30 AM [main] INFO  org.hibernate.dialect.Dialect - <init>
+2019-11-20 11:24:31 AM [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - initiateService
+2019-11-20 11:24:32 AM [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - buildNativeEntityManagerFactory
+2019-11-20 11:24:33 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2019-11-20 11:24:33 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2019-11-20 11:24:33 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2019-11-20 11:24:33 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2019-11-20 11:24:33 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2019-11-20 11:24:33 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2019-11-20 11:24:33 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2019-11-20 11:24:33 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2019-11-20 11:24:33 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2019-11-20 11:24:34 AM [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - initialize
+2019-11-20 11:24:34 AM [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - openEntityManagerInViewInterceptor
+2019-11-20 11:24:34 AM [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - initialize
+2019-11-20 11:24:34 AM [main] INFO  o.a.coyote.http11.Http11NioProtocol - log
+2019-11-20 11:24:34 AM [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - start
+2019-11-20 11:24:34 AM [main] INFO  com.vtc.event.VtcEventApplication - logStarted

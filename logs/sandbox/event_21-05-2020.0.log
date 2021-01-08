@@ -1,0 +1,1844 @@
+2020-05-21 10:18:43 AM [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - buildDefaultMergedContextConfiguration
+2020-05-21 10:18:43 AM [main] INFO  o.s.t.c.s.AbstractContextLoader - generateDefaultLocations
+2020-05-21 10:18:43 AM [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - detectDefaultConfigurationClasses
+2020-05-21 10:18:44 AM [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - getOrFindConfigurationClasses
+2020-05-21 10:18:44 AM [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - getDefaultTestExecutionListenerClassNames
+2020-05-21 10:18:44 AM [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - getTestExecutionListeners
+2020-05-21 10:18:45 AM [background-preinit] INFO  o.h.validator.internal.util.Version - <clinit>
+2020-05-21 10:18:45 AM [main] INFO  com.vtc.event.LuckySpinServiceTest - logStarting
+2020-05-21 10:18:45 AM [main] INFO  com.vtc.event.LuckySpinServiceTest - logStartupProfileInfo
+2020-05-21 10:18:47 AM [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - registerRepositoriesIn
+2020-05-21 10:18:48 AM [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - registerRepositoriesIn
+2020-05-21 10:18:49 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:18:49 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:18:49 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:18:49 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:18:49 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:18:50 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:18:50 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - getConnection
+2020-05-21 10:18:50 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - getConnection
+2020-05-21 10:18:50 AM [main] INFO  o.h.jpa.internal.util.LogHelper - logPersistenceUnitInformation
+2020-05-21 10:18:50 AM [main] INFO  org.hibernate.Version - logVersion
+2020-05-21 10:18:50 AM [main] INFO  org.hibernate.cfg.Environment - <clinit>
+2020-05-21 10:18:50 AM [main] INFO  o.h.annotations.common.Version - <clinit>
+2020-05-21 10:18:51 AM [main] INFO  org.hibernate.dialect.Dialect - <init>
+2020-05-21 10:18:52 AM [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - initiateService
+2020-05-21 10:18:52 AM [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - buildNativeEntityManagerFactory
+2020-05-21 10:18:56 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:18:56 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:18:56 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:18:56 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:18:56 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:18:56 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:18:56 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:18:56 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:18:56 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:18:57 AM [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - initialize
+2020-05-21 10:18:57 AM [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - openEntityManagerInViewInterceptor
+2020-05-21 10:18:57 AM [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - initialize
+2020-05-21 10:18:57 AM [main] INFO  com.vtc.event.LuckySpinServiceTest - logStarted
+2020-05-21 10:18:57 AM [Thread-1] INFO  o.s.s.c.ThreadPoolTaskScheduler - shutdown
+2020-05-21 10:18:57 AM [Thread-1] INFO  o.s.s.c.ThreadPoolTaskExecutor - shutdown
+2020-05-21 10:18:57 AM [Thread-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - destroy
+2020-05-21 10:18:57 AM [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource - close
+2020-05-21 10:18:57 AM [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource - close
+2020-05-21 10:19:14 AM [main] INFO  com.vtc.event.VtcEventApplication - logStarting
+2020-05-21 10:19:14 AM [main] INFO  com.vtc.event.VtcEventApplication - logStartupProfileInfo
+2020-05-21 10:19:15 AM [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - registerRepositoriesIn
+2020-05-21 10:19:16 AM [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - registerRepositoriesIn
+2020-05-21 10:19:16 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:19:16 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:19:16 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:19:16 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:19:16 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:19:16 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:19:17 AM [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - initialize
+2020-05-21 10:19:17 AM [main] INFO  o.a.coyote.http11.Http11NioProtocol - log
+2020-05-21 10:19:17 AM [main] INFO  o.a.catalina.core.StandardService - log
+2020-05-21 10:19:17 AM [main] INFO  o.a.catalina.core.StandardEngine - log
+2020-05-21 10:19:17 AM [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - log
+2020-05-21 10:19:17 AM [main] INFO  o.s.web.context.ContextLoader - prepareWebApplicationContext
+2020-05-21 10:19:17 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - getConnection
+2020-05-21 10:19:18 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - getConnection
+2020-05-21 10:19:18 AM [main] INFO  o.h.jpa.internal.util.LogHelper - logPersistenceUnitInformation
+2020-05-21 10:19:18 AM [main] INFO  org.hibernate.Version - logVersion
+2020-05-21 10:19:18 AM [main] INFO  org.hibernate.cfg.Environment - <clinit>
+2020-05-21 10:19:18 AM [main] INFO  o.h.annotations.common.Version - <clinit>
+2020-05-21 10:19:18 AM [main] INFO  org.hibernate.dialect.Dialect - <init>
+2020-05-21 10:19:20 AM [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - initiateService
+2020-05-21 10:19:20 AM [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - buildNativeEntityManagerFactory
+2020-05-21 10:19:22 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:19:22 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:19:22 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:19:22 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:19:22 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:19:22 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:19:22 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:19:22 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:19:22 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:19:22 AM [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - initialize
+2020-05-21 10:19:22 AM [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - openEntityManagerInViewInterceptor
+2020-05-21 10:19:22 AM [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - initialize
+2020-05-21 10:19:22 AM [main] INFO  o.a.coyote.http11.Http11NioProtocol - log
+2020-05-21 10:19:22 AM [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - start
+2020-05-21 10:19:22 AM [main] INFO  com.vtc.event.VtcEventApplication - logStarted
+2020-05-21 10:20:23 AM [Thread-3] INFO  o.s.s.c.ThreadPoolTaskScheduler - shutdown
+2020-05-21 10:20:23 AM [Thread-3] INFO  o.s.s.c.ThreadPoolTaskExecutor - shutdown
+2020-05-21 10:20:23 AM [Thread-3] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - destroy
+2020-05-21 10:20:23 AM [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource - close
+2020-05-21 10:20:23 AM [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource - close
+2020-05-21 10:20:39 AM [main] INFO  com.vtc.event.VtcEventApplication - logStarting
+2020-05-21 10:20:39 AM [main] INFO  com.vtc.event.VtcEventApplication - logStartupProfileInfo
+2020-05-21 10:20:40 AM [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - registerRepositoriesIn
+2020-05-21 10:20:41 AM [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - registerRepositoriesIn
+2020-05-21 10:20:41 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:20:41 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:20:41 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:20:41 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:20:41 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:20:41 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:20:42 AM [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - initialize
+2020-05-21 10:20:42 AM [main] INFO  o.a.coyote.http11.Http11NioProtocol - log
+2020-05-21 10:20:42 AM [main] INFO  o.a.catalina.core.StandardService - log
+2020-05-21 10:20:42 AM [main] INFO  o.a.catalina.core.StandardEngine - log
+2020-05-21 10:20:42 AM [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - log
+2020-05-21 10:20:42 AM [main] INFO  o.s.web.context.ContextLoader - prepareWebApplicationContext
+2020-05-21 10:20:42 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - getConnection
+2020-05-21 10:20:43 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - getConnection
+2020-05-21 10:20:43 AM [main] INFO  o.h.jpa.internal.util.LogHelper - logPersistenceUnitInformation
+2020-05-21 10:20:43 AM [main] INFO  org.hibernate.Version - logVersion
+2020-05-21 10:20:43 AM [main] INFO  org.hibernate.cfg.Environment - <clinit>
+2020-05-21 10:20:43 AM [main] INFO  o.h.annotations.common.Version - <clinit>
+2020-05-21 10:20:43 AM [main] INFO  org.hibernate.dialect.Dialect - <init>
+2020-05-21 10:20:45 AM [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - initiateService
+2020-05-21 10:20:45 AM [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - buildNativeEntityManagerFactory
+2020-05-21 10:20:47 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:20:47 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:20:47 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:20:47 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:20:47 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:20:47 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:20:47 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:20:47 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:20:47 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:20:47 AM [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - initialize
+2020-05-21 10:20:47 AM [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - openEntityManagerInViewInterceptor
+2020-05-21 10:20:48 AM [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - initialize
+2020-05-21 10:20:48 AM [main] INFO  o.a.coyote.http11.Http11NioProtocol - log
+2020-05-21 10:20:48 AM [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - start
+2020-05-21 10:20:48 AM [main] INFO  com.vtc.event.VtcEventApplication - logStarted
+2020-05-21 10:21:59 AM [http-nio-8083-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - log
+2020-05-21 10:21:59 AM [http-nio-8083-exec-2] INFO  o.s.web.servlet.DispatcherServlet - initServletBean
+2020-05-21 10:21:59 AM [http-nio-8083-exec-2] INFO  o.s.web.servlet.DispatcherServlet - initServletBean
+2020-05-21 10:22:30 AM [http-nio-8083-exec-3] INFO  c.v.e.g.c.GameRankingControler - getGameRanking
+2020-05-21 10:22:31 AM [http-nio-8083-exec-3] ERROR c.v.e.common.utils.JsonMapperUtils - convertJsonToObject
+com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `java.util.ArrayList` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('')
+ at [Source: (String)"{"ret":0,"msg":"Data is empty","content":""}"; line: 1, column: 42] (through reference chain: com.vtc.event.common.dto.response.BasePhongMaChienResponse["content"])
+	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:63)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1343)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleMissingInstantiator(DeserializationContext.java:1032)
+	at com.fasterxml.jackson.databind.deser.ValueInstantiator._createFromStringFallbacks(ValueInstantiator.java:371)
+	at com.fasterxml.jackson.databind.deser.std.StdValueInstantiator.createFromString(StdValueInstantiator.java:323)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:242)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:27)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:127)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:288)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4013)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3023)
+	at com.vtc.event.common.utils.JsonMapperUtils.convertJsonToObject(JsonMapperUtils.java:47)
+	at com.vtc.event.common.utils.ApiExchangeServiceUtil.get(ApiExchangeServiceUtil.java:46)
+	at com.vtc.event.game.service.impl.GameRankingServiceImpl.getGameRanking(GameRankingServiceImpl.java:178)
+	at com.vtc.event.game.controller.GameRankingControler.getGameRanking(GameRankingControler.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:158)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter.doFilter(OAuth2AuthenticationProcessingFilter.java:176)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-05-21 10:22:31 AM [http-nio-8083-exec-3] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - log
+java.lang.NullPointerException: null
+	at com.vtc.event.game.service.impl.GameRankingServiceImpl.getGameRanking(GameRankingServiceImpl.java:182)
+	at com.vtc.event.game.controller.GameRankingControler.getGameRanking(GameRankingControler.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:158)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter.doFilter(OAuth2AuthenticationProcessingFilter.java:176)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-05-21 10:24:48 AM [Thread-3] INFO  o.s.s.c.ThreadPoolTaskScheduler - shutdown
+2020-05-21 10:24:48 AM [Thread-3] INFO  o.s.s.c.ThreadPoolTaskExecutor - shutdown
+2020-05-21 10:24:48 AM [Thread-3] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - destroy
+2020-05-21 10:24:48 AM [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource - close
+2020-05-21 10:24:48 AM [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource - close
+2020-05-21 10:25:06 AM [main] INFO  com.vtc.event.VtcEventApplication - logStarting
+2020-05-21 10:25:06 AM [main] INFO  com.vtc.event.VtcEventApplication - logStartupProfileInfo
+2020-05-21 10:25:07 AM [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - registerRepositoriesIn
+2020-05-21 10:25:07 AM [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - registerRepositoriesIn
+2020-05-21 10:25:08 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:25:08 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:25:09 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:25:09 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:25:09 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:25:09 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:25:09 AM [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - initialize
+2020-05-21 10:25:09 AM [main] INFO  o.a.coyote.http11.Http11NioProtocol - log
+2020-05-21 10:25:09 AM [main] INFO  o.a.catalina.core.StandardService - log
+2020-05-21 10:25:09 AM [main] INFO  o.a.catalina.core.StandardEngine - log
+2020-05-21 10:25:09 AM [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - log
+2020-05-21 10:25:09 AM [main] INFO  o.s.web.context.ContextLoader - prepareWebApplicationContext
+2020-05-21 10:25:10 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - getConnection
+2020-05-21 10:25:10 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - getConnection
+2020-05-21 10:25:10 AM [main] INFO  o.h.jpa.internal.util.LogHelper - logPersistenceUnitInformation
+2020-05-21 10:25:10 AM [main] INFO  org.hibernate.Version - logVersion
+2020-05-21 10:25:10 AM [main] INFO  org.hibernate.cfg.Environment - <clinit>
+2020-05-21 10:25:10 AM [main] INFO  o.h.annotations.common.Version - <clinit>
+2020-05-21 10:25:11 AM [main] INFO  org.hibernate.dialect.Dialect - <init>
+2020-05-21 10:25:12 AM [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - initiateService
+2020-05-21 10:25:13 AM [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - buildNativeEntityManagerFactory
+2020-05-21 10:25:15 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:25:15 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:25:15 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:25:15 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:25:15 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:25:15 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:25:15 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:25:15 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:25:15 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:25:16 AM [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - initialize
+2020-05-21 10:25:16 AM [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - openEntityManagerInViewInterceptor
+2020-05-21 10:25:16 AM [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - initialize
+2020-05-21 10:25:16 AM [main] INFO  o.a.coyote.http11.Http11NioProtocol - log
+2020-05-21 10:25:16 AM [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - start
+2020-05-21 10:25:16 AM [main] INFO  com.vtc.event.VtcEventApplication - logStarted
+2020-05-21 10:25:37 AM [http-nio-8083-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - log
+2020-05-21 10:25:37 AM [http-nio-8083-exec-2] INFO  o.s.web.servlet.DispatcherServlet - initServletBean
+2020-05-21 10:25:37 AM [http-nio-8083-exec-2] INFO  o.s.web.servlet.DispatcherServlet - initServletBean
+2020-05-21 10:25:37 AM [http-nio-8083-exec-2] INFO  c.v.e.g.c.GameRankingControler - getGameRanking
+2020-05-21 10:25:38 AM [http-nio-8083-exec-2] ERROR c.v.e.common.utils.JsonMapperUtils - convertJsonToObject
+com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `java.util.ArrayList` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('')
+ at [Source: (String)"{"ret":0,"msg":"Data is empty","content":""}"; line: 1, column: 42] (through reference chain: com.vtc.event.common.dto.response.BasePhongMaChienResponse["content"])
+	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:63)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1343)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleMissingInstantiator(DeserializationContext.java:1032)
+	at com.fasterxml.jackson.databind.deser.ValueInstantiator._createFromStringFallbacks(ValueInstantiator.java:371)
+	at com.fasterxml.jackson.databind.deser.std.StdValueInstantiator.createFromString(StdValueInstantiator.java:323)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:242)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:27)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:127)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:288)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4013)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3023)
+	at com.vtc.event.common.utils.JsonMapperUtils.convertJsonToObject(JsonMapperUtils.java:47)
+	at com.vtc.event.common.utils.ApiExchangeServiceUtil.get(ApiExchangeServiceUtil.java:46)
+	at com.vtc.event.game.service.impl.GameRankingServiceImpl.getGameRanking(GameRankingServiceImpl.java:181)
+	at com.vtc.event.game.controller.GameRankingControler.getGameRanking(GameRankingControler.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:158)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter.doFilter(OAuth2AuthenticationProcessingFilter.java:176)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-05-21 10:25:38 AM [http-nio-8083-exec-2] INFO  c.v.e.g.c.GameRankingControler - toResult
+2020-05-21 10:26:08 AM [http-nio-8083-exec-3] INFO  c.v.e.g.c.GameRankingControler - getGameRanking
+2020-05-21 10:26:09 AM [http-nio-8083-exec-3] INFO  c.v.e.g.s.i.GameRankingServiceImpl - getGameRanking
+2020-05-21 10:26:09 AM [http-nio-8083-exec-3] INFO  c.v.e.g.s.i.GameRankingServiceImpl - getGameRanking
+2020-05-21 10:26:09 AM [http-nio-8083-exec-3] INFO  c.v.e.g.s.i.GameRankingServiceImpl - getGameRanking
+2020-05-21 10:26:09 AM [http-nio-8083-exec-3] INFO  c.v.e.g.s.i.GameRankingServiceImpl - getGameRanking
+2020-05-21 10:26:09 AM [http-nio-8083-exec-3] INFO  c.v.e.g.s.i.GameRankingServiceImpl - getGameRanking
+2020-05-21 10:26:09 AM [http-nio-8083-exec-3] INFO  c.v.e.g.s.i.GameRankingServiceImpl - getGameRanking
+2020-05-21 10:26:09 AM [http-nio-8083-exec-3] INFO  c.v.e.g.s.i.GameRankingServiceImpl - getGameRanking
+2020-05-21 10:26:09 AM [http-nio-8083-exec-3] INFO  c.v.e.g.s.i.GameRankingServiceImpl - getGameRanking
+2020-05-21 10:26:09 AM [http-nio-8083-exec-3] INFO  c.v.e.g.s.i.GameRankingServiceImpl - getGameRanking
+2020-05-21 10:26:09 AM [http-nio-8083-exec-3] INFO  c.v.e.g.s.i.GameRankingServiceImpl - getGameRanking
+2020-05-21 10:26:09 AM [http-nio-8083-exec-3] INFO  c.v.e.g.s.i.GameRankingServiceImpl - getGameRanking
+2020-05-21 10:26:09 AM [http-nio-8083-exec-3] INFO  c.v.e.g.s.i.GameRankingServiceImpl - getGameRanking
+2020-05-21 10:26:09 AM [http-nio-8083-exec-3] INFO  c.v.e.g.s.i.GameRankingServiceImpl - getGameRanking
+2020-05-21 10:26:09 AM [http-nio-8083-exec-3] INFO  c.v.e.g.s.i.GameRankingServiceImpl - getGameRanking
+2020-05-21 10:26:09 AM [http-nio-8083-exec-3] INFO  c.v.e.g.s.i.GameRankingServiceImpl - getGameRanking
+2020-05-21 10:26:09 AM [http-nio-8083-exec-3] INFO  c.v.e.g.s.i.GameRankingServiceImpl - getGameRanking
+2020-05-21 10:26:09 AM [http-nio-8083-exec-3] INFO  c.v.e.g.s.i.GameRankingServiceImpl - getGameRanking
+2020-05-21 10:26:09 AM [http-nio-8083-exec-3] INFO  c.v.e.g.s.i.GameRankingServiceImpl - getGameRanking
+2020-05-21 10:26:09 AM [http-nio-8083-exec-3] INFO  c.v.e.g.s.i.GameRankingServiceImpl - getGameRanking
+2020-05-21 10:26:09 AM [http-nio-8083-exec-3] INFO  c.v.e.g.s.i.GameRankingServiceImpl - getGameRanking
+2020-05-21 10:26:09 AM [http-nio-8083-exec-3] INFO  c.v.e.g.s.i.GameRankingServiceImpl - getGameRanking
+2020-05-21 10:26:15 AM [http-nio-8083-exec-3] ERROR c.v.e.common.utils.JsonMapperUtils - convertJsonToObject
+com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `java.util.ArrayList` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('')
+ at [Source: (String)"{"ret":0,"msg":"accountid is empty","content":""}"; line: 1, column: 47] (through reference chain: com.vtc.event.common.dto.response.BasePhongMaChienResponse["content"])
+	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:63)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1343)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleMissingInstantiator(DeserializationContext.java:1032)
+	at com.fasterxml.jackson.databind.deser.ValueInstantiator._createFromStringFallbacks(ValueInstantiator.java:371)
+	at com.fasterxml.jackson.databind.deser.std.StdValueInstantiator.createFromString(StdValueInstantiator.java:323)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:242)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:27)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:127)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:288)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4013)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3023)
+	at com.vtc.event.common.utils.JsonMapperUtils.convertJsonToObject(JsonMapperUtils.java:47)
+	at com.vtc.event.common.utils.ApiExchangeServiceUtil.get(ApiExchangeServiceUtil.java:46)
+	at com.vtc.event.game.service.impl.GameRankingServiceImpl.getGameRanking(GameRankingServiceImpl.java:212)
+	at com.vtc.event.game.controller.GameRankingControler.getGameRanking(GameRankingControler.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:158)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter.doFilter(OAuth2AuthenticationProcessingFilter.java:176)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-05-21 10:26:15 AM [http-nio-8083-exec-3] INFO  c.v.e.g.c.GameRankingControler - toResult
+2020-05-21 10:27:30 AM [Thread-3] INFO  o.s.s.c.ThreadPoolTaskScheduler - shutdown
+2020-05-21 10:27:30 AM [Thread-3] INFO  o.s.s.c.ThreadPoolTaskExecutor - shutdown
+2020-05-21 10:27:30 AM [Thread-3] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - destroy
+2020-05-21 10:27:30 AM [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource - close
+2020-05-21 10:27:30 AM [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource - close
+2020-05-21 10:27:46 AM [main] INFO  com.vtc.event.VtcEventApplication - logStarting
+2020-05-21 10:27:46 AM [main] INFO  com.vtc.event.VtcEventApplication - logStartupProfileInfo
+2020-05-21 10:27:47 AM [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - registerRepositoriesIn
+2020-05-21 10:27:47 AM [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - registerRepositoriesIn
+2020-05-21 10:27:48 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:27:48 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:27:48 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:27:48 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:27:48 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:27:48 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:27:49 AM [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - initialize
+2020-05-21 10:27:49 AM [main] INFO  o.a.coyote.http11.Http11NioProtocol - log
+2020-05-21 10:27:49 AM [main] INFO  o.a.catalina.core.StandardService - log
+2020-05-21 10:27:49 AM [main] INFO  o.a.catalina.core.StandardEngine - log
+2020-05-21 10:27:49 AM [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - log
+2020-05-21 10:27:49 AM [main] INFO  o.s.web.context.ContextLoader - prepareWebApplicationContext
+2020-05-21 10:27:49 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - getConnection
+2020-05-21 10:27:50 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - getConnection
+2020-05-21 10:27:50 AM [main] INFO  o.h.jpa.internal.util.LogHelper - logPersistenceUnitInformation
+2020-05-21 10:27:50 AM [main] INFO  org.hibernate.Version - logVersion
+2020-05-21 10:27:50 AM [main] INFO  org.hibernate.cfg.Environment - <clinit>
+2020-05-21 10:27:50 AM [main] INFO  o.h.annotations.common.Version - <clinit>
+2020-05-21 10:27:50 AM [main] INFO  org.hibernate.dialect.Dialect - <init>
+2020-05-21 10:27:52 AM [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - initiateService
+2020-05-21 10:27:52 AM [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - buildNativeEntityManagerFactory
+2020-05-21 10:27:54 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:27:54 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:27:54 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:27:54 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:27:54 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:27:54 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:27:54 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:27:54 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:27:54 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:27:55 AM [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - initialize
+2020-05-21 10:27:55 AM [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - openEntityManagerInViewInterceptor
+2020-05-21 10:27:55 AM [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - initialize
+2020-05-21 10:27:55 AM [main] INFO  o.a.coyote.http11.Http11NioProtocol - log
+2020-05-21 10:27:55 AM [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - start
+2020-05-21 10:27:55 AM [main] INFO  com.vtc.event.VtcEventApplication - logStarted
+2020-05-21 10:28:47 AM [http-nio-8083-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - log
+2020-05-21 10:28:47 AM [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet - initServletBean
+2020-05-21 10:28:47 AM [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet - initServletBean
+2020-05-21 10:28:48 AM [http-nio-8083-exec-1] INFO  c.v.e.g.c.GameRankingControler - getGameRanking
+2020-05-21 10:28:49 AM [http-nio-8083-exec-1] INFO  c.v.e.g.s.i.GameRankingServiceImpl - getGameRanking
+2020-05-21 10:28:49 AM [http-nio-8083-exec-1] INFO  c.v.e.g.s.i.GameRankingServiceImpl - getGameRanking
+2020-05-21 10:28:49 AM [http-nio-8083-exec-1] INFO  c.v.e.g.s.i.GameRankingServiceImpl - getGameRanking
+2020-05-21 10:28:49 AM [http-nio-8083-exec-1] INFO  c.v.e.g.s.i.GameRankingServiceImpl - getGameRanking
+2020-05-21 10:28:49 AM [http-nio-8083-exec-1] INFO  c.v.e.g.s.i.GameRankingServiceImpl - getGameRanking
+2020-05-21 10:28:49 AM [http-nio-8083-exec-1] INFO  c.v.e.g.s.i.GameRankingServiceImpl - getGameRanking
+2020-05-21 10:28:49 AM [http-nio-8083-exec-1] INFO  c.v.e.g.s.i.GameRankingServiceImpl - getGameRanking
+2020-05-21 10:28:49 AM [http-nio-8083-exec-1] INFO  c.v.e.g.s.i.GameRankingServiceImpl - getGameRanking
+2020-05-21 10:28:49 AM [http-nio-8083-exec-1] INFO  c.v.e.g.s.i.GameRankingServiceImpl - getGameRanking
+2020-05-21 10:28:49 AM [http-nio-8083-exec-1] INFO  c.v.e.g.s.i.GameRankingServiceImpl - getGameRanking
+2020-05-21 10:28:49 AM [http-nio-8083-exec-1] INFO  c.v.e.g.s.i.GameRankingServiceImpl - getGameRanking
+2020-05-21 10:28:49 AM [http-nio-8083-exec-1] INFO  c.v.e.g.s.i.GameRankingServiceImpl - getGameRanking
+2020-05-21 10:28:49 AM [http-nio-8083-exec-1] INFO  c.v.e.g.s.i.GameRankingServiceImpl - getGameRanking
+2020-05-21 10:28:49 AM [http-nio-8083-exec-1] INFO  c.v.e.g.s.i.GameRankingServiceImpl - getGameRanking
+2020-05-21 10:28:49 AM [http-nio-8083-exec-1] INFO  c.v.e.g.s.i.GameRankingServiceImpl - getGameRanking
+2020-05-21 10:28:49 AM [http-nio-8083-exec-1] INFO  c.v.e.g.s.i.GameRankingServiceImpl - getGameRanking
+2020-05-21 10:28:49 AM [http-nio-8083-exec-1] INFO  c.v.e.g.s.i.GameRankingServiceImpl - getGameRanking
+2020-05-21 10:28:49 AM [http-nio-8083-exec-1] INFO  c.v.e.g.s.i.GameRankingServiceImpl - getGameRanking
+2020-05-21 10:28:49 AM [http-nio-8083-exec-1] INFO  c.v.e.g.s.i.GameRankingServiceImpl - getGameRanking
+2020-05-21 10:28:49 AM [http-nio-8083-exec-1] INFO  c.v.e.g.s.i.GameRankingServiceImpl - getGameRanking
+2020-05-21 10:28:49 AM [http-nio-8083-exec-1] ERROR c.v.e.common.utils.JsonMapperUtils - convertJsonToObject
+com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `java.util.ArrayList` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('')
+ at [Source: (String)"{"ret":0,"msg":"accountid is empty","content":""}"; line: 1, column: 47] (through reference chain: com.vtc.event.common.dto.response.BasePhongMaChienResponse["content"])
+	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:63)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1343)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleMissingInstantiator(DeserializationContext.java:1032)
+	at com.fasterxml.jackson.databind.deser.ValueInstantiator._createFromStringFallbacks(ValueInstantiator.java:371)
+	at com.fasterxml.jackson.databind.deser.std.StdValueInstantiator.createFromString(StdValueInstantiator.java:323)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:242)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:27)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:127)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:288)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4013)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3023)
+	at com.vtc.event.common.utils.JsonMapperUtils.convertJsonToObject(JsonMapperUtils.java:47)
+	at com.vtc.event.common.utils.ApiExchangeServiceUtil.get(ApiExchangeServiceUtil.java:46)
+	at com.vtc.event.game.service.impl.GameRankingServiceImpl.getGameRanking(GameRankingServiceImpl.java:213)
+	at com.vtc.event.game.controller.GameRankingControler.getGameRanking(GameRankingControler.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:158)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter.doFilter(OAuth2AuthenticationProcessingFilter.java:176)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-05-21 10:28:50 AM [http-nio-8083-exec-1] INFO  c.v.e.g.c.GameRankingControler - toResult
+2020-05-21 10:30:05 AM [http-nio-8083-exec-5] INFO  c.v.e.g.c.GameRankingControler - getGameRanking
+2020-05-21 10:30:05 AM [http-nio-8083-exec-5] ERROR c.v.e.common.utils.JsonMapperUtils - convertJsonToObject
+com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `java.util.ArrayList` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('')
+ at [Source: (String)"{"ret":0,"msg":"Data is empty","content":""}"; line: 1, column: 42] (through reference chain: com.vtc.event.common.dto.response.BasePhongMaChienResponse["content"])
+	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:63)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1343)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleMissingInstantiator(DeserializationContext.java:1032)
+	at com.fasterxml.jackson.databind.deser.ValueInstantiator._createFromStringFallbacks(ValueInstantiator.java:371)
+	at com.fasterxml.jackson.databind.deser.std.StdValueInstantiator.createFromString(StdValueInstantiator.java:323)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:242)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:27)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:127)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:288)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4013)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3023)
+	at com.vtc.event.common.utils.JsonMapperUtils.convertJsonToObject(JsonMapperUtils.java:47)
+	at com.vtc.event.common.utils.ApiExchangeServiceUtil.get(ApiExchangeServiceUtil.java:46)
+	at com.vtc.event.game.service.impl.GameRankingServiceImpl.getGameRanking(GameRankingServiceImpl.java:181)
+	at com.vtc.event.game.controller.GameRankingControler.getGameRanking(GameRankingControler.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:158)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter.doFilter(OAuth2AuthenticationProcessingFilter.java:176)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-05-21 10:30:05 AM [http-nio-8083-exec-5] INFO  c.v.e.g.c.GameRankingControler - toResult
+2020-05-21 10:34:34 AM [Thread-3] INFO  o.s.s.c.ThreadPoolTaskScheduler - shutdown
+2020-05-21 10:34:34 AM [Thread-3] INFO  o.s.s.c.ThreadPoolTaskExecutor - shutdown
+2020-05-21 10:34:34 AM [Thread-3] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - destroy
+2020-05-21 10:34:34 AM [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource - close
+2020-05-21 10:34:34 AM [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource - close
+2020-05-21 10:34:50 AM [main] INFO  com.vtc.event.VtcEventApplication - logStarting
+2020-05-21 10:34:50 AM [main] INFO  com.vtc.event.VtcEventApplication - logStartupProfileInfo
+2020-05-21 10:34:51 AM [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - registerRepositoriesIn
+2020-05-21 10:34:51 AM [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - registerRepositoriesIn
+2020-05-21 10:34:52 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:34:52 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:34:52 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:34:52 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:34:52 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:34:52 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:34:53 AM [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - initialize
+2020-05-21 10:34:53 AM [main] INFO  o.a.coyote.http11.Http11NioProtocol - log
+2020-05-21 10:34:53 AM [main] INFO  o.a.catalina.core.StandardService - log
+2020-05-21 10:34:53 AM [main] INFO  o.a.catalina.core.StandardEngine - log
+2020-05-21 10:34:53 AM [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - log
+2020-05-21 10:34:53 AM [main] INFO  o.s.web.context.ContextLoader - prepareWebApplicationContext
+2020-05-21 10:34:54 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - getConnection
+2020-05-21 10:34:54 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - getConnection
+2020-05-21 10:34:54 AM [main] INFO  o.h.jpa.internal.util.LogHelper - logPersistenceUnitInformation
+2020-05-21 10:34:54 AM [main] INFO  org.hibernate.Version - logVersion
+2020-05-21 10:34:54 AM [main] INFO  org.hibernate.cfg.Environment - <clinit>
+2020-05-21 10:34:54 AM [main] INFO  o.h.annotations.common.Version - <clinit>
+2020-05-21 10:34:55 AM [main] INFO  org.hibernate.dialect.Dialect - <init>
+2020-05-21 10:34:56 AM [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - initiateService
+2020-05-21 10:34:56 AM [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - buildNativeEntityManagerFactory
+2020-05-21 10:34:58 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:34:58 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:34:58 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:34:58 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:34:58 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:34:58 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:34:58 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:34:58 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:34:58 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:34:59 AM [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - initialize
+2020-05-21 10:34:59 AM [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - openEntityManagerInViewInterceptor
+2020-05-21 10:34:59 AM [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - initialize
+2020-05-21 10:34:59 AM [main] INFO  o.a.coyote.http11.Http11NioProtocol - log
+2020-05-21 10:34:59 AM [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - start
+2020-05-21 10:34:59 AM [main] INFO  com.vtc.event.VtcEventApplication - logStarted
+2020-05-21 10:36:01 AM [Thread-3] INFO  o.s.s.c.ThreadPoolTaskScheduler - shutdown
+2020-05-21 10:36:01 AM [Thread-3] INFO  o.s.s.c.ThreadPoolTaskExecutor - shutdown
+2020-05-21 10:36:01 AM [Thread-3] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - destroy
+2020-05-21 10:36:01 AM [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource - close
+2020-05-21 10:36:01 AM [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource - close
+2020-05-21 10:36:16 AM [main] INFO  com.vtc.event.VtcEventApplication - logStarting
+2020-05-21 10:36:16 AM [main] INFO  com.vtc.event.VtcEventApplication - logStartupProfileInfo
+2020-05-21 10:36:18 AM [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - registerRepositoriesIn
+2020-05-21 10:36:18 AM [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - registerRepositoriesIn
+2020-05-21 10:36:19 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:36:19 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:36:19 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:36:19 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:36:19 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:36:19 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:36:20 AM [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - initialize
+2020-05-21 10:36:20 AM [main] INFO  o.a.coyote.http11.Http11NioProtocol - log
+2020-05-21 10:36:20 AM [main] INFO  o.a.catalina.core.StandardService - log
+2020-05-21 10:36:20 AM [main] INFO  o.a.catalina.core.StandardEngine - log
+2020-05-21 10:36:20 AM [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - log
+2020-05-21 10:36:20 AM [main] INFO  o.s.web.context.ContextLoader - prepareWebApplicationContext
+2020-05-21 10:36:20 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - getConnection
+2020-05-21 10:36:20 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - getConnection
+2020-05-21 10:36:21 AM [main] INFO  o.h.jpa.internal.util.LogHelper - logPersistenceUnitInformation
+2020-05-21 10:36:21 AM [main] INFO  org.hibernate.Version - logVersion
+2020-05-21 10:36:21 AM [main] INFO  org.hibernate.cfg.Environment - <clinit>
+2020-05-21 10:36:21 AM [main] INFO  o.h.annotations.common.Version - <clinit>
+2020-05-21 10:36:21 AM [main] INFO  org.hibernate.dialect.Dialect - <init>
+2020-05-21 10:36:23 AM [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - initiateService
+2020-05-21 10:36:23 AM [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - buildNativeEntityManagerFactory
+2020-05-21 10:36:26 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:36:26 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:36:26 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:36:26 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:36:26 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:36:26 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:36:26 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:36:26 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:36:26 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:36:26 AM [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - initialize
+2020-05-21 10:36:26 AM [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - openEntityManagerInViewInterceptor
+2020-05-21 10:36:27 AM [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - initialize
+2020-05-21 10:36:27 AM [main] INFO  o.a.coyote.http11.Http11NioProtocol - log
+2020-05-21 10:36:27 AM [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - start
+2020-05-21 10:36:27 AM [main] INFO  com.vtc.event.VtcEventApplication - logStarted
+2020-05-21 10:36:36 AM [http-nio-8083-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - log
+2020-05-21 10:36:36 AM [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet - initServletBean
+2020-05-21 10:36:36 AM [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet - initServletBean
+2020-05-21 10:36:36 AM [http-nio-8083-exec-1] INFO  c.v.e.g.c.GameRankingControler - getGameRanking
+2020-05-21 10:36:37 AM [http-nio-8083-exec-1] INFO  c.v.e.g.s.i.GameRankingServiceImpl - getGameRanking
+2020-05-21 10:36:37 AM [http-nio-8083-exec-1] ERROR c.v.e.common.utils.JsonMapperUtils - convertJsonToObject
+com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `java.util.ArrayList` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('')
+ at [Source: (String)"{"ret":0,"msg":"Data is empty","content":""}"; line: 1, column: 42] (through reference chain: com.vtc.event.common.dto.response.BasePhongMaChienResponse["content"])
+	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:63)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1343)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleMissingInstantiator(DeserializationContext.java:1032)
+	at com.fasterxml.jackson.databind.deser.ValueInstantiator._createFromStringFallbacks(ValueInstantiator.java:371)
+	at com.fasterxml.jackson.databind.deser.std.StdValueInstantiator.createFromString(StdValueInstantiator.java:323)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:242)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:27)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:127)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:288)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4013)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3023)
+	at com.vtc.event.common.utils.JsonMapperUtils.convertJsonToObject(JsonMapperUtils.java:47)
+	at com.vtc.event.common.utils.ApiExchangeServiceUtil.get(ApiExchangeServiceUtil.java:46)
+	at com.vtc.event.game.service.impl.GameRankingServiceImpl.getGameRanking(GameRankingServiceImpl.java:182)
+	at com.vtc.event.game.controller.GameRankingControler.getGameRanking(GameRankingControler.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:158)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter.doFilter(OAuth2AuthenticationProcessingFilter.java:176)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-05-21 10:36:37 AM [http-nio-8083-exec-1] INFO  c.v.e.g.c.GameRankingControler - toResult
+2020-05-21 10:43:28 AM [Thread-3] INFO  o.s.s.c.ThreadPoolTaskScheduler - shutdown
+2020-05-21 10:43:28 AM [Thread-3] INFO  o.s.s.c.ThreadPoolTaskExecutor - shutdown
+2020-05-21 10:43:28 AM [Thread-3] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - destroy
+2020-05-21 10:43:28 AM [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource - close
+2020-05-21 10:43:28 AM [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource - close
+2020-05-21 10:45:08 AM [main] INFO  com.vtc.event.VtcEventApplication - logStarting
+2020-05-21 10:45:08 AM [main] INFO  com.vtc.event.VtcEventApplication - logStartupProfileInfo
+2020-05-21 10:45:09 AM [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - registerRepositoriesIn
+2020-05-21 10:45:10 AM [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - registerRepositoriesIn
+2020-05-21 10:45:11 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:45:11 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:45:11 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:45:11 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:45:11 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:45:11 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:45:11 AM [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - initialize
+2020-05-21 10:45:11 AM [main] INFO  o.a.coyote.http11.Http11NioProtocol - log
+2020-05-21 10:45:11 AM [main] INFO  o.a.catalina.core.StandardService - log
+2020-05-21 10:45:11 AM [main] INFO  o.a.catalina.core.StandardEngine - log
+2020-05-21 10:45:11 AM [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - log
+2020-05-21 10:45:11 AM [main] INFO  o.s.web.context.ContextLoader - prepareWebApplicationContext
+2020-05-21 10:45:12 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - getConnection
+2020-05-21 10:45:12 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - getConnection
+2020-05-21 10:45:12 AM [main] INFO  o.h.jpa.internal.util.LogHelper - logPersistenceUnitInformation
+2020-05-21 10:45:12 AM [main] INFO  org.hibernate.Version - logVersion
+2020-05-21 10:45:12 AM [main] INFO  org.hibernate.cfg.Environment - <clinit>
+2020-05-21 10:45:12 AM [main] INFO  o.h.annotations.common.Version - <clinit>
+2020-05-21 10:45:12 AM [main] INFO  org.hibernate.dialect.Dialect - <init>
+2020-05-21 10:45:14 AM [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - initiateService
+2020-05-21 10:45:14 AM [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - buildNativeEntityManagerFactory
+2020-05-21 10:45:16 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:45:16 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:45:16 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:45:16 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:45:16 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:45:16 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:45:16 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:45:16 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:45:16 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:45:17 AM [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - initialize
+2020-05-21 10:45:17 AM [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - openEntityManagerInViewInterceptor
+2020-05-21 10:45:17 AM [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - initialize
+2020-05-21 10:45:17 AM [main] INFO  o.a.coyote.http11.Http11NioProtocol - log
+2020-05-21 10:45:17 AM [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - start
+2020-05-21 10:45:17 AM [main] INFO  com.vtc.event.VtcEventApplication - logStarted
+2020-05-21 10:45:22 AM [http-nio-8083-exec-9] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - log
+2020-05-21 10:45:22 AM [http-nio-8083-exec-9] INFO  o.s.web.servlet.DispatcherServlet - initServletBean
+2020-05-21 10:45:22 AM [http-nio-8083-exec-9] INFO  o.s.web.servlet.DispatcherServlet - initServletBean
+2020-05-21 10:45:22 AM [http-nio-8083-exec-9] INFO  c.v.e.g.c.GameRankingControler - getGameRanking
+2020-05-21 10:45:23 AM [http-nio-8083-exec-9] INFO  c.v.e.g.s.i.GameRankingServiceImpl - getGameRanking
+2020-05-21 10:45:23 AM [http-nio-8083-exec-9] INFO  c.v.e.g.s.i.GameRankingServiceImpl - getGameRanking
+2020-05-21 10:45:23 AM [http-nio-8083-exec-9] INFO  c.v.e.g.s.i.GameRankingServiceImpl - getGameRanking
+2020-05-21 10:45:23 AM [http-nio-8083-exec-9] ERROR c.v.e.common.utils.JsonMapperUtils - convertJsonToObject
+com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `java.util.ArrayList` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('')
+ at [Source: (String)"{"ret":0,"msg":"Data is empty","content":""}"; line: 1, column: 42] (through reference chain: com.vtc.event.common.dto.response.BasePhongMaChienResponse["content"])
+	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:63)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1343)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleMissingInstantiator(DeserializationContext.java:1032)
+	at com.fasterxml.jackson.databind.deser.ValueInstantiator._createFromStringFallbacks(ValueInstantiator.java:371)
+	at com.fasterxml.jackson.databind.deser.std.StdValueInstantiator.createFromString(StdValueInstantiator.java:323)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:242)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:27)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:127)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:288)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4013)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3023)
+	at com.vtc.event.common.utils.JsonMapperUtils.convertJsonToObject(JsonMapperUtils.java:47)
+	at com.vtc.event.common.utils.ApiExchangeServiceUtil.get(ApiExchangeServiceUtil.java:46)
+	at com.vtc.event.game.service.impl.GameRankingServiceImpl.getGameRanking(GameRankingServiceImpl.java:181)
+	at com.vtc.event.game.controller.GameRankingControler.getGameRanking(GameRankingControler.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:158)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter.doFilter(OAuth2AuthenticationProcessingFilter.java:176)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-05-21 10:45:26 AM [http-nio-8083-exec-9] ERROR c.v.e.common.utils.JsonMapperUtils - convertJsonToObject
+com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `java.util.ArrayList` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('')
+ at [Source: (String)"{"ret":0,"msg":"accountid is empty","content":""}"; line: 1, column: 47] (through reference chain: com.vtc.event.common.dto.response.BasePhongMaChienResponse["content"])
+	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:63)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1343)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleMissingInstantiator(DeserializationContext.java:1032)
+	at com.fasterxml.jackson.databind.deser.ValueInstantiator._createFromStringFallbacks(ValueInstantiator.java:371)
+	at com.fasterxml.jackson.databind.deser.std.StdValueInstantiator.createFromString(StdValueInstantiator.java:323)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:242)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:27)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:127)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:288)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4013)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3023)
+	at com.vtc.event.common.utils.JsonMapperUtils.convertJsonToObject(JsonMapperUtils.java:47)
+	at com.vtc.event.common.utils.ApiExchangeServiceUtil.get(ApiExchangeServiceUtil.java:46)
+	at com.vtc.event.game.service.impl.GameRankingServiceImpl.getGameRanking(GameRankingServiceImpl.java:212)
+	at com.vtc.event.game.controller.GameRankingControler.getGameRanking(GameRankingControler.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:158)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter.doFilter(OAuth2AuthenticationProcessingFilter.java:176)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-05-21 10:45:26 AM [http-nio-8083-exec-9] INFO  c.v.e.g.c.GameRankingControler - toResult
+2020-05-21 10:46:22 AM [http-nio-8083-exec-10] INFO  c.v.e.g.c.GameRankingControler - getGameRanking
+2020-05-21 10:46:25 AM [http-nio-8083-exec-10] INFO  c.v.e.g.s.i.GameRankingServiceImpl - getGameRanking
+2020-05-21 10:46:25 AM [http-nio-8083-exec-10] INFO  c.v.e.g.s.i.GameRankingServiceImpl - getGameRanking
+2020-05-21 10:46:25 AM [http-nio-8083-exec-10] INFO  c.v.e.g.s.i.GameRankingServiceImpl - getGameRanking
+2020-05-21 10:46:25 AM [http-nio-8083-exec-10] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - log
+java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
+	at java.base/java.util.Objects.checkIndex(Objects.java:372)
+	at java.base/java.util.ArrayList.get(ArrayList.java:458)
+	at com.vtc.event.game.service.impl.GameRankingServiceImpl.getGameRanking(GameRankingServiceImpl.java:191)
+	at com.vtc.event.game.controller.GameRankingControler.getGameRanking(GameRankingControler.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:158)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter.doFilter(OAuth2AuthenticationProcessingFilter.java:176)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-05-21 10:50:53 AM [Thread-3] INFO  o.s.s.c.ThreadPoolTaskScheduler - shutdown
+2020-05-21 10:50:53 AM [Thread-3] INFO  o.s.s.c.ThreadPoolTaskExecutor - shutdown
+2020-05-21 10:50:53 AM [Thread-3] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - destroy
+2020-05-21 10:50:53 AM [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource - close
+2020-05-21 10:50:53 AM [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource - close
+2020-05-21 10:51:06 AM [main] INFO  com.vtc.event.VtcEventApplication - logStarting
+2020-05-21 10:51:06 AM [main] INFO  com.vtc.event.VtcEventApplication - logStartupProfileInfo
+2020-05-21 10:51:07 AM [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - registerRepositoriesIn
+2020-05-21 10:51:07 AM [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - registerRepositoriesIn
+2020-05-21 10:51:08 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:51:08 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:51:08 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:51:08 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:51:08 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:51:08 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:51:09 AM [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - initialize
+2020-05-21 10:51:09 AM [main] INFO  o.a.coyote.http11.Http11NioProtocol - log
+2020-05-21 10:51:09 AM [main] INFO  o.a.catalina.core.StandardService - log
+2020-05-21 10:51:09 AM [main] INFO  o.a.catalina.core.StandardEngine - log
+2020-05-21 10:51:09 AM [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - log
+2020-05-21 10:51:09 AM [main] INFO  o.s.web.context.ContextLoader - prepareWebApplicationContext
+2020-05-21 10:51:09 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - getConnection
+2020-05-21 10:51:10 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - getConnection
+2020-05-21 10:51:10 AM [main] INFO  o.h.jpa.internal.util.LogHelper - logPersistenceUnitInformation
+2020-05-21 10:51:10 AM [main] INFO  org.hibernate.Version - logVersion
+2020-05-21 10:51:10 AM [main] INFO  org.hibernate.cfg.Environment - <clinit>
+2020-05-21 10:51:10 AM [main] INFO  o.h.annotations.common.Version - <clinit>
+2020-05-21 10:51:10 AM [main] INFO  org.hibernate.dialect.Dialect - <init>
+2020-05-21 10:51:12 AM [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - initiateService
+2020-05-21 10:51:12 AM [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - buildNativeEntityManagerFactory
+2020-05-21 10:51:14 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:51:14 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:51:14 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:51:14 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:51:14 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:51:14 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:51:14 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:51:14 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:51:14 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:51:14 AM [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - initialize
+2020-05-21 10:51:14 AM [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - openEntityManagerInViewInterceptor
+2020-05-21 10:51:15 AM [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - initialize
+2020-05-21 10:51:15 AM [main] INFO  o.a.coyote.http11.Http11NioProtocol - log
+2020-05-21 10:51:15 AM [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - start
+2020-05-21 10:51:15 AM [main] INFO  com.vtc.event.VtcEventApplication - logStarted
+2020-05-21 10:51:34 AM [http-nio-8083-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - log
+2020-05-21 10:51:34 AM [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet - initServletBean
+2020-05-21 10:51:34 AM [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet - initServletBean
+2020-05-21 10:51:34 AM [http-nio-8083-exec-1] INFO  c.v.e.g.c.GameRankingControler - getGameRanking
+2020-05-21 10:51:35 AM [http-nio-8083-exec-1] INFO  c.v.e.g.s.i.GameRankingServiceImpl - getGameRanking
+2020-05-21 10:51:35 AM [http-nio-8083-exec-1] INFO  c.v.e.g.s.i.GameRankingServiceImpl - getGameRanking
+2020-05-21 10:51:35 AM [http-nio-8083-exec-1] INFO  c.v.e.g.s.i.GameRankingServiceImpl - getGameRanking
+2020-05-21 10:51:35 AM [http-nio-8083-exec-1] ERROR c.v.e.common.utils.JsonMapperUtils - convertJsonToObject
+com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `java.util.ArrayList` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('')
+ at [Source: (String)"{"ret":0,"msg":"accountid is empty","content":""}"; line: 1, column: 47] (through reference chain: com.vtc.event.common.dto.response.BasePhongMaChienResponse["content"])
+	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:63)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1343)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleMissingInstantiator(DeserializationContext.java:1032)
+	at com.fasterxml.jackson.databind.deser.ValueInstantiator._createFromStringFallbacks(ValueInstantiator.java:371)
+	at com.fasterxml.jackson.databind.deser.std.StdValueInstantiator.createFromString(StdValueInstantiator.java:323)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:242)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:27)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:127)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:288)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4013)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3023)
+	at com.vtc.event.common.utils.JsonMapperUtils.convertJsonToObject(JsonMapperUtils.java:47)
+	at com.vtc.event.common.utils.ApiExchangeServiceUtil.get(ApiExchangeServiceUtil.java:46)
+	at com.vtc.event.game.service.impl.GameRankingServiceImpl.getGameRanking(GameRankingServiceImpl.java:227)
+	at com.vtc.event.game.controller.GameRankingControler.getGameRanking(GameRankingControler.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:158)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter.doFilter(OAuth2AuthenticationProcessingFilter.java:176)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-05-21 10:51:35 AM [http-nio-8083-exec-1] INFO  c.v.e.g.c.GameRankingControler - toResult
+2020-05-21 10:55:07 AM [Thread-3] INFO  o.s.s.c.ThreadPoolTaskScheduler - shutdown
+2020-05-21 10:55:07 AM [Thread-3] INFO  o.s.s.c.ThreadPoolTaskExecutor - shutdown
+2020-05-21 10:55:07 AM [Thread-3] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - destroy
+2020-05-21 10:55:07 AM [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource - close
+2020-05-21 10:55:07 AM [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource - close
+2020-05-21 10:55:22 AM [main] INFO  com.vtc.event.VtcEventApplication - logStarting
+2020-05-21 10:55:22 AM [main] INFO  com.vtc.event.VtcEventApplication - logStartupProfileInfo
+2020-05-21 10:55:23 AM [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - registerRepositoriesIn
+2020-05-21 10:55:23 AM [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - registerRepositoriesIn
+2020-05-21 10:55:24 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:55:24 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:55:24 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:55:24 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:55:24 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:55:24 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-05-21 10:55:24 AM [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - initialize
+2020-05-21 10:55:24 AM [main] INFO  o.a.coyote.http11.Http11NioProtocol - log
+2020-05-21 10:55:24 AM [main] INFO  o.a.catalina.core.StandardService - log
+2020-05-21 10:55:24 AM [main] INFO  o.a.catalina.core.StandardEngine - log
+2020-05-21 10:55:24 AM [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - log
+2020-05-21 10:55:24 AM [main] INFO  o.s.web.context.ContextLoader - prepareWebApplicationContext
+2020-05-21 10:55:25 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - getConnection
+2020-05-21 10:55:25 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - getConnection
+2020-05-21 10:55:25 AM [main] INFO  o.h.jpa.internal.util.LogHelper - logPersistenceUnitInformation
+2020-05-21 10:55:25 AM [main] INFO  org.hibernate.Version - logVersion
+2020-05-21 10:55:25 AM [main] INFO  org.hibernate.cfg.Environment - <clinit>
+2020-05-21 10:55:25 AM [main] INFO  o.h.annotations.common.Version - <clinit>
+2020-05-21 10:55:26 AM [main] INFO  org.hibernate.dialect.Dialect - <init>
+2020-05-21 10:55:27 AM [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - initiateService
+2020-05-21 10:55:27 AM [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - buildNativeEntityManagerFactory
+2020-05-21 10:55:30 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:55:30 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:55:30 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:55:30 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:55:30 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:55:30 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:55:30 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:55:30 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:55:30 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-05-21 10:55:30 AM [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - initialize
+2020-05-21 10:55:31 AM [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - openEntityManagerInViewInterceptor
+2020-05-21 10:55:31 AM [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - initialize
+2020-05-21 10:55:31 AM [main] INFO  o.a.coyote.http11.Http11NioProtocol - log
+2020-05-21 10:55:31 AM [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - start
+2020-05-21 10:55:31 AM [main] INFO  com.vtc.event.VtcEventApplication - logStarted
+2020-05-21 10:55:34 AM [http-nio-8083-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - log
+2020-05-21 10:55:34 AM [http-nio-8083-exec-2] INFO  o.s.web.servlet.DispatcherServlet - initServletBean
+2020-05-21 10:55:34 AM [http-nio-8083-exec-2] INFO  o.s.web.servlet.DispatcherServlet - initServletBean
+2020-05-21 10:55:34 AM [http-nio-8083-exec-2] INFO  c.v.e.g.c.GameRankingControler - getGameRanking
+2020-05-21 10:55:34 AM [http-nio-8083-exec-2] INFO  c.v.e.g.s.i.GameRankingServiceImpl - getGameRanking
+2020-05-21 10:55:34 AM [http-nio-8083-exec-2] INFO  c.v.e.g.s.i.GameRankingServiceImpl - getGameRanking
+2020-05-21 10:55:34 AM [http-nio-8083-exec-2] INFO  c.v.e.g.s.i.GameRankingServiceImpl - getGameRanking
+2020-05-21 10:55:35 AM [http-nio-8083-exec-2] ERROR c.v.e.common.utils.JsonMapperUtils - convertJsonToObject
+com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `java.util.ArrayList` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('')
+ at [Source: (String)"{"ret":0,"msg":"accountid is empty","content":""}"; line: 1, column: 47] (through reference chain: com.vtc.event.common.dto.response.BasePhongMaChienResponse["content"])
+	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:63)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1343)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleMissingInstantiator(DeserializationContext.java:1032)
+	at com.fasterxml.jackson.databind.deser.ValueInstantiator._createFromStringFallbacks(ValueInstantiator.java:371)
+	at com.fasterxml.jackson.databind.deser.std.StdValueInstantiator.createFromString(StdValueInstantiator.java:323)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:242)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:27)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:127)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:288)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4013)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3023)
+	at com.vtc.event.common.utils.JsonMapperUtils.convertJsonToObject(JsonMapperUtils.java:47)
+	at com.vtc.event.common.utils.ApiExchangeServiceUtil.get(ApiExchangeServiceUtil.java:46)
+	at com.vtc.event.game.service.impl.GameRankingServiceImpl.getGameRanking(GameRankingServiceImpl.java:239)
+	at com.vtc.event.game.controller.GameRankingControler.getGameRanking(GameRankingControler.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:158)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter.doFilter(OAuth2AuthenticationProcessingFilter.java:176)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-05-21 10:55:35 AM [http-nio-8083-exec-2] INFO  c.v.e.g.c.GameRankingControler - toResult

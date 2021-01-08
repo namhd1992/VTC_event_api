@@ -1,0 +1,573 @@
+2020-03-03 09:29:28 AM [main] INFO  com.vtc.event.VtcEventApplication - logStarting
+2020-03-03 09:29:28 AM [main] INFO  com.vtc.event.VtcEventApplication - logStartupProfileInfo
+2020-03-03 09:29:29 AM [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - registerRepositoriesIn
+2020-03-03 09:29:29 AM [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - registerRepositoriesIn
+2020-03-03 09:29:30 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-03-03 09:29:30 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-03-03 09:29:30 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-03-03 09:29:30 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-03-03 09:29:30 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-03-03 09:29:30 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-03-03 09:29:31 AM [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - initialize
+2020-03-03 09:29:31 AM [main] INFO  o.a.coyote.http11.Http11NioProtocol - log
+2020-03-03 09:29:31 AM [main] INFO  o.a.catalina.core.StandardService - log
+2020-03-03 09:29:31 AM [main] INFO  o.a.catalina.core.StandardEngine - log
+2020-03-03 09:29:31 AM [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - log
+2020-03-03 09:29:31 AM [main] INFO  o.s.web.context.ContextLoader - prepareWebApplicationContext
+2020-03-03 09:29:31 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - getConnection
+2020-03-03 09:29:32 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - getConnection
+2020-03-03 09:29:32 AM [main] INFO  o.h.jpa.internal.util.LogHelper - logPersistenceUnitInformation
+2020-03-03 09:29:32 AM [main] INFO  org.hibernate.Version - logVersion
+2020-03-03 09:29:32 AM [main] INFO  org.hibernate.cfg.Environment - <clinit>
+2020-03-03 09:29:32 AM [main] INFO  o.h.annotations.common.Version - <clinit>
+2020-03-03 09:29:33 AM [main] INFO  org.hibernate.dialect.Dialect - <init>
+2020-03-03 09:29:34 AM [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - initiateService
+2020-03-03 09:29:34 AM [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - buildNativeEntityManagerFactory
+2020-03-03 09:29:36 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 09:29:36 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 09:29:36 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 09:29:36 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 09:29:36 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 09:29:36 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 09:29:36 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 09:29:36 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 09:29:36 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 09:29:36 AM [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - initialize
+2020-03-03 09:29:36 AM [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - openEntityManagerInViewInterceptor
+2020-03-03 09:29:36 AM [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - initialize
+2020-03-03 09:29:37 AM [main] INFO  o.a.coyote.http11.Http11NioProtocol - log
+2020-03-03 09:29:37 AM [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - start
+2020-03-03 09:29:37 AM [main] INFO  com.vtc.event.VtcEventApplication - logStarted
+2020-03-03 09:33:37 AM [http-nio-9093-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - log
+2020-03-03 09:33:37 AM [http-nio-9093-exec-3] INFO  o.s.web.servlet.DispatcherServlet - initServletBean
+2020-03-03 09:33:37 AM [http-nio-9093-exec-3] INFO  o.s.web.servlet.DispatcherServlet - initServletBean
+2020-03-03 09:37:07 AM [http-nio-9093-exec-6] INFO  c.v.e.l.c.LuckySpinController - getLuckySpinDetail
+2020-03-03 09:37:07 AM [http-nio-9093-exec-6] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - log
+java.lang.IllegalArgumentException: Can not set long field com.vtc.event.common.dao.entity.LuckySpin.pricePerTurnScoin to null value
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeLongFieldAccessorImpl.set(UnsafeLongFieldAccessorImpl.java:80)
+	at java.base/java.lang.reflect.Field.set(Field.java:780)
+	at org.hibernate.property.access.spi.SetterFieldImpl.set(SetterFieldImpl.java:41)
+	at org.hibernate.tuple.entity.AbstractEntityTuplizer.setPropertyValues(AbstractEntityTuplizer.java:649)
+	at org.hibernate.tuple.entity.PojoEntityTuplizer.setPropertyValues(PojoEntityTuplizer.java:205)
+	at org.hibernate.persister.entity.AbstractEntityPersister.setPropertyValues(AbstractEntityPersister.java:4905)
+	at org.hibernate.engine.internal.TwoPhaseLoad.doInitializeEntity(TwoPhaseLoad.java:190)
+	at org.hibernate.engine.internal.TwoPhaseLoad.initializeEntity(TwoPhaseLoad.java:129)
+	at org.hibernate.loader.Loader.initializeEntitiesAndCollections(Loader.java:1151)
+	at org.hibernate.loader.Loader.processResultSet(Loader.java:1010)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:948)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:340)
+	at org.hibernate.loader.Loader.doList(Loader.java:2689)
+	at org.hibernate.loader.Loader.doList(Loader.java:2672)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2506)
+	at org.hibernate.loader.Loader.list(Loader.java:2501)
+	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:504)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:395)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.performList(HQLQueryPlan.java:220)
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1507)
+	at org.hibernate.query.internal.AbstractProducedQuery.doList(AbstractProducedQuery.java:1537)
+	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1505)
+	at org.hibernate.query.Query.getResultList(Query.java:132)
+	at org.hibernate.query.criteria.internal.compile.CriteriaQueryTypeQueryAdapter.getResultList(CriteriaQueryTypeQueryAdapter.java:74)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:306)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:73)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:359)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:200)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:644)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:608)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lambda$invoke$3(RepositoryFactorySupport.java:595)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:595)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:59)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:61)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy167.findAll(Unknown Source)
+	at com.vtc.event.luckySpin.service.impl.LuckySpinServiceImpl.getLuckySpinDetail(LuckySpinServiceImpl.java:173)
+	at com.vtc.event.luckySpin.controller.LuckySpinController.getLuckySpinDetail(LuckySpinController.java:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:158)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter.doFilter(OAuth2AuthenticationProcessingFilter.java:176)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-03-03 09:38:54 AM [http-nio-9093-exec-8] INFO  c.v.e.l.c.LuckySpinController - getLuckySpinDetailUser
+2020-03-03 09:38:59 AM [http-nio-9093-exec-8] INFO  c.v.e.l.c.LuckySpinController - toResult
+2020-03-03 10:15:58 AM [http-nio-9093-exec-10] INFO  c.v.e.l.c.LuckySpinController - getLuckySpinDetailUser
+2020-03-03 10:15:59 AM [http-nio-9093-exec-10] INFO  c.v.e.l.c.LuckySpinController - toResult
+2020-03-03 10:17:07 AM [http-nio-9093-exec-4] INFO  c.v.e.l.c.LuckySpinController - getLuckySpinDetailUser
+2020-03-03 10:17:08 AM [http-nio-9093-exec-4] INFO  c.v.e.l.c.LuckySpinController - toResult
+2020-03-03 10:17:22 AM [http-nio-9093-exec-5] INFO  c.v.e.l.c.LuckySpinController - getLuckySpinDetailUser
+2020-03-03 10:17:23 AM [http-nio-9093-exec-5] INFO  c.v.e.l.c.LuckySpinController - toResult
+2020-03-03 10:17:25 AM [http-nio-9093-exec-6] INFO  c.v.e.l.c.LuckySpinController - getLuckySpinDetailUser
+2020-03-03 10:17:26 AM [http-nio-9093-exec-6] INFO  c.v.e.l.c.LuckySpinController - toResult
+2020-03-03 10:17:32 AM [http-nio-9093-exec-7] INFO  c.v.e.l.c.LuckySpinController - getLuckySpinDetailUser
+2020-03-03 10:17:33 AM [http-nio-9093-exec-7] INFO  c.v.e.l.c.LuckySpinController - toResult
+2020-03-03 10:17:43 AM [http-nio-9093-exec-8] INFO  c.v.e.l.c.LuckySpinController - getLuckySpinDetailUser
+2020-03-03 10:17:43 AM [http-nio-9093-exec-8] INFO  c.v.e.l.c.LuckySpinController - toResult
+2020-03-03 10:19:26 AM [http-nio-9093-exec-1] INFO  c.v.e.l.c.LuckySpinController - getLuckySpinDetailUser
+2020-03-03 10:19:26 AM [http-nio-9093-exec-1] INFO  c.v.e.l.c.LuckySpinController - toResult
+2020-03-03 10:19:48 AM [http-nio-9093-exec-3] INFO  c.v.e.l.c.LuckySpinController - getLuckySpinDetailUser
+2020-03-03 10:19:48 AM [http-nio-9093-exec-3] INFO  c.v.e.l.c.LuckySpinController - toResult
+2020-03-03 10:21:20 AM [http-nio-9093-exec-5] INFO  c.v.e.l.c.LuckySpinController - getLuckySpinDetailUser
+2020-03-03 10:21:21 AM [http-nio-9093-exec-5] INFO  c.v.e.l.c.LuckySpinController - toResult
+2020-03-03 10:21:34 AM [http-nio-9093-exec-6] INFO  c.v.e.l.c.LuckySpinController - getLuckySpinDetailUser
+2020-03-03 10:21:34 AM [http-nio-9093-exec-6] INFO  c.v.e.l.c.LuckySpinController - toResult
+2020-03-03 10:25:33 AM [Thread-3] INFO  o.s.s.c.ThreadPoolTaskScheduler - shutdown
+2020-03-03 10:25:33 AM [Thread-3] INFO  o.s.s.c.ThreadPoolTaskExecutor - shutdown
+2020-03-03 10:25:33 AM [Thread-3] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - destroy
+2020-03-03 10:25:33 AM [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource - close
+2020-03-03 10:25:33 AM [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource - close
+2020-03-03 10:25:51 AM [main] INFO  com.vtc.event.VtcEventApplication - logStarting
+2020-03-03 10:25:51 AM [main] INFO  com.vtc.event.VtcEventApplication - logStartupProfileInfo
+2020-03-03 10:25:52 AM [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - registerRepositoriesIn
+2020-03-03 10:25:53 AM [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - registerRepositoriesIn
+2020-03-03 10:25:53 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-03-03 10:25:53 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-03-03 10:25:53 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-03-03 10:25:53 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-03-03 10:25:53 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-03-03 10:25:53 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-03-03 10:25:54 AM [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - initialize
+2020-03-03 10:25:54 AM [main] INFO  o.a.coyote.http11.Http11NioProtocol - log
+2020-03-03 10:25:54 AM [main] INFO  o.a.catalina.core.StandardService - log
+2020-03-03 10:25:54 AM [main] INFO  o.a.catalina.core.StandardEngine - log
+2020-03-03 10:25:54 AM [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - log
+2020-03-03 10:25:54 AM [main] INFO  o.s.web.context.ContextLoader - prepareWebApplicationContext
+2020-03-03 10:25:55 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - getConnection
+2020-03-03 10:25:55 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - getConnection
+2020-03-03 10:25:55 AM [main] INFO  o.h.jpa.internal.util.LogHelper - logPersistenceUnitInformation
+2020-03-03 10:25:55 AM [main] INFO  org.hibernate.Version - logVersion
+2020-03-03 10:25:55 AM [main] INFO  org.hibernate.cfg.Environment - <clinit>
+2020-03-03 10:25:55 AM [main] INFO  o.h.annotations.common.Version - <clinit>
+2020-03-03 10:25:56 AM [main] INFO  org.hibernate.dialect.Dialect - <init>
+2020-03-03 10:25:58 AM [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - initiateService
+2020-03-03 10:25:58 AM [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - buildNativeEntityManagerFactory
+2020-03-03 10:26:00 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 10:26:00 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 10:26:00 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 10:26:00 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 10:26:00 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 10:26:00 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 10:26:00 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 10:26:01 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 10:26:01 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 10:26:01 AM [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - initialize
+2020-03-03 10:26:01 AM [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - openEntityManagerInViewInterceptor
+2020-03-03 10:26:01 AM [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - initialize
+2020-03-03 10:26:01 AM [main] INFO  o.a.coyote.http11.Http11NioProtocol - log
+2020-03-03 10:26:01 AM [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - start
+2020-03-03 10:26:01 AM [main] INFO  com.vtc.event.VtcEventApplication - logStarted
+2020-03-03 10:26:17 AM [http-nio-9093-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - log
+2020-03-03 10:26:17 AM [http-nio-9093-exec-3] INFO  o.s.web.servlet.DispatcherServlet - initServletBean
+2020-03-03 10:26:17 AM [http-nio-9093-exec-3] INFO  o.s.web.servlet.DispatcherServlet - initServletBean
+2020-03-03 10:26:17 AM [http-nio-9093-exec-3] INFO  c.v.e.l.c.LuckySpinController - getLuckySpinDetailUser
+2020-03-03 10:26:18 AM [http-nio-9093-exec-3] INFO  c.v.e.l.c.LuckySpinController - toResult
+2020-03-03 10:26:56 AM [http-nio-9093-exec-4] INFO  c.v.e.l.c.LuckySpinController - getLuckySpinDetailUser
+2020-03-03 10:26:57 AM [http-nio-9093-exec-4] INFO  c.v.e.l.c.LuckySpinController - toResult
+2020-03-03 10:27:15 AM [http-nio-9093-exec-5] INFO  c.v.e.l.c.LuckySpinController - getLuckySpinDetailUser
+2020-03-03 10:27:15 AM [http-nio-9093-exec-5] INFO  c.v.e.l.c.LuckySpinController - toResult
+2020-03-03 10:27:35 AM [http-nio-9093-exec-6] INFO  c.v.e.l.c.LuckySpinController - getLuckySpinDetailUser
+2020-03-03 10:27:35 AM [http-nio-9093-exec-6] INFO  c.v.e.l.c.LuckySpinController - toResult
+2020-03-03 10:29:29 AM [Thread-3] INFO  o.s.s.c.ThreadPoolTaskScheduler - shutdown
+2020-03-03 10:29:29 AM [Thread-3] INFO  o.s.s.c.ThreadPoolTaskExecutor - shutdown
+2020-03-03 10:29:29 AM [Thread-3] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - destroy
+2020-03-03 10:29:29 AM [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource - close
+2020-03-03 10:29:29 AM [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource - close
+2020-03-03 10:29:46 AM [main] INFO  com.vtc.event.VtcEventApplication - logStarting
+2020-03-03 10:29:46 AM [main] INFO  com.vtc.event.VtcEventApplication - logStartupProfileInfo
+2020-03-03 10:29:48 AM [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - registerRepositoriesIn
+2020-03-03 10:29:48 AM [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - registerRepositoriesIn
+2020-03-03 10:29:49 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-03-03 10:29:49 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-03-03 10:29:49 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-03-03 10:29:49 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-03-03 10:29:49 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-03-03 10:29:49 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-03-03 10:29:49 AM [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - initialize
+2020-03-03 10:29:49 AM [main] INFO  o.a.coyote.http11.Http11NioProtocol - log
+2020-03-03 10:29:49 AM [main] INFO  o.a.catalina.core.StandardService - log
+2020-03-03 10:29:49 AM [main] INFO  o.a.catalina.core.StandardEngine - log
+2020-03-03 10:29:50 AM [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - log
+2020-03-03 10:29:50 AM [main] INFO  o.s.web.context.ContextLoader - prepareWebApplicationContext
+2020-03-03 10:29:50 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - getConnection
+2020-03-03 10:29:50 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - getConnection
+2020-03-03 10:29:50 AM [main] INFO  o.h.jpa.internal.util.LogHelper - logPersistenceUnitInformation
+2020-03-03 10:29:50 AM [main] INFO  org.hibernate.Version - logVersion
+2020-03-03 10:29:50 AM [main] INFO  org.hibernate.cfg.Environment - <clinit>
+2020-03-03 10:29:51 AM [main] INFO  o.h.annotations.common.Version - <clinit>
+2020-03-03 10:29:51 AM [main] INFO  org.hibernate.dialect.Dialect - <init>
+2020-03-03 10:29:53 AM [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - initiateService
+2020-03-03 10:29:53 AM [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - buildNativeEntityManagerFactory
+2020-03-03 10:29:55 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 10:29:55 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 10:29:55 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 10:29:55 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 10:29:55 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 10:29:55 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 10:29:55 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 10:29:55 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 10:29:55 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 10:29:55 AM [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - initialize
+2020-03-03 10:29:55 AM [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - openEntityManagerInViewInterceptor
+2020-03-03 10:29:56 AM [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - initialize
+2020-03-03 10:29:56 AM [main] INFO  o.a.coyote.http11.Http11NioProtocol - log
+2020-03-03 10:29:56 AM [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - start
+2020-03-03 10:29:56 AM [main] INFO  com.vtc.event.VtcEventApplication - logStarted
+2020-03-03 10:30:11 AM [http-nio-9093-exec-6] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - log
+2020-03-03 10:30:11 AM [http-nio-9093-exec-6] INFO  o.s.web.servlet.DispatcherServlet - initServletBean
+2020-03-03 10:30:11 AM [http-nio-9093-exec-6] INFO  o.s.web.servlet.DispatcherServlet - initServletBean
+2020-03-03 10:30:11 AM [http-nio-9093-exec-6] INFO  c.v.e.l.c.LuckySpinController - getLuckySpinDetailUser
+2020-03-03 10:30:12 AM [http-nio-9093-exec-6] INFO  c.v.e.l.s.impl.LuckySpinServiceImpl - updateUserTurnSpin
+2020-03-03 10:30:12 AM [http-nio-9093-exec-6] INFO  c.v.e.l.s.impl.LuckySpinServiceImpl - updateUserTurnSpin
+2020-03-03 10:30:12 AM [http-nio-9093-exec-6] INFO  c.v.e.l.c.LuckySpinController - toResult
+2020-03-03 10:30:18 AM [http-nio-9093-exec-9] INFO  c.v.e.l.c.LuckySpinController - getLuckySpinDetailUser
+2020-03-03 10:30:18 AM [http-nio-9093-exec-9] INFO  c.v.e.l.c.LuckySpinController - toResult
+2020-03-03 10:30:37 AM [http-nio-9093-exec-8] INFO  c.v.e.l.c.LuckySpinController - getLuckySpinDetailUser
+2020-03-03 10:30:37 AM [http-nio-9093-exec-8] INFO  c.v.e.l.s.impl.LuckySpinServiceImpl - updateUserTurnSpin
+2020-03-03 10:30:37 AM [http-nio-9093-exec-8] INFO  c.v.e.l.s.impl.LuckySpinServiceImpl - updateUserTurnSpin
+2020-03-03 10:30:37 AM [http-nio-9093-exec-8] INFO  c.v.e.l.c.LuckySpinController - toResult
+2020-03-03 10:31:28 AM [Thread-3] INFO  o.s.s.c.ThreadPoolTaskScheduler - shutdown
+2020-03-03 10:31:28 AM [Thread-3] INFO  o.s.s.c.ThreadPoolTaskExecutor - shutdown
+2020-03-03 10:31:28 AM [Thread-3] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - destroy
+2020-03-03 10:31:28 AM [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource - close
+2020-03-03 10:31:28 AM [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource - close
+2020-03-03 10:31:41 AM [main] INFO  com.vtc.event.VtcEventApplication - logStarting
+2020-03-03 10:31:41 AM [main] INFO  com.vtc.event.VtcEventApplication - logStartupProfileInfo
+2020-03-03 10:31:42 AM [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - registerRepositoriesIn
+2020-03-03 10:31:42 AM [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - registerRepositoriesIn
+2020-03-03 10:31:43 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-03-03 10:31:43 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-03-03 10:31:43 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-03-03 10:31:43 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-03-03 10:31:43 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-03-03 10:31:43 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-03-03 10:31:44 AM [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - initialize
+2020-03-03 10:31:44 AM [main] INFO  o.a.coyote.http11.Http11NioProtocol - log
+2020-03-03 10:31:44 AM [main] INFO  o.a.catalina.core.StandardService - log
+2020-03-03 10:31:44 AM [main] INFO  o.a.catalina.core.StandardEngine - log
+2020-03-03 10:31:44 AM [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - log
+2020-03-03 10:31:44 AM [main] INFO  o.s.web.context.ContextLoader - prepareWebApplicationContext
+2020-03-03 10:31:44 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - getConnection
+2020-03-03 10:31:45 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - getConnection
+2020-03-03 10:31:45 AM [main] INFO  o.h.jpa.internal.util.LogHelper - logPersistenceUnitInformation
+2020-03-03 10:31:45 AM [main] INFO  org.hibernate.Version - logVersion
+2020-03-03 10:31:45 AM [main] INFO  org.hibernate.cfg.Environment - <clinit>
+2020-03-03 10:31:45 AM [main] INFO  o.h.annotations.common.Version - <clinit>
+2020-03-03 10:31:45 AM [main] INFO  org.hibernate.dialect.Dialect - <init>
+2020-03-03 10:31:47 AM [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - initiateService
+2020-03-03 10:31:47 AM [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - buildNativeEntityManagerFactory
+2020-03-03 10:31:49 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 10:31:49 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 10:31:49 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 10:31:49 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 10:31:49 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 10:31:49 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 10:31:49 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 10:31:49 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 10:31:49 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 10:31:49 AM [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - initialize
+2020-03-03 10:31:49 AM [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - openEntityManagerInViewInterceptor
+2020-03-03 10:31:49 AM [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - initialize
+2020-03-03 10:31:50 AM [main] INFO  o.a.coyote.http11.Http11NioProtocol - log
+2020-03-03 10:31:50 AM [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - start
+2020-03-03 10:31:50 AM [main] INFO  com.vtc.event.VtcEventApplication - logStarted
+2020-03-03 10:32:15 AM [http-nio-9093-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - log
+2020-03-03 10:32:15 AM [http-nio-9093-exec-1] INFO  o.s.web.servlet.DispatcherServlet - initServletBean
+2020-03-03 10:32:15 AM [http-nio-9093-exec-1] INFO  o.s.web.servlet.DispatcherServlet - initServletBean
+2020-03-03 10:32:15 AM [http-nio-9093-exec-1] INFO  c.v.e.l.c.LuckySpinController - getLuckySpinDetailUser
+2020-03-03 10:32:16 AM [http-nio-9093-exec-1] INFO  c.v.e.l.s.impl.LuckySpinServiceImpl - updateUserTurnSpin
+2020-03-03 10:32:16 AM [http-nio-9093-exec-1] INFO  c.v.e.l.s.impl.LuckySpinServiceImpl - updateUserTurnSpin
+2020-03-03 10:32:16 AM [http-nio-9093-exec-1] INFO  c.v.e.l.s.impl.LuckySpinServiceImpl - updateUserTurnSpin
+2020-03-03 10:32:16 AM [http-nio-9093-exec-1] INFO  c.v.e.l.s.impl.LuckySpinServiceImpl - updateUserTurnSpin
+2020-03-03 10:32:16 AM [http-nio-9093-exec-1] INFO  c.v.e.l.c.LuckySpinController - toResult
+2020-03-03 10:59:21 AM [Thread-3] INFO  o.s.s.c.ThreadPoolTaskScheduler - shutdown
+2020-03-03 10:59:21 AM [Thread-3] INFO  o.s.s.c.ThreadPoolTaskExecutor - shutdown
+2020-03-03 10:59:21 AM [Thread-3] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - destroy
+2020-03-03 10:59:21 AM [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource - close
+2020-03-03 10:59:21 AM [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource - close
+2020-03-03 10:59:42 AM [main] INFO  com.vtc.event.VtcEventApplication - logStarting
+2020-03-03 10:59:42 AM [main] INFO  com.vtc.event.VtcEventApplication - logStartupProfileInfo
+2020-03-03 10:59:43 AM [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - registerRepositoriesIn
+2020-03-03 10:59:43 AM [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - registerRepositoriesIn
+2020-03-03 10:59:44 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-03-03 10:59:44 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-03-03 10:59:44 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-03-03 10:59:44 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-03-03 10:59:44 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-03-03 10:59:44 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-03-03 10:59:44 AM [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - initialize
+2020-03-03 10:59:44 AM [main] INFO  o.a.coyote.http11.Http11NioProtocol - log
+2020-03-03 10:59:44 AM [main] INFO  o.a.catalina.core.StandardService - log
+2020-03-03 10:59:44 AM [main] INFO  o.a.catalina.core.StandardEngine - log
+2020-03-03 10:59:44 AM [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - log
+2020-03-03 10:59:44 AM [main] INFO  o.s.web.context.ContextLoader - prepareWebApplicationContext
+2020-03-03 10:59:45 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - getConnection
+2020-03-03 10:59:45 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - getConnection
+2020-03-03 10:59:45 AM [main] INFO  o.h.jpa.internal.util.LogHelper - logPersistenceUnitInformation
+2020-03-03 10:59:45 AM [main] INFO  org.hibernate.Version - logVersion
+2020-03-03 10:59:45 AM [main] INFO  org.hibernate.cfg.Environment - <clinit>
+2020-03-03 10:59:45 AM [main] INFO  o.h.annotations.common.Version - <clinit>
+2020-03-03 10:59:45 AM [main] INFO  org.hibernate.dialect.Dialect - <init>
+2020-03-03 10:59:47 AM [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - initiateService
+2020-03-03 10:59:47 AM [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - buildNativeEntityManagerFactory
+2020-03-03 10:59:48 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 10:59:48 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 10:59:48 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 10:59:48 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 10:59:48 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 10:59:48 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 10:59:48 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 10:59:48 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 10:59:48 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 10:59:49 AM [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - initialize
+2020-03-03 10:59:49 AM [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - openEntityManagerInViewInterceptor
+2020-03-03 10:59:49 AM [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - initialize
+2020-03-03 10:59:49 AM [main] INFO  o.a.coyote.http11.Http11NioProtocol - log
+2020-03-03 10:59:49 AM [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - start
+2020-03-03 10:59:49 AM [main] INFO  com.vtc.event.VtcEventApplication - logStarted
+2020-03-03 11:04:02 AM [http-nio-9093-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - log
+2020-03-03 11:04:02 AM [http-nio-9093-exec-1] INFO  o.s.web.servlet.DispatcherServlet - initServletBean
+2020-03-03 11:04:02 AM [http-nio-9093-exec-1] INFO  o.s.web.servlet.DispatcherServlet - initServletBean
+2020-03-03 11:04:02 AM [http-nio-9093-exec-1] INFO  c.v.e.l.c.LuckySpinController - getLuckySpinDetailUser
+2020-03-03 11:04:03 AM [http-nio-9093-exec-1] INFO  c.v.e.l.c.LuckySpinController - toResult
+2020-03-03 11:05:14 AM [http-nio-9093-exec-5] INFO  c.v.e.l.c.LuckySpinController - getLuckySpinDetailUser
+2020-03-03 11:05:14 AM [http-nio-9093-exec-5] INFO  c.v.e.l.s.impl.LuckySpinServiceImpl - updateUserTurnSpin
+2020-03-03 11:05:14 AM [http-nio-9093-exec-5] INFO  c.v.e.l.s.impl.LuckySpinServiceImpl - updateUserTurnSpin
+2020-03-03 11:05:14 AM [http-nio-9093-exec-5] INFO  c.v.e.l.s.impl.LuckySpinServiceImpl - updateUserTurnSpin
+2020-03-03 11:05:14 AM [http-nio-9093-exec-5] INFO  c.v.e.l.s.impl.LuckySpinServiceImpl - updateUserTurnSpin
+2020-03-03 11:05:14 AM [http-nio-9093-exec-5] INFO  c.v.e.l.c.LuckySpinController - toResult
+2020-03-03 11:05:27 AM [http-nio-9093-exec-6] INFO  c.v.e.l.c.LuckySpinController - getLuckySpinDetailUser
+2020-03-03 11:05:27 AM [http-nio-9093-exec-6] INFO  c.v.e.l.s.impl.LuckySpinServiceImpl - updateUserTurnSpin
+2020-03-03 11:05:27 AM [http-nio-9093-exec-6] INFO  c.v.e.l.s.impl.LuckySpinServiceImpl - updateUserTurnSpin
+2020-03-03 11:05:27 AM [http-nio-9093-exec-6] INFO  c.v.e.l.s.impl.LuckySpinServiceImpl - updateUserTurnSpin
+2020-03-03 11:05:27 AM [http-nio-9093-exec-6] INFO  c.v.e.l.s.impl.LuckySpinServiceImpl - updateUserTurnSpin
+2020-03-03 11:05:27 AM [http-nio-9093-exec-6] INFO  c.v.e.l.c.LuckySpinController - toResult
+2020-03-03 11:05:53 AM [http-nio-9093-exec-7] INFO  c.v.e.l.c.LuckySpinController - getLuckySpinDetailUser
+2020-03-03 11:05:54 AM [http-nio-9093-exec-7] INFO  c.v.e.l.c.LuckySpinController - toResult
+2020-03-03 11:06:47 AM [http-nio-9093-exec-8] INFO  c.v.e.l.c.LuckySpinController - getLuckySpinDetailUser
+2020-03-03 11:06:47 AM [http-nio-9093-exec-8] INFO  c.v.e.l.s.impl.LuckySpinServiceImpl - updateUserTurnSpin
+2020-03-03 11:06:47 AM [http-nio-9093-exec-8] INFO  c.v.e.l.s.impl.LuckySpinServiceImpl - updateUserTurnSpin
+2020-03-03 11:06:47 AM [http-nio-9093-exec-8] INFO  c.v.e.l.s.impl.LuckySpinServiceImpl - updateUserTurnSpin
+2020-03-03 11:06:47 AM [http-nio-9093-exec-8] INFO  c.v.e.l.s.impl.LuckySpinServiceImpl - updateUserTurnSpin
+2020-03-03 11:06:47 AM [http-nio-9093-exec-8] INFO  c.v.e.l.c.LuckySpinController - toResult
+2020-03-03 11:07:02 AM [http-nio-9093-exec-10] INFO  c.v.e.l.c.LuckySpinController - getLuckySpinDetailUser
+2020-03-03 11:07:03 AM [http-nio-9093-exec-10] INFO  c.v.e.l.s.impl.LuckySpinServiceImpl - updateUserTurnSpin
+2020-03-03 11:07:03 AM [http-nio-9093-exec-10] INFO  c.v.e.l.s.impl.LuckySpinServiceImpl - updateUserTurnSpin
+2020-03-03 11:07:03 AM [http-nio-9093-exec-10] INFO  c.v.e.l.s.impl.LuckySpinServiceImpl - updateUserTurnSpin
+2020-03-03 11:07:03 AM [http-nio-9093-exec-10] INFO  c.v.e.l.s.impl.LuckySpinServiceImpl - updateUserTurnSpin
+2020-03-03 11:07:03 AM [http-nio-9093-exec-10] INFO  c.v.e.l.c.LuckySpinController - toResult
+2020-03-03 11:07:50 AM [http-nio-9093-exec-9] INFO  c.v.e.l.c.LuckySpinController - getLuckySpinDetailUser
+2020-03-03 11:07:50 AM [http-nio-9093-exec-9] INFO  c.v.e.l.s.impl.LuckySpinServiceImpl - updateUserTurnSpin
+2020-03-03 11:07:50 AM [http-nio-9093-exec-9] INFO  c.v.e.l.s.impl.LuckySpinServiceImpl - updateUserTurnSpin
+2020-03-03 11:07:50 AM [http-nio-9093-exec-9] INFO  c.v.e.l.s.impl.LuckySpinServiceImpl - updateUserTurnSpin
+2020-03-03 11:07:50 AM [http-nio-9093-exec-9] INFO  c.v.e.l.s.impl.LuckySpinServiceImpl - updateUserTurnSpin
+2020-03-03 11:07:50 AM [http-nio-9093-exec-9] INFO  c.v.e.l.c.LuckySpinController - toResult
+2020-03-03 11:08:05 AM [http-nio-9093-exec-2] INFO  c.v.e.l.c.LuckySpinController - getLuckySpinDetailUser
+2020-03-03 11:08:06 AM [http-nio-9093-exec-2] INFO  c.v.e.l.s.impl.LuckySpinServiceImpl - updateUserTurnSpin
+2020-03-03 11:08:06 AM [http-nio-9093-exec-2] INFO  c.v.e.l.s.impl.LuckySpinServiceImpl - updateUserTurnSpin
+2020-03-03 11:08:06 AM [http-nio-9093-exec-2] INFO  c.v.e.l.s.impl.LuckySpinServiceImpl - updateUserTurnSpin
+2020-03-03 11:08:06 AM [http-nio-9093-exec-2] INFO  c.v.e.l.s.impl.LuckySpinServiceImpl - updateUserTurnSpin
+2020-03-03 11:08:06 AM [http-nio-9093-exec-2] INFO  c.v.e.l.c.LuckySpinController - toResult
+2020-03-03 11:19:40 AM [Thread-3] INFO  o.s.s.c.ThreadPoolTaskScheduler - shutdown
+2020-03-03 11:19:40 AM [Thread-3] INFO  o.s.s.c.ThreadPoolTaskExecutor - shutdown
+2020-03-03 11:19:40 AM [Thread-3] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - destroy
+2020-03-03 11:19:40 AM [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource - close
+2020-03-03 11:19:40 AM [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource - close
+2020-03-03 11:19:55 AM [main] INFO  com.vtc.event.VtcEventApplication - logStarting
+2020-03-03 11:19:55 AM [main] INFO  com.vtc.event.VtcEventApplication - logStartupProfileInfo
+2020-03-03 11:19:56 AM [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - registerRepositoriesIn
+2020-03-03 11:19:56 AM [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - registerRepositoriesIn
+2020-03-03 11:19:57 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-03-03 11:19:57 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-03-03 11:19:57 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-03-03 11:19:57 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-03-03 11:19:57 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-03-03 11:19:57 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-03-03 11:19:58 AM [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - initialize
+2020-03-03 11:19:58 AM [main] INFO  o.a.coyote.http11.Http11NioProtocol - log
+2020-03-03 11:19:58 AM [main] INFO  o.a.catalina.core.StandardService - log
+2020-03-03 11:19:58 AM [main] INFO  o.a.catalina.core.StandardEngine - log
+2020-03-03 11:19:58 AM [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - log
+2020-03-03 11:19:58 AM [main] INFO  o.s.web.context.ContextLoader - prepareWebApplicationContext
+2020-03-03 11:19:58 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - getConnection
+2020-03-03 11:19:59 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - getConnection
+2020-03-03 11:19:59 AM [main] INFO  o.h.jpa.internal.util.LogHelper - logPersistenceUnitInformation
+2020-03-03 11:19:59 AM [main] INFO  org.hibernate.Version - logVersion
+2020-03-03 11:19:59 AM [main] INFO  org.hibernate.cfg.Environment - <clinit>
+2020-03-03 11:19:59 AM [main] INFO  o.h.annotations.common.Version - <clinit>
+2020-03-03 11:19:59 AM [main] INFO  org.hibernate.dialect.Dialect - <init>
+2020-03-03 11:20:01 AM [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - initiateService
+2020-03-03 11:20:01 AM [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - buildNativeEntityManagerFactory
+2020-03-03 11:20:03 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 11:20:03 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 11:20:03 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 11:20:03 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 11:20:03 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 11:20:03 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 11:20:03 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 11:20:03 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 11:20:03 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 11:20:03 AM [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - initialize
+2020-03-03 11:20:04 AM [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - openEntityManagerInViewInterceptor
+2020-03-03 11:20:04 AM [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - initialize
+2020-03-03 11:20:04 AM [main] INFO  o.a.coyote.http11.Http11NioProtocol - log
+2020-03-03 11:20:04 AM [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - start
+2020-03-03 11:20:04 AM [main] INFO  com.vtc.event.VtcEventApplication - logStarted
+2020-03-03 11:21:09 AM [http-nio-9093-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - log
+2020-03-03 11:21:09 AM [http-nio-9093-exec-2] INFO  o.s.web.servlet.DispatcherServlet - initServletBean
+2020-03-03 11:21:09 AM [http-nio-9093-exec-2] INFO  o.s.web.servlet.DispatcherServlet - initServletBean
+2020-03-03 11:21:10 AM [http-nio-9093-exec-2] INFO  c.v.e.l.c.LuckySpinController - getLuckySpinDetailUser
+2020-03-03 11:21:10 AM [http-nio-9093-exec-2] INFO  c.v.e.l.c.LuckySpinController - toResult
+2020-03-03 11:40:51 AM [Thread-3] INFO  o.s.s.c.ThreadPoolTaskScheduler - shutdown
+2020-03-03 11:40:51 AM [Thread-3] INFO  o.s.s.c.ThreadPoolTaskExecutor - shutdown
+2020-03-03 11:40:51 AM [Thread-3] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - destroy
+2020-03-03 11:40:51 AM [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource - close
+2020-03-03 11:40:51 AM [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource - close
+2020-03-03 11:41:05 AM [main] INFO  com.vtc.event.VtcEventApplication - logStarting
+2020-03-03 11:41:05 AM [main] INFO  com.vtc.event.VtcEventApplication - logStartupProfileInfo
+2020-03-03 11:41:07 AM [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - registerRepositoriesIn
+2020-03-03 11:41:07 AM [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - registerRepositoriesIn
+2020-03-03 11:41:08 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-03-03 11:41:08 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-03-03 11:41:08 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-03-03 11:41:08 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-03-03 11:41:08 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-03-03 11:41:08 AM [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization
+2020-03-03 11:41:08 AM [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - initialize
+2020-03-03 11:41:08 AM [main] INFO  o.a.coyote.http11.Http11NioProtocol - log
+2020-03-03 11:41:08 AM [main] INFO  o.a.catalina.core.StandardService - log
+2020-03-03 11:41:08 AM [main] INFO  o.a.catalina.core.StandardEngine - log
+2020-03-03 11:41:09 AM [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - log
+2020-03-03 11:41:09 AM [main] INFO  o.s.web.context.ContextLoader - prepareWebApplicationContext
+2020-03-03 11:41:09 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - getConnection
+2020-03-03 11:41:09 AM [main] INFO  com.zaxxer.hikari.HikariDataSource - getConnection
+2020-03-03 11:41:09 AM [main] INFO  o.h.jpa.internal.util.LogHelper - logPersistenceUnitInformation
+2020-03-03 11:41:09 AM [main] INFO  org.hibernate.Version - logVersion
+2020-03-03 11:41:09 AM [main] INFO  org.hibernate.cfg.Environment - <clinit>
+2020-03-03 11:41:09 AM [main] INFO  o.h.annotations.common.Version - <clinit>
+2020-03-03 11:41:10 AM [main] INFO  org.hibernate.dialect.Dialect - <init>
+2020-03-03 11:41:11 AM [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - initiateService
+2020-03-03 11:41:11 AM [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - buildNativeEntityManagerFactory
+2020-03-03 11:41:13 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 11:41:13 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 11:41:13 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 11:41:13 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 11:41:13 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 11:41:13 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 11:41:13 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 11:41:13 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 11:41:13 AM [main] INFO  o.s.s.web.DefaultSecurityFilterChain - <init>
+2020-03-03 11:41:13 AM [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - initialize
+2020-03-03 11:41:13 AM [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - openEntityManagerInViewInterceptor
+2020-03-03 11:41:14 AM [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - initialize
+2020-03-03 11:41:14 AM [main] INFO  o.a.coyote.http11.Http11NioProtocol - log
+2020-03-03 11:41:14 AM [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - start
+2020-03-03 11:41:14 AM [main] INFO  com.vtc.event.VtcEventApplication - logStarted
+2020-03-03 11:41:16 AM [http-nio-9093-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - log
+2020-03-03 11:41:16 AM [http-nio-9093-exec-2] INFO  o.s.web.servlet.DispatcherServlet - initServletBean
+2020-03-03 11:41:16 AM [http-nio-9093-exec-2] INFO  o.s.web.servlet.DispatcherServlet - initServletBean
+2020-03-03 11:41:16 AM [http-nio-9093-exec-2] INFO  c.v.e.l.c.LuckySpinController - getLuckySpinDetailUser
+2020-03-03 11:41:16 AM [http-nio-9093-exec-2] INFO  c.v.e.l.c.LuckySpinController - toResult
