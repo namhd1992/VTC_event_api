@@ -100,15 +100,15 @@ public class UserInfoServiceImpl extends AbstractService<UserInfo, Long, UserInf
    
     public UserInfoServiceImpl(Environment env) {
         SCOIN_SIGNIN_GET_ACCESS_TOKEN_URL = env
-                .getProperty(EnvironmentKey.LIVE_SCOIN_SIGNIN_GET_ACCESS_TOKEN_URL.getKey());
+                .getProperty(EnvironmentKey.SANDBOX_SCOIN_SIGNIN_GET_ACCESS_TOKEN_URL.getKey());
         SCOIN_SIGNIN_GET_PROFILE_URL = env
-                .getProperty(EnvironmentKey.LIVE_SCOIN_SIGNIN_GET_PROFILE_URL.getKey());
+                .getProperty(EnvironmentKey.SANDBOX_SCOIN_SIGNIN_GET_PROFILE_URL.getKey());
         SCOIN_SIGNIN_CLIENTID = env
-                .getProperty(EnvironmentKey.LIVE_SCOIN_SIGNIN_CLIENTID.getKey());
+                .getProperty(EnvironmentKey.SANDBOX_SCOIN_SIGNIN_CLIENTID.getKey());
         SCOIN_SIGNIN_CLIENTSECRET = env
-                .getProperty(EnvironmentKey.LIVE_SCOIN_SIGNIN_CLIENTSECRET.getKey());
+                .getProperty(EnvironmentKey.SANDBOX_SCOIN_SIGNIN_CLIENTSECRET.getKey());
         SCOIN_SIGNIN_AGENCYID = env
-                .getProperty(EnvironmentKey.LIVE_SCOIN_SIGNIN_AGENCYID.getKey());
+                .getProperty(EnvironmentKey.SANDBOX_SCOIN_SIGNIN_AGENCYID.getKey());
 //        SCOIN_BALANCE_SCOIN_URL = env
 //                .getProperty(EnvironmentKey.LIVE_SCOIN_BALANCE_SCOIN_URL.getKey());
     }

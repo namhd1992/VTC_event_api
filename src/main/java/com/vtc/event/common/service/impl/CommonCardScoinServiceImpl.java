@@ -70,9 +70,9 @@ public class CommonCardScoinServiceImpl extends
     private String TOPUP_CARD_HISTORY_API_KEY;
     
     public CommonCardScoinServiceImpl(Environment env) {
-        CARD_API_URL = env.getProperty(EnvironmentKey.LIVE_FUND_REQUEST_CARD_API_URL.getKey());
+        CARD_API_URL = env.getProperty(EnvironmentKey.SANDBOX_FUND_REQUEST_CARD_API_URL.getKey());
         CARD_API_KEY_DECODE_TRIPLEDES = env
-                .getProperty(EnvironmentKey.LIVE_CARD_API_KEY_DECODE_TRIPLEDES.getKey());
+                .getProperty(EnvironmentKey.SANDBOX_CARD_API_KEY_DECODE_TRIPLEDES.getKey());
         TOPUP_CARD_HISTORY_API_URL = env.getProperty(EnvironmentKey.TOPUP_CARD_HISTORY_API_URL.getKey());
         TOPUP_CARD_HISTORY_API_KEY = env.getProperty(EnvironmentKey.TOPUP_CARD_HISTORY_API_KEY.getKey());
     }

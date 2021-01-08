@@ -55,11 +55,11 @@ public class PaymentServiceImpl
     private String SCOIN_SCOIN_SECRET_KEY;
 
     public PaymentServiceImpl(Environment env) {
-        SCOIN_XU_API_URL = env.getProperty(EnvironmentKey.LIVE_SCOIN_XU_API_URL.getKey());
-        SCOIN_XU_API_KEY = env.getProperty(EnvironmentKey.LIVE_SCOIN_XU_API_KEY.getKey());
-        SCOIN_XU_SECRET_KEY = env.getProperty(EnvironmentKey.LIVE_SCOIN_XU_SECRET_KEY.getKey());
+        SCOIN_XU_API_URL = env.getProperty(EnvironmentKey.SANDBOX_SCOIN_XU_API_URL.getKey());
+        SCOIN_XU_API_KEY = env.getProperty(EnvironmentKey.SANDBOX_SCOIN_XU_API_KEY.getKey());
+        SCOIN_XU_SECRET_KEY = env.getProperty(EnvironmentKey.SANDBOX_SCOIN_XU_SECRET_KEY.getKey());
         SCOIN_BALANCE_SCOIN_URL = env
-                .getProperty(EnvironmentKey.LIVE_SCOIN_BALANCE_SCOIN_URL.getKey());
+                .getProperty(EnvironmentKey.SANDBOX_SCOIN_BALANCE_SCOIN_URL.getKey());
         SCOIN_SCOIN_API_URL = env.getProperty(EnvironmentKey.SANDBOX_SCOIN_SCOIN_API_URL.getKey());
         SCOIN_SCOIN_API_KEY = env.getProperty(EnvironmentKey.SANDBOX_SCOIN_SCOIN_API_KEY.getKey());
         SCOIN_SCOIN_SECRET_KEY = env.getProperty(EnvironmentKey.SANDBOX_SCOIN_SCOIN_SECRET_KEY.getKey());

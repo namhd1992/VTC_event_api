@@ -61,7 +61,7 @@ public class CommonUserInfoServiceImpl extends AbstractService<UserInfo, Long, U
 
     public CommonUserInfoServiceImpl(Environment env) {
         SCOIN_SIGNIN_GET_PROFILE_URL = env
-                .getProperty(EnvironmentKey.LIVE_SCOIN_SIGNIN_GET_PROFILE_URL.getKey());
+                .getProperty(EnvironmentKey.SANDBOX_SCOIN_SIGNIN_GET_PROFILE_URL.getKey());
         SCOIN_SIGNIN_KEY_DECRYPT_TRIPLE_DES = env
                 .getProperty(EnvironmentKey.SANDBOX_SCOIN_SIGNIN_KEY_DECRYPT_TRIPLE_DES.getKey());
     }
