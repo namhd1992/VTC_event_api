@@ -64,10 +64,10 @@ public class CommonCardScoinServiceImpl extends
     @Autowired
     LuckySpinSettingRepository luckySpinSettingRepo;
     
-    private String CARD_API_URL;
-    private String CARD_API_KEY_DECODE_TRIPLEDES;
-    private String TOPUP_CARD_HISTORY_API_URL;
-    private String TOPUP_CARD_HISTORY_API_KEY;
+    private transient String CARD_API_URL;
+    private transient String CARD_API_KEY_DECODE_TRIPLEDES;
+    private transient String TOPUP_CARD_HISTORY_API_URL;
+    private transient String TOPUP_CARD_HISTORY_API_KEY;
     
     public CommonCardScoinServiceImpl(Environment env) {
         CARD_API_URL = env.getProperty(EnvironmentKey.SANDBOX_FUND_REQUEST_CARD_API_URL.getKey());

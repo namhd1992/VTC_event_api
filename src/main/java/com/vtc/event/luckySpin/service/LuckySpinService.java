@@ -10,8 +10,11 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.repository.query.Param;
 
 import com.vtc.event.common.dao.entity.LuckySpin;
-import com.vtc.event.common.dao.entity.LuckySpinItem;
+import com.vtc.event.common.dao.entity.LuckySpinItemOfLuckySpin;
+import com.vtc.event.common.dto.request.LuckySpinExchangeItemRequest;
 import com.vtc.event.common.dto.request.LuckySpinGetRequest;
+import com.vtc.event.common.dto.request.LuckySpinOpenItemRequest;
+import com.vtc.event.common.dto.response.ExchangeItemResponse;
 import com.vtc.event.common.dto.response.LuckySpinDetailResponse;
 import com.vtc.event.common.dto.response.UserXuInfoResponse;
 import com.vtc.event.common.exception.ScoinBusinessException;
@@ -34,12 +37,16 @@ public interface LuckySpinService extends AbstractInterfaceService<LuckySpin, Lo
 
     Optional<LuckySpinDetailResponse> getLuckySpinDetail(Long luckySpinId, String role) throws ScoinBusinessException;
 
-    LuckySpinItem luckySpinAward(Long luckySpinId) throws ScoinBusinessException;
+    List<LuckySpinItemOfLuckySpin> luckySpinOpenItem(LuckySpinOpenItemRequest request) throws ScoinBusinessException;
+    
+    ExchangeItemResponse luckySpinExchangeItem(LuckySpinExchangeItemRequest reques) throws ScoinBusinessException;
 
     UserXuInfoResponse getBalanceXu(Long scoinId) throws ScoinBusinessException;
     
     List<String> getLuckyNumbers(long cardValue, int quantity) throws Exception;
     
     String createLuckyNumber(int digitNumber) throws ScoinBusinessException;
+    
+    LuckySpin findByType(String type);
 
 }

@@ -12,6 +12,7 @@ import org.springframework.util.StringUtils;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.vtc.event.common.dto.response.ScoinResponse;
+import com.vtc.event.common.utils.JsonMapperUtils;
 
 /**
  * Author : Dat Le Quang
@@ -34,9 +35,8 @@ public class AbstractController<S> {
         response.setMessage("Successful");
         response.setData(t);
         response.setTotalRecords(0);
-        LOGGER.info("=========== STATUS API : SUCCESSFUL=============}");
-//        LOGGER.info("===============RESPONSE============== \n {}", 
-//                JsonMapperUtils.toJson(response));
+        LOGGER.info("===============RESPONSE============== \n {}", 
+                JsonMapperUtils.toJson(response));
         return response;
     }
     
@@ -46,9 +46,8 @@ public class AbstractController<S> {
         response.setMessage("Successful");
         response.setData(t);
         response.setTotalRecords(totalRecords);
-        LOGGER.info("=========== STATUS API : SUCCESSFUL=============}");
-//        LOGGER.info("===============RESPONSE============== \n {}", 
-//                JsonMapperUtils.toJson(response));
+        LOGGER.info("===============RESPONSE============== \n {}", 
+                JsonMapperUtils.toJson(response));
         return response;
     }
     

@@ -8,8 +8,8 @@ import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 import java.util.Optional;
+import java.util.Set;
 import java.util.concurrent.ThreadLocalRandom;
-import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
@@ -19,37 +19,38 @@ import org.springframework.util.CollectionUtils;
 import org.springframework.util.ObjectUtils;
 
 import com.vtc.event.common.Constant;
-import com.vtc.event.common.MessageConstant;
 import com.vtc.event.common.dao.entity.FundsCardScoin;
 import com.vtc.event.common.dao.entity.LuckyNumber;
 import com.vtc.event.common.dao.entity.LuckySpin;
-import com.vtc.event.common.dao.entity.LuckySpinBuyTurnHistory;
+import com.vtc.event.common.dao.entity.LuckySpinGift;
 import com.vtc.event.common.dao.entity.LuckySpinHistory;
 import com.vtc.event.common.dao.entity.LuckySpinItem;
 import com.vtc.event.common.dao.entity.LuckySpinItemOfLuckySpin;
-import com.vtc.event.common.dao.entity.LuckySpinPersonalTurnoverItem;
-import com.vtc.event.common.dao.entity.LuckySpinPersonalTurnoverRadius;
+import com.vtc.event.common.dao.entity.LuckySpinItemOfUser;
+import com.vtc.event.common.dao.entity.LuckySpinRadiusPersonalTopup;
+import com.vtc.event.common.dao.entity.LuckySpinSetting;
 import com.vtc.event.common.dao.entity.LuckySpinUser;
 import com.vtc.event.common.dao.entity.TopupCardHistory;
-import com.vtc.event.common.dao.entity.TransactionHistory;
 import com.vtc.event.common.dao.entity.UserInfo;
 import com.vtc.event.common.dao.repository.GiftcodeRepository;
 import com.vtc.event.common.dao.repository.LuckyNumberRepository;
 import com.vtc.event.common.dao.repository.LuckySpinBuyTurnHistoryRepository;
-import com.vtc.event.common.dao.repository.LuckySpinHistoryFakeRepository;
+import com.vtc.event.common.dao.repository.LuckySpinGiftRepository;
 import com.vtc.event.common.dao.repository.LuckySpinHistoryRepository;
 import com.vtc.event.common.dao.repository.LuckySpinItemOfLuckySpinRepository;
+import com.vtc.event.common.dao.repository.LuckySpinItemOfUserRepository;
 import com.vtc.event.common.dao.repository.LuckySpinItemRepository;
-import com.vtc.event.common.dao.repository.LuckySpinPersonalTurnoverItemRepository;
-import com.vtc.event.common.dao.repository.LuckySpinPersonalTurnoverRadiusRepository;
+import com.vtc.event.common.dao.repository.LuckySpinRadiusPersonalTopupRepository;
 import com.vtc.event.common.dao.repository.LuckySpinRepository;
 import com.vtc.event.common.dao.repository.LuckySpinSettingRepository;
 import com.vtc.event.common.dao.repository.LuckySpinUserRepository;
 import com.vtc.event.common.dao.repository.TopupCardHistoryRepository;
+import com.vtc.event.common.dto.request.LuckySpinExchangeItemRequest;
 import com.vtc.event.common.dto.request.LuckySpinGetRequest;
-import com.vtc.event.common.dto.request.TransactionHistoryCreateRequest;
-import com.vtc.event.common.dto.request.XuExchangeRequest;
+import com.vtc.event.common.dto.request.LuckySpinOpenItemRequest;
+import com.vtc.event.common.dto.response.ExchangeItemResponse;
 import com.vtc.event.common.dto.response.LuckySpinDetailResponse;
+import com.vtc.event.common.dto.response.LuckySpinGiftResponse;
 import com.vtc.event.common.dto.response.UserBuyTurnResponse;
 import com.vtc.event.common.dto.response.UserTurnSpinDetailResponse;
 import com.vtc.event.common.dto.response.UserXuInfoResponse;
@@ -64,7 +65,6 @@ import com.vtc.event.common.service.CommonCardScoinService;
 import com.vtc.event.common.service.PaymentService;
 import com.vtc.event.common.service.TransactionHistoryService;
 import com.vtc.event.common.utils.DateUtils;
-import com.vtc.event.common.utils.JsonMapperUtils;
 import com.vtc.event.common.utils.StringUtils;
 import com.vtc.event.luckySpin.ConditionTurnover;
 import com.vtc.event.luckySpin.RamdomItems;
@@ -84,67 +84,64 @@ public class LuckySpinServiceImpl extends AbstractService<LuckySpin, Long, Lucky
         implements LuckySpinService {
     
     @Autowired
-    LuckySpinSettingRepository             luckySpinSettingRepo;
+    LuckySpinSettingRepository luckySpinSettingRepo;
 
     @Autowired
-    LuckySpinItemRepository                luckySpinItemRepo;
+    LuckySpinItemRepository       itemOfSpinRepo;
 
     @Autowired
-    LuckySpinItemOfLuckySpinRepository     itemOfSpinRepo;
+    LuckySpinItemOfLuckySpinRepository    spinItemOfLuckySpinRepo;
 
     @Autowired
-    LuckySpinUserRepository                luckySpinUserRepo;
+    LuckySpinUserRepository     luckySpinUserRepo;
 
     @Autowired
-    UserInfoService                        userInfoService;
+    UserInfoService            userInfoService;
 
     @Autowired
-    PaymentService                         exchangeMoneyScoinService;
+    PaymentService             exchangeMoneyScoinService;
 
     @Autowired
-    LuckySpinHistoryRepository             spinHistoryRepo;
+    LuckySpinHistoryRepository spinHistoryRepo;
 
     @Autowired
-    GiftcodeRepository                     giftcodeRepo;
+    GiftcodeRepository         giftcodeRepo;
 
     @Autowired
-    TransactionHistoryService              transactionHistoryService;
+    TransactionHistoryService  transactionHistoryService;
 
     @Autowired
-    PaymentService                         exchangeCoinService;
+    PaymentService             exchangeCoinService;
 
     @Autowired
-    UserVTCService                         userVTCService;
+    UserVTCService             userVTCService;
 
     @Autowired
-    CommonCardScoinService                 cardScoinService;
+    CommonCardScoinService     cardScoinService;
 
     @Autowired
-    LuckyNumberRepository                  luckyNumberRepo;
+    LuckyNumberRepository      luckyNumberRepo;
 
     @Autowired
-    TopupCardHistoryRepository             topupCardHistoryRepo;
+    TopupCardHistoryRepository topupCardHistoryRepo;
 
     @Autowired
-    ConditionTurnover                      conditionTurnover;
+    ConditionTurnover          conditionTurnover;
 
     @Autowired
-    PaymentService                         paymentService;
-
-    @Autowired
-    LuckySpinBuyTurnHistoryRepository      buyTurnHistoryRepo;
-
-    @Autowired
-    LuckySpinPersonalTurnoverRadiusRepository luckySpinPersonalTurnoverRadiusRepo;
+    PaymentService             paymentService;
     
     @Autowired
-    LuckySpinPersonalTurnoverItemRepository luckySpinPersonalTurnoverItemRepo;
+    LuckySpinBuyTurnHistoryRepository buyTurnHistoryRepo;
     
     @Autowired
-    LuckySpinHistoryRepository luckySpinHistoryRepository;
+    LuckySpinRadiusPersonalTopupRepository radiusPersonalTopupRepo;
     
     @Autowired
-    LuckySpinHistoryFakeRepository luckySpinHistoryFakeRepository;
+    LuckySpinItemOfUserRepository luckySpinItemOfUserRepo;
+    
+    @Autowired
+    LuckySpinGiftRepository luckySpinGiftRepo;
     
 //    private String             TUDO_URL;
 //    private String             TUDO_API_KEY;
@@ -182,97 +179,125 @@ public class LuckySpinServiceImpl extends AbstractService<LuckySpin, Long, Lucky
         
         //get LuckySpin
         List<LuckySpin> luckySpins = repo.findAll();
-        if(CollectionUtils.isEmpty(luckySpins)) 
-            throw new ScoinNotFoundEntityException("Not found LuckySpin by this ID");
-        LuckySpin luckySpin = luckySpins.get(0);
-        
-        //get all spin item
-        List<LuckySpinItemOfLuckySpin> luckySpinItemOfLuckySpins = luckySpin.getSpinItems();
-        if (CollectionUtils.isEmpty(luckySpinItemOfLuckySpins)) {
-            throw new ScoinNotFoundEntityException("Not found LuckySpinItemOfLuckySpin by this LuckySpin");
+        if(CollectionUtils.isEmpty(luckySpins)) throw new ScoinNotFoundEntityException("Not found LuckySpin");
+        if (CollectionUtils.isEmpty(luckySpins)) {
+            throw new ScoinNotFoundEntityException("Not fount Item of this lucky spin id");
         }
         
-        // Get List LuckySpinItem by List LuckySpinItemOfLuckySpin
-        List<LuckySpinItem> luckySpinItems = luckySpinItemOfLuckySpins.stream()
-                .map(luckySpinItemOfLuckySpin -> luckySpinItemOfLuckySpin.getItem())
-                .collect(Collectors.toList());
+        LuckySpin luckySpin = luckySpins.get(0);
+        
+        //get all spin item of lucky spin
+//        List<LuckySpinItemOfLuckySpin> itemsOfLuckySpin = luckySpin.getSpinItems();
         
         UserTurnSpinDetailResponse userTurnSpinDetailResponse = new UserTurnSpinDetailResponse();
+        List<LuckySpinItemOfUser> itemOfUser = new ArrayList<LuckySpinItemOfUser>();
+        List<LuckySpinGift> luckySpinGifts = luckySpinGiftRepo.findAll();
+        List<LuckySpinGiftResponse> luckySpinGiftResponses = new ArrayList<LuckySpinGiftResponse>();
+        
+        luckySpinGifts.forEach(luckySpinGift -> {
+            LuckySpinGiftResponse luckySpinGiftResponse = new LuckySpinGiftResponse();
+            luckySpinGiftResponse.setLuckySpinGiftId(luckySpinGift.getId());
+            luckySpinGiftResponse.setName(luckySpinGift.getName());
+            luckySpinGiftResponse.setSetPoint(luckySpinGift.getSetPoint());
+            luckySpinGiftResponse.setTypeGift(luckySpinGift.getTypeGift());
+            luckySpinGiftResponse.setValue(luckySpinGift.getValue());
+            luckySpinGiftResponse.setQuantity(luckySpinGift.getQuantity());
+            
+            luckySpinGiftResponses.add(luckySpinGiftResponse);
+        });
         
         if (!ObjectUtils.isEmpty(userInfo)) {
             //update UserTurnSpin
-            LuckySpinUser luckySpinUser = updateUserTurnSpin(userInfo, luckySpin);
+            LuckySpinUser userTurnSpin = updateUserTurnSpin(userInfo, luckySpin);
             
             //get user buy turn info
-//            long totalTopupOfUser = 0;
+            long totalTopupCardToGame = 0;
             UserBuyTurnResponse turnsBuyInfo = new UserBuyTurnResponse();
             
-//            List<TopupCardHistory> TopupCardHistorys = topupCardHistoryRepo.
-//                findByScoinIdAndAndPaymentTimeAfterAndPaymentTimeBefore(userInfo.getUserVTC().getScoinId(), 
-//                                                            luckySpin.getStartDate(), 
-//                                                            luckySpin.getEndDate());
-//            if (!CollectionUtils.isEmpty(TopupCardHistorys)) {
-//                for (TopupCardHistory TopupCardHistory : TopupCardHistorys) {
-//                    totalTopupOfUser += TopupCardHistory.getTotalPayment();
-//                }
-//            }
-            
-//            turnsBuyInfo.setTotalTopupOfUser(totalTopupOfUser);
-            turnsBuyInfo.setAccumulationPoint(luckySpinUser.getBalance());
-            
-            if (luckySpinUser.getBalance() != 0) {
-                turnsBuyInfo.setCardBalanceRounding((luckySpin.getPricePerTurn() - luckySpinUser.getBalance()) / 2);
-            } else {
-                turnsBuyInfo.setCardBalanceRounding(luckySpin.getPricePerTurn() / 2);
+            List<TopupCardHistory> topupCardToGames = topupCardHistoryRepo.
+                    findByScoinIdAndPaymentTypeAndCreateOnAfterAndCreateOnBefore(userInfo.getUserVTC().getScoinId(), 
+                                                            Constant.SCOIN_CARD_TYPE_CARD_SCOIN_TO_GAME,
+                                                            luckySpin.getStartDate(), 
+                                                            luckySpin.getEndDate());
+            if (!CollectionUtils.isEmpty(topupCardToGames)) {
+                for (TopupCardHistory topupScoinToGame : topupCardToGames) {
+                    totalTopupCardToGame += topupScoinToGame.getTotalPayment();
+                }
             }
             
-            if (luckySpinUser.getBalance() != 0) {
-                turnsBuyInfo.setScoinBalanceRounding(luckySpin.getPricePerTurn() - luckySpinUser.getBalance());
+            turnsBuyInfo.setScoinTopupCardToGame(totalTopupCardToGame);
+            
+            if (userTurnSpin.getBalance() != 0) {
+                turnsBuyInfo.setScoinBalanceRounding(50000 - userTurnSpin.getBalance());
             } else {
-                turnsBuyInfo.setScoinBalanceRounding(luckySpin.getPricePerTurn());
+                turnsBuyInfo.setScoinBalanceRounding(50000);
             }
+            
+            //get item of user
+            itemOfUser = luckySpinItemOfUserRepo.findByLuckySpinAndUserInfo(luckySpin, userInfo);
             
             //get userTurnSpin response
             userTurnSpinDetailResponse.setUserId(userInfo.getId());
             userTurnSpinDetailResponse.setSpinId(luckySpin.getId());
-            userTurnSpinDetailResponse.setTurnsBuy(luckySpinUser.getTurnsBuy());
-            userTurnSpinDetailResponse.setTurnsFree(luckySpinUser.getTurnsFree());
+            userTurnSpinDetailResponse.setTurnsBuy(userTurnSpin.getTurnsBuy());
+            userTurnSpinDetailResponse.setTurnsFree(userTurnSpin.getTurnsFree());
             if (!StringUtils.isEmpty(userInfo.getFullName()))
                 userTurnSpinDetailResponse.setCurrName(userInfo.getFullName());
-            userTurnSpinDetailResponse.setBalanceLP(userInfo.getUserVTC().getScoin());
+            userTurnSpinDetailResponse.setScoin(userInfo.getUserVTC().getScoin());
             userTurnSpinDetailResponse.setCurrName(userInfo.getUserVTC().getUsername());
-            userTurnSpinDetailResponse.setRewardPoint(userInfo.getSplayPoint());
             userTurnSpinDetailResponse.setTurnsBuyInfo(turnsBuyInfo);
+            
+            //get luckySpinGift response
+            int maxQuantity = -1;
+            for (LuckySpinGiftResponse luckySpinGiftResponse : luckySpinGiftResponses) {
+                for (LuckySpinGift luckySpinGift : luckySpinGifts) {
+                    if (luckySpinGiftResponse.getLuckySpinGiftId() == luckySpinGift.getId()) {
+                        Set<LuckySpinItem> luckySpinItems = luckySpinGift.getLuckySpinItems();
+                        for(LuckySpinItem luckySpinItem : luckySpinItems) {
+                            LuckySpinItemOfUser luckySpinItemOfUser = luckySpinItemOfUserRepo
+                                    .findByLuckySpinAndUserInfoAndLuckySpinItem(luckySpin, userInfo, luckySpinItem);
+                            int itemQuantity = 0;
+                            if (!ObjectUtils.isEmpty(luckySpinItemOfUser)) 
+                                itemQuantity = luckySpinItemOfUser.getQuantity();
+                            if (maxQuantity < 0
+                                    || maxQuantity > itemQuantity) {
+                                maxQuantity = itemQuantity;
+                            }
+                        }
+                    }
+                    
+                    luckySpinGiftResponse.setMaxQuantity(maxQuantity);
+                }
+            }
         }
         
         LuckySpinDetailResponse response = new LuckySpinDetailResponse();
-        response.setItemOfSpin(luckySpinItems);
+//        response.setLuckySpinItemOfLuckySpin(itemsOfLuckySpin);
         response.setLuckySpin(luckySpin);
+        response.setLuckySpinGifts(luckySpinGiftResponses);
+        response.setItemOfUser(itemOfUser);
         response.setSettings(null);
         response.setUserTurnSpin(userTurnSpinDetailResponse);
         
-        LOGGER.info("RESPONSE ===== {}" , JsonMapperUtils.toJson(Optional.of(response).get()));
         return Optional.of(response);
     }
 
     @Override
-    public LuckySpinItem luckySpinAward(Long luckySpinId) throws ScoinBusinessException {
+    public List<LuckySpinItemOfLuckySpin> luckySpinOpenItem(LuckySpinOpenItemRequest request) throws ScoinBusinessException {
         UserInfo userInfo = verifyAccessTokenUser();
         
-//        if (StringUtils.isEmpty(userInfo.getPhoneNumber())) {
-//            throw new ScoinUnverifiedAccountException("You don't verify phone number");
-//        }
-        
-        if (ObjectUtils.isEmpty(luckySpinId)) {
+        if (ObjectUtils.isEmpty(request)
+                || ObjectUtils.isEmpty(request.getLuckySpinId())
+                || request.getTurnNumber() < 1) {
             throw new ScoinInvalidDataRequestException();
         }
         
         Pageable pageable = PageRequest.of(0, 1);
         
         //get LuckySpin
-        List<LuckySpin> luckySpins = findLuckySpin(luckySpinId, Constant.STATUS_ACTIVE,pageable);
+        List<LuckySpin> luckySpins = findLuckySpin(request.getLuckySpinId(), Constant.STATUS_ACTIVE,pageable);
         if (CollectionUtils.isEmpty(luckySpins)) {
-            throw new ScoinNotFoundEntityException("Not found LuckySpin");
+            throw new ScoinNotFoundEntityException("Not fount Item of this lucky spin");
         }
         LuckySpin luckySpin = luckySpins.get(0);
         
@@ -283,142 +308,121 @@ public class LuckySpinServiceImpl extends AbstractService<LuckySpin, Long, Lucky
 
         // get User Turn Spin and update turn enough
         LuckySpinUser luckySpinUser = updateUserTurnSpin(userInfo, luckySpin);
-        String typeOfTurn = null;
-        if (luckySpinUser.getTurnsBuy() < 1 
-                && luckySpinUser.getTurnsFree() < 1) {
-            throw new ScoinNotEnoughtException(MessageConstant.SPIN_TURNS_NOT_ENOUGHT);
-        } 
+        
+        if (luckySpinUser.getTurnsFree() < 1
+               && luckySpinUser.getTurnsBuy() < 1) {
+            throw new ScoinNotEnoughtException("Không đủ lượt quay");
+        }
 
         // Make ratio item to group user
-        
         List<RamdomItems> ratioItems = makeRatioItemToUser(luckySpin, luckySpinUser.getPersonalTopup(), userInfo);
         
         ratioItems.forEach(ratioItem -> {
             LOGGER.info("Item ======= : {}", ratioItem.getSpinItemId() + ", ratio =====: " + ratioItem.getRadioItem());
         });
 
-        // skip item if quantity = 0
-        LuckySpinItemOfLuckySpin resultItem = null;
-        while (resultItem == null) {
-            long positionRamdom = ramdomInList(ratioItems);
-            if (positionRamdom == -1)
-                continue;
-            resultItem = itemOfSpinRepo.findById(positionRamdom)
-                    .orElseThrow(() -> new ScoinNotFoundEntityException("Not found spin item by this id ramdom"));
-            
-            LuckySpinItem item = resultItem.getItem();
-
-                boolean passItem = conditionTurnover.
-                            checkPickItemFolowTurnover(luckySpin, topupCardHistoryRepo.sumTotalPayment(), item);
-                if (!passItem) {
-                    LOGGER.info("PASS ITEM : ============== : {}" + item.getType() + " , Value = " + item.getValue());
-                    resultItem = null;
-                    continue;
-                }
-                
-            // verify user folow topup card
-//            if (item.getType().equals(Constant.LUCKYSPIN_GIFT_SCOIN_CARD)
-//                    && item.getValue() >= 50000) {
-//                boolean passItemScoinCard = conditionTurnover.checkPickUserFolowTopupCard(userInfo, item);
-//                if (!passItemScoinCard) {
-//                    LOGGER.info("PASS USER : ============== : {}" + item.getType() 
-//                                                            + " , Value = " + item.getValue() 
-//                                                            + "User Name : " + userInfo.getFullName());
-//                    resultItem = null;
-//                    continue;
-//                }
-//            }
-        }
-            
-        LOGGER.info("ITEM TYPE KQ ================ {}", resultItem.getItem().getType());
-
-        // Create spin transaction
-        LuckySpinHistory spinHistory = new LuckySpinHistory();
-        spinHistory.setUserInfo(luckySpinUser.getUserInfo());
-        spinHistory.setUserName(userInfo.getUserVTC().getUsername());
-        if (!StringUtils.isEmpty(userInfo.getPhoneNumber()))
-            spinHistory.setPhoneNumber(StringUtils.hiddenCharString(userInfo.getPhoneNumber(),3));
-        spinHistory.setLuckySpin(luckySpinUser.getLuckySpin());
-        spinHistory.setItem(resultItem.getItem());
-        spinHistory.setStatus(Constant.STATUS_RECIEVED);
-        spinHistory.setTurnType(typeOfTurn);
-            
-        switch (resultItem.getItem().getType()) {
-        // Handle item XU
-        case Constant.LUCKYSPIN_GIFT_XU:
-            awardIsXu(resultItem, luckySpin, userInfo, luckySpinUser, spinHistory);
-            break;
+        // quantity item can play
+        int turnNumber = request.getTurnNumber();
+        if (luckySpinUser.getTurnsFree() < request.getTurnNumber()) turnNumber = luckySpinUser.getTurnsFree();
         
-        case Constant.LUCKYSPIN_GIFT_SCOIN:
-//            paymentService.exchangeScoin(userInfo, Constant.SCOIN_TYPE_TOPUP, resultItem.getItem().getValue(), 
-//                    createDescription(userInfo, luckySpin.getName(), resultItem.getItem().getValue()));
-            int multiplier = 0;
-            if (resultItem.getItem().getValue() > 1000000) {
-                multiplier = (int) resultItem.getItem().getValue() / 1000000;
-                for (int i = 0; i < multiplier; i++) {
-                    cardScoinService.topupScoin(1000000, userInfo.getUserVTC().getUsername());
-                }
-            } else {
-                cardScoinService.topupScoin(resultItem.getItem().getValue(), userInfo.getUserVTC().getUsername());
-            }
-            
-            spinHistory.setValue(resultItem.getItem().getValue());
-            spinHistory.setMessage(resultItem.getItem().getWinningTitle());
-            spinHistory.setDescription(resultItem.getItem().getType());
-            break;
-            
-        // Handle item ACTION 
-        case Constant.LUCKYSPIN_GIFT_ACTION:
-            if (resultItem.getItem().getKeyName().equals("themluot")) {
-                luckySpinUser.setTurnsFree(luckySpinUser.getTurnsFree() + 1);
-                luckySpinUserRepo.save(luckySpinUser);
-                spinHistory.setMessage("Bạn đã được thêm 1 lượt");
-            } else {
-                spinHistory.setMessage("Chúc bạn may mắn lần sau");
-            }
-
-            spinHistory.setValue(0);
-            spinHistory.setDescription(resultItem.getItem().getName());
-            luckySpin.setSpinTimes(luckySpinUser.getLuckySpin().getSpinTimes() + 1);
-            save(luckySpin);
-            break;
-            
-        // Handle item SCOIN CARD
-//        case Constant.LUCKYSPIN_GIFT_SCOIN_CARD:
-//            awardIsScoinCard(luckySpin, 
-//                    userInfo, 
-//                    resultItem,
-//                    spinHistory);
-//            break;
+        //pick item follow event
+        List<LuckySpinItemOfLuckySpin> responses = new ArrayList<LuckySpinItemOfLuckySpin>();
+        for (int i = 0; i < turnNumber; i++) {
+            responses.add(pickRandomItem(luckySpin, userInfo, ratioItems));
         }
         
-        // user lost turn spin
-        luckySpinUser.setTurnsFree(luckySpinUser.getTurnsFree() - 1);
-        luckySpinUser = luckySpinUserRepo.save(luckySpinUser);
-        if (ObjectUtils.isEmpty(luckySpinUser)) {
-            throw new ScoinFailedToExecuteException("Failed to update User Turn Spin");
-        }
+        //update luckySpinUser
+        luckySpinUser.setTurnsFree(luckySpinUser.getTurnsFree() - turnNumber);
+        luckySpinUserRepo.save(luckySpinUser);
         
-        LuckySpinHistory history = spinHistoryRepo.save(spinHistory);
-        if (ObjectUtils.isEmpty(history)) {
-            throw new ScoinFailedToExecuteException("Can't create Spin History");
-        }
-
-        // update quantity Spin_item
-        resultItem.setReceivedQuantity(resultItem.getReceivedQuantity() + 1);
-        if (resultItem.getTotalQuantity() > 0) 
-            resultItem.setTotalQuantity(resultItem.getTotalQuantity() - 1);
-        itemOfSpinRepo.save(resultItem);
-
         // Update luckySpinTime
-        luckySpin.setSpinTimes(luckySpin.getSpinTimes() + 1);
+        luckySpin.setSpinTimes(luckySpinUser.getLuckySpin().getSpinTimes() + request.getTurnNumber());
         save(luckySpin);
 
-        return resultItem.getItem();
+        return responses;
 
     }
     
-   
+    @Override
+    public ExchangeItemResponse luckySpinExchangeItem(LuckySpinExchangeItemRequest request)
+            throws ScoinBusinessException {
+        UserInfo userInfo = verifyAccessTokenUser();
+        
+        if (ObjectUtils.isEmpty(request) 
+                || ObjectUtils.isEmpty(request.getLuckySpinId())
+                || ObjectUtils.isEmpty(request.getLuckySpinGiftId())
+                || request.getTurnNumber() < 1) {
+            throw new ScoinInvalidDataRequestException();
+        }
+        
+        LuckySpin luckySpin = repo.getOne(request.getLuckySpinId());
+        if (ObjectUtils.isEmpty(luckySpin)) {
+            throw new ScoinNotFoundEntityException("Not found Lucky Spin by this id");
+        }
+        
+//        if (luckySpin.getStartDate().after(new Date())
+//                || luckySpin.getEndDate().before(new Date())) {
+//            throw new ScoinTimingStartAndEndException();
+//        }
+        
+        LuckySpinGift luckySpinGift = luckySpinGiftRepo.getOne(request.getLuckySpinGiftId());
+        if (ObjectUtils.isEmpty(luckySpinGift)) {
+            throw new ScoinNotFoundEntityException("Not found Lucky Spin Gift by this id");
+        }
+        
+        //check item quantiry of user
+        Set<LuckySpinItem> luckySpinItems = luckySpinGift.getLuckySpinItems();
+        luckySpinItems.forEach(luckySpinItem -> {
+            LuckySpinItemOfUser luckySpinItemOfUser = luckySpinItemOfUserRepo
+                    .findByLuckySpinAndUserInfoAndLuckySpinItem(luckySpin, userInfo, luckySpinItem);
+            int quantity = luckySpinItemOfUser.getQuantity();
+            if (quantity < request.getTurnNumber()) 
+                throw new ScoinNotEnoughtException("Không đủ Chữ để đổi");
+        });
+        
+        for(int i = 0 ; i < request.getTurnNumber(); i++) {
+          //Create spin history
+          createLuckySpinHistoty(userInfo, 
+                  luckySpin, 
+                  luckySpinGift,
+                  null,
+                  Constant.LUCKYSPIN_TURN_TYPE_GIFT);
+        }
+        
+        if (luckySpinGift.getTypeGift().equals(Constant.LUCKYSPIN_GIFT_SCOIN)) {
+            long totalScoinGift = luckySpinGift.getValue() * request.getTurnNumber();
+            if (totalScoinGift >= 1000000) {
+                throw new ScoinFailedToExecuteException("Vượt quá mức scoin cho phép");
+            }
+
+            cardScoinService.topupScoin(totalScoinGift, userInfo.getUserVTC().getUsername());
+        }
+        
+        // deduct quantity gift
+        luckySpinGift.setQuantity(luckySpinGift.getQuantity() - request.getTurnNumber());
+        luckySpinGiftRepo.save(luckySpinGift);
+        
+        // deduct item of user
+        luckySpinItems.forEach(luckySpinItem -> {
+            LuckySpinItemOfUser luckySpinItemOfUser = luckySpinItemOfUserRepo
+                    .findByLuckySpinAndUserInfoAndLuckySpinItem(luckySpin, userInfo, luckySpinItem);
+            luckySpinItemOfUser
+                    .setQuantity(luckySpinItemOfUser.getQuantity() - request.getTurnNumber());
+            luckySpinItemOfUserRepo.save(luckySpinItemOfUser);
+            if (ObjectUtils.isEmpty(luckySpinItemOfUser)) {
+                throw new ScoinFailedToExecuteException("Can't create item of user");
+            }
+        });
+        
+        ExchangeItemResponse response = new ExchangeItemResponse();
+        response.setLuckySpinGiftId(luckySpinGift.getId());
+        response.setName(luckySpinGift.getName());
+        response.setTypeGift(luckySpinGift.getTypeGift());
+        response.setValue(luckySpinGift.getValue() * request.getTurnNumber());
+        response.setQuantity(request.getTurnNumber());
+        
+        return response;
+    }
     
     @Override
     public UserXuInfoResponse getBalanceXu(Long scoinId) throws ScoinBusinessException {
@@ -468,6 +472,60 @@ public class LuckySpinServiceImpl extends AbstractService<LuckySpin, Long, Lucky
         return "Success";
     }
     
+    private LuckySpinItemOfLuckySpin pickRandomItem(LuckySpin luckySpin, 
+                                                    UserInfo userInfo, 
+                                                    List<RamdomItems> ratioItems) {
+        LuckySpinItemOfLuckySpin resultItem = null;
+        while (resultItem == null) {
+            long positionRamdom = ramdomInList(ratioItems);
+            if (positionRamdom == -1)
+                continue;
+            resultItem = spinItemOfLuckySpinRepo.findById(positionRamdom)
+                    .orElseThrow(() -> new ScoinNotFoundEntityException("Not found spin item by this id ramdom"));
+            
+            LuckySpinItem item = resultItem.getItem();
+
+            long totalTurnover = 0;
+            LuckySpinSetting turnoverSetting = luckySpinSettingRepo.
+                    findByKeyNameAndStatus(Constant.LUCKYSPIN_TURNOVER_KEYNAME_TOTAL, Constant.STATUS_ACTIVE);
+            if (!ObjectUtils.isEmpty(turnoverSetting))
+                totalTurnover = turnoverSetting.getIntValue();
+
+            boolean passItem = conditionTurnover.checkPickItemFolowTurnover(luckySpin,
+                    totalTurnover, item);
+            if (!passItem) {
+                LOGGER.info("PASS ITEM : ============== : {}" + item.getType() + " , Value = " + item.getValue());
+                resultItem = null;
+                continue;
+            }
+        }
+        
+        LuckySpinItemOfUser luckySpinItemOfUser = luckySpinItemOfUserRepo
+                .findByLuckySpinAndUserInfoAndLuckySpinItem(luckySpin, userInfo, resultItem.getItem());
+        if (ObjectUtils.isEmpty(luckySpinItemOfUser)) {
+            luckySpinItemOfUser = new LuckySpinItemOfUser();
+            luckySpinItemOfUser.setLuckySpin(luckySpin);
+            luckySpinItemOfUser.setUserInfo(userInfo);
+            luckySpinItemOfUser.setLuckySpinItem(resultItem.getItem());
+            luckySpinItemOfUser.setQuantity(1);
+        } else {
+            luckySpinItemOfUser.setQuantity(luckySpinItemOfUser.getQuantity() + 1);
+        }
+        
+        luckySpinItemOfUserRepo.save(luckySpinItemOfUser);
+        if (ObjectUtils.isEmpty(luckySpinItemOfUser))
+            throw new ScoinFailedToExecuteException("Don't success when save Item of User");
+        
+        createLuckySpinHistoty(userInfo, luckySpin, null, resultItem.getItem(),
+                Constant.LUCKYSPIN_TURN_TYPE_ITEM);
+        
+        // update quantity Spin_item
+        resultItem.setReceivedQuantity(resultItem.getReceivedQuantity() + 1);
+        spinItemOfLuckySpinRepo.save(resultItem);
+        
+        return resultItem;
+    }
+    
     //===================== COMPONENT =============================
     
 //    private synchronized LuckyNumber addLuckyNumber(LuckyNumber luckyNumber, UserInfo userInfo) {
@@ -506,11 +564,11 @@ public class LuckySpinServiceImpl extends AbstractService<LuckySpin, Long, Lucky
 //    }
     
     private long ramdomInList(List<RamdomItems> randomItems) {
-        int tmp = ThreadLocalRandom.current().nextInt(1000);
+        int tmp = ThreadLocalRandom.current().nextInt(10000);
         
         List<Long> spinTurnIds = new ArrayList<Long>();
         randomItems.forEach(randomItem -> {
-            int totalItemFollowRatio = Math.round((float) randomItem.getRadioItem() * 10);
+            int totalItemFollowRatio = Math.round((float) randomItem.getRadioItem() * 100);
             long spinItemId = randomItem.getSpinItemId();
             for (int i = 0; i < totalItemFollowRatio; i++) {
                 spinTurnIds.add(spinItemId);
@@ -523,74 +581,51 @@ public class LuckySpinServiceImpl extends AbstractService<LuckySpin, Long, Lucky
     
     private LuckySpinUser updateUserTurnSpin(UserInfo userInfo, LuckySpin luckySpin) {
         //process turn spin
-        int turnOfUser = 0;
-        long topupCardValue = 0;
-        long topupScoinValue = 0;
+        int turnTopupCardToGame = 0;
+        long totalTopupCardToGame = 0;
         long balance = 0;
-        
-        // get LuckySpinUser
-        LuckySpinUser luckySpinUser = new LuckySpinUser();
-        Optional<LuckySpinUser> optLuckySpinUser = luckySpinUserRepo
+        LuckySpinUser userTurnSpin = new LuckySpinUser();
+        Optional<LuckySpinUser> optUserTurnSpin = luckySpinUserRepo
                 .findByUserInfoAndLuckySpin(userInfo, luckySpin);
         
-        if (!optLuckySpinUser.isPresent()) {
-            luckySpinUser.setLuckySpin(luckySpin);
-            luckySpinUser.setUserInfo(userInfo);
+        if (!optUserTurnSpin.isPresent()) {
+            userTurnSpin.setLuckySpin(luckySpin);
+            userTurnSpin.setUserInfo(userInfo);
         } else {
-            luckySpinUser = optLuckySpinUser.get();
+            userTurnSpin = optUserTurnSpin.get();
         }
         
-        //Update turn for user
-        List<TopupCardHistory> topupHistorysOfUser = topupCardHistoryRepo.
-                findByLuckyWheelUsedIsFalseAndScoinIdAndPaymentTimeAfterAndPaymentTimeBefore(
-                                                                                userInfo.getUserVTC().getScoinId(), 
-                                                                                luckySpin.getStartDate(), 
-                                                                                luckySpin.getEndDate());
-        if (!CollectionUtils.isEmpty(topupHistorysOfUser)) {
-            for (TopupCardHistory topupHistoryOfUser : topupHistorysOfUser) {
-                if (topupHistoryOfUser.getPaymentType().equals(Constant.LUCKYSPIN_TOPUP_TYPE_CARD)) {
-                    topupCardValue += topupHistoryOfUser.getTotalPayment();
-                } else if (topupHistoryOfUser.getPaymentType().equals(Constant.LUCKYSPIN_TOPUP_TYPE_SCOIN)) {
-                    topupScoinValue += topupHistoryOfUser.getTotalPayment();
+        //Update UserTurnSpin
+        List<TopupCardHistory> topupCards = topupCardHistoryRepo.
+                findByLuckyWheelUsedIsFalseAndScoinIdAndCreateOnAfterAndCreateOnBefore(
+                        userInfo.getUserVTC().getScoinId(), luckySpin.getStartDate(), luckySpin.getEndDate());
+        if (!CollectionUtils.isEmpty(topupCards)) {
+            for (TopupCardHistory topupCard : topupCards) {
+                if (topupCard.getPaymentType().equals(Constant.SCOIN_CARD_TYPE_CARD_SCOIN_TO_GAME)) {
+                  totalTopupCardToGame += topupCard.getTotalPayment();
                 }
-                
-                topupHistoryOfUser.setLuckyWheelUsed(true);
-                topupCardHistoryRepo.save(topupHistoryOfUser);
+               
+                topupCard.setLuckyWheelUsed(true);
+                topupCardHistoryRepo.save(topupCard);
             }
             
-            balance = (topupCardValue * 2) + topupScoinValue + luckySpinUser.getBalance();
-            
-            
-            if (balance >= luckySpin.getPricePerTurn()
-                    && (luckySpin.getBuyTurnType().equals(Constant.LUCKYSPIN_TOPUP_TYPE_ALL)
-                            || luckySpin.getBuyTurnType().equals(Constant.LUCKYSPIN_TOPUP_TYPE_CARD))) {
-                turnOfUser = (int) (balance / luckySpin.getPricePerTurn());
-                balance = balance - (turnOfUser * luckySpin.getPricePerTurn());
-                
-                LuckySpinBuyTurnHistory buyTurnHistory = new LuckySpinBuyTurnHistory();
-                buyTurnHistory.setUserInfo(userInfo);
-                buyTurnHistory.setLuckySpin(luckySpin);
-                buyTurnHistory.setBuyValue(turnOfUser * luckySpin.getPricePerTurn());
-                buyTurnHistory.setBuyType(luckySpin.getBuyTurnType());
-                buyTurnHistory.setSpinTurn(turnOfUser);
-                buyTurnHistory.setBuyQuantity(1);
-                buyTurnHistory.setStatus(Constant.STATUS_SUCCESS);
-                buyTurnHistoryRepo.save(buyTurnHistory);
-                
+            balance = totalTopupCardToGame + userTurnSpin.getBalance();
+            if (balance >= 50000) {
+                turnTopupCardToGame = (int) (balance / 50000);
+                balance = balance - (turnTopupCardToGame * 50000);
             }
             
-            luckySpinUser.setBalance(balance);
-            luckySpinUser.setTurnsFree(luckySpinUser.getTurnsFree() + turnOfUser);
-            luckySpinUser.setPersonalTopup(luckySpinUser.getPersonalTopup() + topupCardValue + topupScoinValue);
-            luckySpinUser.setAccumulationPoint(luckySpinUser.getAccumulationPoint() + (topupCardValue * 2) + topupScoinValue);
+            userTurnSpin.setTurnsFree(userTurnSpin.getTurnsFree() + turnTopupCardToGame);
+            userTurnSpin.setPersonalTopup(userTurnSpin.getPersonalTopup() + totalTopupCardToGame);
+            userTurnSpin.setBalance(balance);
         }
         
-        luckySpinUser = luckySpinUserRepo.save(luckySpinUser);
-        if (ObjectUtils.isEmpty(luckySpinUser)) {
+        userTurnSpin = luckySpinUserRepo.save(userTurnSpin);
+        if (ObjectUtils.isEmpty(userTurnSpin)) {
             throw new ScoinFailedToExecuteException("Don't create new user turn spin");
         }
         
-        return luckySpinUser;
+        return userTurnSpin;
     }
     
     private List<RamdomItems> makeRatioItemToUser(LuckySpin luckySpin, long personalTopup, UserInfo userInfo){
@@ -598,101 +633,44 @@ public class LuckySpinServiceImpl extends AbstractService<LuckySpin, Long, Lucky
         int totalIndexItem = 0;
         boolean haveActionItem = false;
         
-        List<LuckySpinItemOfLuckySpin> itemOfluckySpins = luckySpin.getSpinItems();
-        if (CollectionUtils.isEmpty(itemOfluckySpins)) {
-            throw new ScoinNotFoundEntityException("Not found item of this lucky spin");
-        }
-
-        //get big item
-        List<LuckySpinItemOfLuckySpin> bigItems = itemOfluckySpins.stream()
-                .filter(item -> item.getItem().isBigItem())
-                .collect(Collectors.toList());
-
-        // sort big item
-        bigItems.sort((i1, i2) -> Long.valueOf(i1.getItem().getValue())
-                .compareTo(Long.valueOf(i2.getItem().getValue())));
+        
         
         // choose ratio of item for group user
-        if (!CollectionUtils.isEmpty(bigItems)
-                && personalTopup >= bigItems.get(0).getItem().getValue()*5) {
+        if (personalTopup >= 25000000
+                && spinHistoryRepo.countMainItemReceived(25000000, luckySpin, userInfo) < 1) {
+            // User have topup high
+            List<LuckySpinRadiusPersonalTopup> radiusPersonalTopups = radiusPersonalTopupRepo.
+                    findByLuckySpinAndPersonalTopupLandmark(luckySpin, 25000000);
             
-            //get landmark topup personal of this user
-            long personalLandmark = conditionTurnover.
-                    pickRatioItemFolowPersonalTurnover(personalTopup, bigItems);
-            
-            // item of landmark topup personal of this user
-            LuckySpinItemOfLuckySpin luckySpinBigItem = bigItems.stream()
-                    .filter(item -> item.getItem().getValue()*5 == personalLandmark).findFirst()
-                    .get();
-            
-            LOGGER.info("luckySpinBigItem.getItem().getValue() ================== {}", luckySpinBigItem.getItem().getValue());
-
-            // get personal turnover item
-            LuckySpinPersonalTurnoverItem luckySpinPersonalTurnoverItem = luckySpinPersonalTurnoverItemRepo.
-                                                        findBySpinItem(luckySpinBigItem);
-            
-            if (ObjectUtils.isEmpty(luckySpinPersonalTurnoverItem)) {
-                throw new ScoinNotFoundEntityException("Not fount Personal Turnover Item");
-            }
-            
-            int bigItemLuckySpinHistorie = 0;
-            int bigItemLuckySpinHistoryFake = 0;
-            if (luckySpinPersonalTurnoverItem.isMainItem()) {
-                // count mainItem in history in this day
-                bigItemLuckySpinHistorie = luckySpinHistoryRepository
-                        .countByItemAndCreateOnBetween(luckySpinPersonalTurnoverItem.getSpinItem().getItem(),
-                                                          DateUtils.startDate(new Date()), 
-                                                          DateUtils.endDate(new Date()));
+            if (!ObjectUtils.isEmpty(radiusPersonalTopups)) {
                 
-                // count mainItem in history fake in this day
-                bigItemLuckySpinHistoryFake = luckySpinHistoryFakeRepository.
-                        countByLuckySpinIdAndItemValueAndCreateOnBetween(luckySpin.getId(), 
-                                          luckySpinPersonalTurnoverItem.getSpinItem().getItem().getValue(), 
-                                          DateUtils.startDate(new Date()), 
-                                          DateUtils.endDate(new Date()));
-                }
-            
-            // count mainItem recied of user
-            int itemThisUserRecied = luckySpinHistoryRepository.
-                    countByUserInfoAndItem(userInfo, luckySpinPersonalTurnoverItem.getSpinItem().getItem());
-
-            // if quantity mainItem < quantity can recied and mainItem don't have in this day and fake history
-            if (itemThisUserRecied < luckySpinPersonalTurnoverItem.getLimitPerUser()
-                    && bigItemLuckySpinHistorie < 1
-                    && bigItemLuckySpinHistoryFake < 1) {
-                List<LuckySpinPersonalTurnoverRadius> personalTurnoversRadius = luckySpinPersonalTurnoverRadiusRepo.findAll();
-                
-                if (ObjectUtils.isEmpty(personalTurnoversRadius)) {
-                    throw new ScoinNotFoundEntityException("Not fount Personal Turnover other Item");
-                }
-                    
-                // add to items random
-                for (LuckySpinPersonalTurnoverRadius personalTurnoverRadius : personalTurnoversRadius) {
-                    totalIndexItem += personalTurnoverRadius.getRatioIndex();
-                    if (personalTurnoverRadius.getRatioIndex() <= 0) continue;
-                    ratioItems.add(new RamdomItems(personalTurnoverRadius.getSpinItem().getId(),
-                            personalTurnoverRadius.getRatioIndex(),
-                            personalTurnoverRadius.getSpinItem().getItem().getType()));
+                //total ratio index
+                for (LuckySpinRadiusPersonalTopup radiusPersonalTopup : radiusPersonalTopups) {
+                    totalIndexItem += radiusPersonalTopup.getRatioIndex();
+                    if (radiusPersonalTopup.getSpinItem().getItem().getType().equals(Constant.LUCKYSPIN_GIFT_ACTION))
+                        haveActionItem = true;
                 }
                 
-             // check is lucky spin has item
+                // check is lucky spin has item
                 if (totalIndexItem < 1 && haveActionItem == true) {
                     throw new ScoinNotFoundEntityException("Not found items off this lucky spin");
                 }
                 
-                ratioItems.add(new RamdomItems(luckySpinPersonalTurnoverItem.getSpinItem().getId(),
-                        (double) 100 - totalIndexItem,
-                        luckySpinPersonalTurnoverItem.getSpinItem().getItem().getType()));
-                LOGGER.info("personalLandmark ============== : {}", personalLandmark);
+                // add to items random
+                for (LuckySpinRadiusPersonalTopup radiusPersonalTopup : radiusPersonalTopups) {
+                    if (radiusPersonalTopup.getRatioIndex() <= 0) continue;
+                    ratioItems.add(new RamdomItems(radiusPersonalTopup.getSpinItem().getId(),
+                                                   radiusPersonalTopup.getRatio(),
+                                                   radiusPersonalTopup.getSpinItem().getItem().getType()));
+                }
                 return ratioItems;
             }
-            
         } 
         // User have ratio basic
         //total ratio index and check is lucky spin has item
-        for (LuckySpinItemOfLuckySpin itemOfUser : luckySpin.getSpinItems()) {
-            totalIndexItem += itemOfUser.getRatioIndex();
-            if (itemOfUser.getItem().getType().equals(Constant.LUCKYSPIN_GIFT_ACTION))
+        for (LuckySpinItemOfLuckySpin item : luckySpin.getSpinItems()) {
+            totalIndexItem += item.getRatioIndex();
+            if (item.getItem().getType().equals(Constant.LUCKYSPIN_GIFT_ACTION))
                 haveActionItem = true;
         }
             
@@ -702,190 +680,64 @@ public class LuckySpinServiceImpl extends AbstractService<LuckySpin, Long, Lucky
         }
         
         // add to items random
-        for (LuckySpinItemOfLuckySpin itemOfUser : luckySpin.getSpinItems()) {
-            if (itemOfUser.getRatioIndex() > 0
-                    || itemOfUser.getItem().getType().equals(Constant.LUCKYSPIN_GIFT_ACTION)) {
-                ratioItems.add(new RamdomItems(itemOfUser.getId(),
-                        (double) 100 / totalIndexItem * itemOfUser.getRatioIndex(),
-                        itemOfUser.getItem().getType()));
+        for (LuckySpinItemOfLuckySpin item : luckySpin.getSpinItems()) {
+            if (item.getRatioIndex() > 0
+                    || item.getItem().getType().equals(Constant.LUCKYSPIN_GIFT_ACTION)) {
+                ratioItems.add(new RamdomItems(item.getId(),
+                        (double) 100 / totalIndexItem * item.getRatioIndex(),
+                        item.getItem().getType()));
             }
         }
         
         return ratioItems;
     }
     
-    private UserXuInfoResponse luckySpinExchangeXu(UserInfo userInfo, 
-                                                   long amount, 
-                                                   String luckySpinName, 
-                                                   String typeExchange,
-                                                   String dataRequest) {
-        String content = createDescription(userInfo, luckySpinName, amount);
+    private void createLuckySpinHistoty(UserInfo userInfo, 
+                                        LuckySpin luckySpin, 
+                                        LuckySpinGift luckySpinGift,
+                                        LuckySpinItem luckySpinItem,
+                                        String turnType) {
+        LuckySpinHistory spinHistory = new LuckySpinHistory();
         
-        //create Transaction History
-        TransactionHistoryCreateRequest historyCreateRequest = new TransactionHistoryCreateRequest();
-        historyCreateRequest.setUserInfo(userInfo);
-        historyCreateRequest.setAmount(amount);
-        historyCreateRequest.setDataRequest(dataRequest);
-        historyCreateRequest.setBalanceBefore(userInfo.getUserVTC().getXu());
-        historyCreateRequest.setBalanceAfter(userInfo.getUserVTC().getXu());
-        historyCreateRequest.setServiceType(Constant.SERVICE_TYPE_DEDUCT);
-        historyCreateRequest.setSourceType(Constant.SOURCE_TYPE_LUCKYSPIN);
-        TransactionHistory trans = 
-        transactionHistoryService.createTransactionHistory(historyCreateRequest);
+        if (!ObjectUtils.isEmpty(luckySpinGift)) {
+            spinHistory.setValue(luckySpinGift.getValue());
+            spinHistory.setMessage(luckySpinGift.getName());
+            spinHistory.setDescription(luckySpinGift.getTypeGift());
+            spinHistory.setItem(null);
+            spinHistory.setGift(luckySpinGift);
+        } else {
+            spinHistory.setValue(luckySpinItem.getValue());
+            spinHistory.setMessage(luckySpinItem.getName());
+            spinHistory.setDescription(luckySpinItem.getType());
+            spinHistory.setItem(luckySpinItem);
+            spinHistory.setGift(null);
+        }
+       
+        spinHistory.setUserInfo(userInfo);
+        spinHistory.setLuckySpin(luckySpin);
         
-        //TOPUP xu
-        XuExchangeRequest xuExchangeRequest = new XuExchangeRequest();
-        xuExchangeRequest.setScoin_id(userInfo.getUserVTC().getScoinId());
-        xuExchangeRequest.setAmount(amount);
-        xuExchangeRequest.setTransid(trans.getId());
-        xuExchangeRequest.setContent(content);
-        UserXuInfoResponse userXuInfo = 
-                exchangeCoinService.exchangeXu(xuExchangeRequest, typeExchange);
-        
-        //update balance xu user
-        userInfo.getUserVTC().setXu(userXuInfo.getTotalBalance());
-        userVTCService.save(userInfo.getUserVTC());
-        
-        //set success to transaction
-        historyCreateRequest.setBalanceAfter(userInfo.getUserVTC().getXu());
-        historyCreateRequest.setStatus(Constant.STATUS_SUCCESS);
-        transactionHistoryService.save(trans);
-        return  userXuInfo;
+        spinHistory.setStatus(Constant.STATUS_RECIEVED);
+        spinHistory.setTurnType(turnType);
+        LuckySpinHistory history = spinHistoryRepo.save(spinHistory);
+        if (ObjectUtils.isEmpty(history)) {
+            throw new ScoinFailedToExecuteException("Can't create Spin History");
+        }
     }
     
-    private String createDescription(UserInfo userInfo, String luckySpinName, long amount) {
-        return "Scoin ID : " + userInfo.getUserVTC().getScoinId()
-                + ", UserName : " + userInfo.getUserVTC().getUsername()
-                + ", requirement : " + "Topup nhận thưởng luckySpin : " + luckySpinName
-                + ", Date : " + DateUtils.toStringFormDate(new Date(), DateUtils.DATE_TIME_MYSQL_FORMAT) 
-                + ", Amount : " + amount;
-    }
-    
-    private void awardIsXu(LuckySpinItemOfLuckySpin resultItem, 
-                           LuckySpin luckySpin, 
-                           UserInfo userInfo, 
-                           LuckySpinUser luckySpinUser, 
-                           LuckySpinHistory spinHistory) {
-        long amountAdd = resultItem.getItem().getValue() * luckySpin.getPricePerTurn();
-        
-        //TOPUP xu when user win item xu
-        luckySpinExchangeXu(userInfo, amountAdd, luckySpin.getName(), 
-                Constant.XU_TOPUP, "spinId: " + luckySpinUser.getLuckySpin().getId());
-        String message = resultItem.getItem().getWinningTitle() + " " + amountAdd + " COIN";
-        spinHistory.setValue(amountAdd);
-        spinHistory.setMessage(message);
-    }
-    
-//    private void awardIsJackpot(LuckySpinItem resultItem, LuckySpin luckySpin, UserInfo userInfo,
-//                                UserTurnSpin userTurnSpin, LuckySpinHistory spinHistory,
-//                                long amountJackpotWinner) {
-//        spinHistory.setValue(amountJackpotWinner);
-//        spinHistory.setMessage(resultItem.getItem().getWinningTitle() + " " + amountJackpotWinner + "SP");
-//        
-//        //TOPUP xu when win JACKPOT
-//        String requirement ="Cộng xu nhận thưởng JACKPOT luckyspin : " + luckySpin.getName();
-//        luckySpinExchangeXu(userInfo, 
-//            amountJackpotWinner, 
-//            requirement, 
-//            Constant.XU_DEDUCT, 
-//            "spinId: " + userTurnSpin.getLuckySpin().getId());
-//    }
-    
-//    private void awardIsGiftcode(LuckySpinItem resultItem, UserInfo userInfo, LuckySpinHistory spinHistory) {
-//        if (resultItem.getQuantity() < 1) throw new ScoinNotEnoughtException("Not enought gift");
-//        List<Giftcode> giftcodes = giftcodeRepo
-//                .findByItemSpinAndUserLostIsNullAndDeviceIDIsNull(resultItem.getItem());
-//        if (CollectionUtils.isEmpty(giftcodes)) {
-//            throw new ScoinNotEnoughtException("Not enought giftcode");
-//        }
-//        
-//        Giftcode gc = giftcodes.get(0);
-//        gc.setUserLost(userInfo);
-//        if (!ObjectUtils.isEmpty(userInfo.getDeviceId())) 
-//            gc.setDeviceID(userInfo.getDeviceId());
-//        giftcodeRepo.save(gc);
-//        
-//        addItemTuDoScoin(userInfo.getUserVTC().getScoinId(),
-//                Constant.SCOIN_TUDO_ITEM_TYPE_GIFTCODE, 
-//                resultItem.getItem().getName(), 
-//                gc.getMainCode());
-//        
-//        spinHistory.setValue(0);
-//        spinHistory.setDescription(gc.getMainCode());
-//        spinHistory.setMessage(resultItem.getItem().getWinningTitle() + " " + gc.getMainCode());
-//
-//    }
-
-//    private void awardIsLuckyNumber(LuckySpin luckySpin, UserInfo userInfo,LuckyNumber luckyNumber, LuckySpinItem resultItem, LuckySpinHistory spinHistory) {
-////        addItemTuDoScoin(userInfo.getUserVTC().getScoinId(),
-////                Constant.SCOIN_TUDO_ITEM_TYPE_LUCKY_NUMBER, 
-////                resultItem.getItem().getName(), 
-////                luckyNumber.getLuckyCode());
-//        
-//        spinHistory.setDescription(luckyNumber.getLuckyCode());
-//        spinHistory.setValue(Math.round(resultItem.getItem().getValue()));
-//        spinHistory.setMessage(resultItem.getItem().getWinningTitle() +
-//                " - Mã giải(" + spinHistory.getDescription()+
-//                ") - "+resultItem.getLuckySpin().getId());
-//        
-//        LuckySpinSetting luckySpinSetting = new LuckySpinSetting();
-//        luckySpinSetting = luckySpinSettingRepo.findByLuckySpinAndKeyNameAndStatus(luckySpin, resultItem.getItem().getType(), Constant.STATUS_ACTIVE);
-//        addLuckyNumber(luckyNumber, userInfo);
-//        if(ObjectUtils.isEmpty(luckySpinSetting)) {
-//          luckySpinSetting = new LuckySpinSetting();
-//          luckySpinSetting.setLuckySpin(luckySpin);
-//          luckySpinSetting.setName("Lucky Number result");
-//          luckySpinSetting.setKeyName(resultItem.getItem().getType());
-//          luckySpinSetting.setType("item_result");
-//          luckySpinSetting.setIntValue(1);
-//          luckySpinSetting.setStatus(Constant.STATUS_ACTIVE);
-//        } else {
-//            luckySpinSetting.setIntValue(luckySpinSetting.getIntValue() + 1);
-//        }
-//        
-//        luckySpinSettingRepo.save(luckySpinSetting);
-//        
-//    }
-    
-//    private void awardIsScoinCard(LuckySpin luckySpin, UserInfo userInfo, LuckySpinItem resultItem, LuckySpinHistory spinHistory) {
-//        String valueCard = String.valueOf(resultItem.getItem().getValue());
-//        FundsCardScoin fundsCardScoin = cardScoinService.buyCard(valueCard, 1);
-//       
-//        String scoinCardInfo = "Mã thẻ : " + fundsCardScoin.getMainCodeCard()
-//                    + " - Seri : " + fundsCardScoin.getSeriCard()
-//                    + " - HSD : " + DateUtils.toStringFormDate(fundsCardScoin.getExpirationDateCard(), DateUtils.DATE_DEFAULT_FORMAT);
-//        
-//        addItemTuDoScoin(userInfo.getUserVTC().getScoinId(),
-//                Constant.SCOIN_TUDO_ITEM_TYPE_SCOIN_CARD, resultItem.getItem().getName(), scoinCardInfo);
-//        spinHistory.setValue(Math.round(resultItem.getItem().getValue()));
-//        spinHistory.setDescription(scoinCardInfo);
-//        spinHistory.setMessage(resultItem.getItem().getWinningTitle() + " - Mã giải ( "
-//                + spinHistory.getDescription() + " ) - " + resultItem.getLuckySpin().getId());
-//
-//        fundsCardScoin.setRecipientUser(userInfo.getUserVTC().getScoinId());
-//        
-//        cardScoinService.save(fundsCardScoin);
-//        LuckySpinSetting luckySpinSetting = new LuckySpinSetting();
-//        luckySpinSetting = luckySpinSettingRepo.
-//                findByLuckySpinAndKeyNameAndStatus(luckySpin, resultItem.getItem().getType() + "_" + String.valueOf(resultItem.getItem().getValue()), Constant.STATUS_ACTIVE);
-//        if(ObjectUtils.isEmpty(luckySpinSetting)) {
-//          luckySpinSetting = new LuckySpinSetting();
-//          luckySpinSetting.setLuckySpin(luckySpin);
-//          luckySpinSetting.setName("Scoin Card result");
-//          luckySpinSetting.setKeyName(resultItem.getItem().getType() + "_" + String.valueOf(resultItem.getItem().getValue()));
-//          luckySpinSetting.setType("item_result");
-//          luckySpinSetting.setIntValue(1);
-//          luckySpinSetting.setStatus(Constant.STATUS_ACTIVE);
-//        } else {
-//            luckySpinSetting.setIntValue(luckySpinSetting.getIntValue() + 1);
-//        }
-//       
-//        luckySpinSettingRepo.save(luckySpinSetting);
-//    }
-
     @Override
     public List<LuckySpin> findLuckySpin(Long spinId, String status, Pageable pageable) {
         return repo.findLuckySpin(spinId, status, pageable);
+    }
+
+    @Override
+    public LuckySpin findByType(String type) {
+        Pageable pageable = PageRequest.of(0, 1);
+        List<LuckySpin> luckySpins = repo.findByType(type, pageable);
+        if (CollectionUtils.isEmpty(luckySpins)) {
+            throw new ScoinNotFoundEntityException("Not fount Item of this lucky spin");
+        }
+        
+        return luckySpins.get(0);
     }
     
 }

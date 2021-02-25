@@ -67,13 +67,13 @@ public class LuckySpin {
 
     private int            freeSpinPerDay;
 
-    private int            freeSpinOnStart;
+    private long           freeSpinOnStart;
 
     private String         buyTurnType;
 
     private int            maxSpinPerUser;
 
-    private long           pricePerTurn;
+    private int            pricePerTurn;
 
     private String         status;
 
@@ -85,6 +85,14 @@ public class LuckySpin {
     private UserInfo       createBy;
 
     private boolean        checkDeviceId;
+
+    private int            rankingType;
+
+    @Temporal(TemporalType.TIMESTAMP)
+    private Date           dateStartRanking;
+
+    @Temporal(TemporalType.TIMESTAMP)
+    private Date           dateEndRanking;
 
     @JsonBackReference
     @OneToMany(mappedBy = "luckySpin", fetch = FetchType.EAGER)

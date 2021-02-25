@@ -5,12 +5,16 @@ package com.vtc.event.luckySpin.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.vtc.event.common.AbstractController;
 import com.vtc.event.common.Constant;
+import com.vtc.event.common.dto.request.LuckySpinExchangeItemRequest;
 import com.vtc.event.common.dto.request.LuckySpinGetRequest;
+import com.vtc.event.common.dto.request.LuckySpinOpenItemRequest;
 import com.vtc.event.common.dto.response.LuckySpinDetailResponse;
 import com.vtc.event.common.exception.ScoinFailedToExecuteException;
 import com.vtc.event.common.utils.JsonMapperUtils;
@@ -50,10 +54,16 @@ public class LuckySpinController extends AbstractController<LuckySpinService> {
         return response(toResult(response));
     }
     
-    @GetMapping("/lucky-spin/award-spin")
-    public ResponseEntity<?> luckySpinAward(@RequestParam(value = "lucky_spin_id") Long luckySpinId) {
-        LOGGER.info("===============REQUEST============== \n {}", JsonMapperUtils.toJson(luckySpinId));
-        return response(toResult(service.luckySpinAward(luckySpinId)));
+    @PostMapping("/lucky-spin/exchange-item")
+    public ResponseEntity<?> luckySpinExchangeItem(@RequestBody LuckySpinExchangeItemRequest request) {
+        LOGGER.info("===============REQUEST============== \n {}", JsonMapperUtils.toJson(request));
+        return response(toResult(service.luckySpinExchangeItem(request)));
+    }
+    
+    @PostMapping("/lucky-spin/open-item")
+    public ResponseEntity<?> luckySpinOpenItem(@RequestBody LuckySpinOpenItemRequest request) {
+        LOGGER.info("===============REQUEST============== \n {}", JsonMapperUtils.toJson(request));
+        return response(toResult(service.luckySpinOpenItem(request)));
     }
     
 //    ======================================================================================================

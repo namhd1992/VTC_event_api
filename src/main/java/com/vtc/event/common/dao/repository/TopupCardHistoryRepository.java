@@ -22,33 +22,19 @@ public interface TopupCardHistoryRepository extends JpaRepository<TopupCardHisto
     
     List<TopupCardHistory> findByCreateOnAfter(Date date);
     
-    @Query(value = "SELECT sum(totalPayment) FROM TopupCardHistory")
-    Long sumTotalPayment();
-    
     @Query(value = "SELECT sum(totalPayment) FROM TopupCardHistory WHERE scoinId = ?1")
     Long sumCardValueByScoinId(Long scoinId);
     
-    List<TopupCardHistory> findByLuckyWheelUsedIsFalseAndScoinIdAndPaymentTypeAndPaymentTimeAfterAndPaymentTimeBefore
-                                                                                                    (Long scoinId,
-                                                                                                     String paymentType,
-                                                                                                     Date startDate,
-                                                                                                     Date endDate);
-    
-    List<TopupCardHistory> findByLuckyWheelUsedIsFalseAndScoinIdAndPaymentTimeAfterAndPaymentTimeBefore
-                                                                                            (Long scoinId,
-                                                                                             Date startDate,
-                                                                                             Date endDate);
+    List<TopupCardHistory> findByLuckyWheelUsedIsFalseAndScoinIdAndCreateOnAfterAndCreateOnBefore(Long scoinId,
+                                                                                                  Date startDate,
+                                                                                                  Date endDate);
 
     TopupCardHistory findByBillingTransId(long scoinTransId);
     
-    List<TopupCardHistory> findByScoinIdAndPaymentTypeAndPaymentTimeAfterAndPaymentTimeBefore(Long scoinId,
+    List<TopupCardHistory> findByScoinIdAndPaymentTypeAndCreateOnAfterAndCreateOnBefore(Long scoinId,
                                                                                      String cardType,
                                                                                      Date startDate,
                                                                                      Date endDate);
-    
-    List<TopupCardHistory> findByScoinIdAndAndPaymentTimeAfterAndPaymentTimeBefore(Long scoinId,
-                                                                                  Date startDate,
-                                                                                  Date endDate);
     
     List<TopupCardHistory> findByScoinIdAndPaymentType(Long scoinId, String cardType);
     

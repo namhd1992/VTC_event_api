@@ -30,7 +30,7 @@ import com.vtc.event.common.utils.JsonMapperUtils;
  */
 public abstract class AbstractService<T, ID extends Serializable, R extends JpaRepository<T, ID>> {
     
-    protected Logger             LOGGER = LoggerFactory.getLogger(this.getClass());
+    protected final Logger             LOGGER = LoggerFactory.getLogger(this.getClass());
 
     @Autowired
     protected R                  repo;

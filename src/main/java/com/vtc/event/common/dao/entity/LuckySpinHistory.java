@@ -42,8 +42,6 @@ public class LuckySpinHistory {
 
     private String        userName;
 
-    private String        phoneNumber;
-
     @JsonBackReference
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "luckySpin")

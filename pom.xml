@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.vtc.event</groupId>
-	<artifactId>VTC_event</artifactId>
+	<artifactId>VTC_dual_event</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>VTC_event</name>
 	<description>Demo project for Spring Boot</description>
@@ -127,7 +127,7 @@
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
-			<version>1.18.4</version><!--$NO-MVN-MAN-VER$-->
+			<version>1.18.6</version><!--$NO-MVN-MAN-VER$-->
 		</dependency>
 		
 		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->

@@ -3,23 +3,21 @@
  **************************************************************************/
 package com.vtc.event.common.dao.repository;
 
-import java.util.Optional;
+import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
 
 import com.vtc.event.common.dao.entity.LuckySpin;
-import com.vtc.event.common.dao.entity.UserInfo;
-import com.vtc.event.common.dao.entity.LuckySpinUser;
+import com.vtc.event.common.dao.entity.LuckySpinRadiusPersonalTopup;
 
 /**
  * Author : Dat Le Quang
  * Email: Quangdat0993@gmail.com
- * May 7, 2019
+ * Nov 22, 2019
  */
-@Repository
-public interface LuckySpinUserRepository extends JpaRepository<LuckySpinUser, Long> {
+public interface LuckySpinRadiusPersonalTopupRepository
+        extends JpaRepository<LuckySpinRadiusPersonalTopup, Long> {
     
-    Optional<LuckySpinUser> findByUserInfoAndLuckySpin(UserInfo userInfo, LuckySpin luckySpin);
-  
+    List<LuckySpinRadiusPersonalTopup> findByLuckySpinAndPersonalTopupLandmark(LuckySpin luckySpin, long personalTopupLandmark);
+
 }

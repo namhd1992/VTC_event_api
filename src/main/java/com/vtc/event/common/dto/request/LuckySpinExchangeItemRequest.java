@@ -1,7 +1,7 @@
 /***************************************************************************
  * Product made by Quang Dat *
  **************************************************************************/
-package com.vtc.event.common.dto.response;
+package com.vtc.event.common.dto.request;
 
 import com.fasterxml.jackson.databind.PropertyNamingStrategy;
 import com.fasterxml.jackson.databind.annotation.JsonNaming;
@@ -14,17 +14,19 @@ import lombok.Setter;
 /**
  * Author : Dat Le Quang
  * Email: Quangdat0993@gmail.com
- * Oct 23, 2019
+ * May 13, 2019
  */
 @Setter
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
 @JsonNaming(PropertyNamingStrategy.SnakeCaseStrategy.class)
-public class LuckySpinTurnHistoryResponse {
-    
-    private String itemName;
+public class LuckySpinExchangeItemRequest {
 
-    private String date;
+    private Long luckySpinId;
+
+    private Long luckySpinGiftId;
+
+    private int  turnNumber;
 
 }

@@ -21,12 +21,12 @@ import lombok.Setter;
  * Created by phucnguyen on 23/06/2017.
  */
 @Entity
-@Table(name = "tblLuckySpinUser")
+@Table(name = "tblUserTurnSpin")
 @Setter
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class LuckySpinUser {
+public class UserTurnSpin {
     @Id
     @GeneratedValue
     private Long      id;
@@ -47,13 +47,13 @@ public class LuckySpinUser {
 
     private int       turnsBuy;
 
-    private int       turnsFree;
+    private long      turnsFree;
 
     private long      personalTopup;
     
     private long      balance;
 
-    public LuckySpinUser(final UserInfo userInfo, final LuckySpin luckySpin) {
+    public UserTurnSpin(UserInfo userInfo, LuckySpin luckySpin) {
         this.userInfo = userInfo;
         this.luckySpin = luckySpin;
     }

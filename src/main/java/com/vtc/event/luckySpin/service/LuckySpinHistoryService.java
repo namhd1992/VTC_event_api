@@ -12,6 +12,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.vtc.event.common.dao.entity.LuckySpinHistory;
 import com.vtc.event.common.dto.request.AbstractResquest;
+import com.vtc.event.common.dto.response.GetLuckySpinHistoryResponse;
 import com.vtc.event.common.dto.response.GiftQuantityExistResponse;
 import com.vtc.event.common.dto.response.LuckySpinTurnBuyHistoryResponse;
 import com.vtc.event.common.dto.response.LuckySpinTurnHistoryResponse;
@@ -26,14 +27,14 @@ import com.vtc.event.common.service.AbstractInterfaceService;
  */
 public interface LuckySpinHistoryService extends AbstractInterfaceService<LuckySpinHistory, Long> {
     
-    List<SpinHistoryGetLuckyResponse> getSpinHistory(Long luckySpinId, String typeItem, AbstractResquest request)
+    GetLuckySpinHistoryResponse getSpinGiftHistory(Long luckySpinId, AbstractResquest request)
             throws ScoinBusinessException;
     
     List<SpinHistoryGetLuckyResponse> getSpinHistoryByType(Long luckySpinId, String typeGift, AbstractResquest request);
     
-    List<SpinHistoryGetLuckyResponse> getSpinTudo(Long luckySpinId, AbstractResquest request);
+    List<SpinHistoryGetLuckyResponse> getSpinTudo(Long luckySpinId, List<String> typeGifts, AbstractResquest request);
     
-    List<LuckySpinTurnHistoryResponse> getTurnSpinHistory(Long luckySpinId, AbstractResquest request);
+    List<LuckySpinTurnHistoryResponse> getOpenWordSpinHistory(Long luckySpinId, AbstractResquest request);
     
     List<LuckySpinTurnBuyHistoryResponse> getSpinTurnBuyHistory(Long luckySpinId, AbstractResquest request);
     

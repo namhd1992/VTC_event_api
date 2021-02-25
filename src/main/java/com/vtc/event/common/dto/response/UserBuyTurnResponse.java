@@ -17,12 +17,12 @@ import lombok.Setter;
 @NoArgsConstructor
 public class UserBuyTurnResponse {
     
-    private long totalTopupOfUser; // total scoin by topup from wallet to game
+    private long turnCanBuy;// turn can buy in day
 
-    private long accumulationPoint; // turn by top by topup from wallet to game
-
-    private long cardBalanceRounding; // card exist to buy 1 turn
+    private long scoinTopupWallet; // total scoin by topup from wallet to game
     
+    private long scoinTopupCardToGame; // total scoin by topup from wallet to game
+
     private long scoinBalanceRounding; // scoin exist to buy 1 turn
 
 }

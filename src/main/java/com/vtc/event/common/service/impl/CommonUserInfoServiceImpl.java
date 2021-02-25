@@ -56,8 +56,8 @@ public class CommonUserInfoServiceImpl extends AbstractService<UserInfo, Long, U
     @Autowired
     PaymentService paymentService;
     
-    private String    SCOIN_SIGNIN_GET_PROFILE_URL;
-    private String    SCOIN_SIGNIN_KEY_DECRYPT_TRIPLE_DES;
+    private transient String    SCOIN_SIGNIN_GET_PROFILE_URL;
+    private transient String    SCOIN_SIGNIN_KEY_DECRYPT_TRIPLE_DES;
 
     public CommonUserInfoServiceImpl(Environment env) {
         SCOIN_SIGNIN_GET_PROFILE_URL = env

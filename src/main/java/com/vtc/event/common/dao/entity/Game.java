@@ -25,7 +25,7 @@ import lombok.Setter;
  * Created by phucnguyen on 05/12/2017.
  */
 @Entity
-@Table(name = "game")
+@Table(name = "tblSplayGame")
 @Setter
 @Getter
 @NoArgsConstructor
@@ -33,63 +33,55 @@ public class Game {
 
     @Id
     @GeneratedValue
-    private Long          id;
+    private Long           id;
 
     @CreationTimestamp
-    private Date          createOn;
+    private Date           createOn;
 
     @UpdateTimestamp
-    private Date          updateOn;
+    private Date           updateOn;
 
-    private String        name;
+    private String         name;
 
-    private String        keyName;
+    private String         keyName;
 
-    private String        defaultImage;
+    private String         defaultImage;
 
-    private String        bigImage;
+    private String         bigImage;
 
-    private String        fanpageFB;
+    private String         website;
 
-    private String        groupFB;
+    private String         fanpageFB;
 
-    private String        publisher;
+    private String         publisher;
 
-    private String        status;
+    private String         status;
 
-    private String        description;
+    private String         description;
 
-    private String        gameType;
-    
-    private String        webgameUrl;
+    private Long           scoinGameId;
 
-    private Long          scoinGameId;
+    private String         subTitle;
 
-    private String        subTitle;
+    private long           downloadTurns;
 
-    private long          downloadTurns;
+    private String         urlDownloadAndroid;
 
-    private String        urlDownloadAndroid;
+    private String         urlDownloadIos;
 
-    private String        urlDownloadIos;
+    private String         screenShot;
 
-    private String        urlDownloadPC;
+    private float          pointReview;
 
-    private String        screenShot;
+    private int            position;
 
-    private float         pointReview;
+    private int            createBy;
 
-    private int           position;
+    private long           priorityTag;
 
-    private int           createBy;
+    private String         youtubeChannelId;
 
-    private long          priorityTag;
-
-    private String        youtubeChannelId;
-
-    private String        youtubeDefaultSearch;
-
-    private boolean       isGameRanking;
+    private String         youtubeDefaultSearch;
 
     @ManyToMany(fetch = FetchType.LAZY,
             cascade = {
@@ -102,12 +94,12 @@ public class Game {
     @Transient
     private long           numberGiftcodeOfGame;
 
-    public Game(final String name, final String keyName, final String defaultImage, final String groupFB,
+    public Game(final String name, final String keyName, final String defaultImage, final String website,
                   final String fanpageFB, final String publisher, final String status, final Date createOn) {
         this.name = name;
         this.keyName = keyName;
         this.defaultImage = defaultImage;
-        this.groupFB = groupFB;
+        this.website = website;
         this.fanpageFB = fanpageFB;
         this.publisher = publisher;
         this.status = status;

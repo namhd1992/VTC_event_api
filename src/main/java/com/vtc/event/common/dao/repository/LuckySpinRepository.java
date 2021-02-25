@@ -23,7 +23,7 @@ import com.vtc.event.common.dao.entity.LuckySpin;
 public interface LuckySpinRepository extends JpaRepository<LuckySpin, Long> {
     
     @Query(value = "SELECT * FROM tblLuckySpin where (id = :spinId or :spinId is null)"
-//            + " AND NOW() between startDate and endDate"
+            + " AND NOW() between startDate and endDate"
             + " AND status = :status"
             + " ORDER BY createOn desc", nativeQuery = true)
     List<LuckySpin> findLuckySpin(@Param("spinId") Long spinId,

@@ -29,25 +29,25 @@ public class UserInfoController extends AbstractController<UserInfoService>{
         return response(toResult(service.signin(request)));
     }
     
-//    @GetMapping("/name")
-//    public ResponseEntity<?> getUserInfoByName(@RequestParam("user_name") String userName) {
-//        LOGGER.info("===============REQUEST============== \n {}",
-//                JsonMapperUtils.toJson(userName));
-//        return response(toResult(service.getUserInfoByUserName(userName)));
-//    }
+    @GetMapping("/name")
+    public ResponseEntity<?> getUserInfoByName(@RequestParam("user_name") String userName) {
+        LOGGER.info("===============REQUEST============== \n {}",
+                JsonMapperUtils.toJson(userName));
+        return response(toResult(service.getUserInfoByUserName(userName)));
+    }
     
     @GetMapping("/profile")
     public ResponseEntity<?> getMyProfile() {
         return response(toResult(service.getMyProfile()));
     }
     
-//    @GetMapping("/exchange-scoin")
-//    public ResponseEntity<?> exchangeScoin(@RequestParam("type_exchange") String typeExchange,
-//                                           @RequestParam("amount") int amount) {
-//      LOGGER.info("===============REQUEST============== \n {}",
-//          JsonMapperUtils.toJson(amount));
-//        return response(toResult(service.exchangeScoin(typeExchange, amount)));
-//    }
+    @GetMapping("/exchange-scoin")
+    public ResponseEntity<?> exchangeScoin(@RequestParam("type_exchange") String typeExchange,
+                                           @RequestParam("amount") int amount) {
+      LOGGER.info("===============REQUEST============== \n {}",
+          JsonMapperUtils.toJson(amount));
+        return response(toResult(service.exchangeScoin(typeExchange, amount)));
+    }
     
 //    @GetMapping("/scoin/export-scoin-card")
 //    public ResponseEntity<?> exportScoinCard(@RequestParam("value_card") long valueCard,

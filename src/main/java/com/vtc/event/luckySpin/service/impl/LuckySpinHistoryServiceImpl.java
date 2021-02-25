@@ -8,6 +8,8 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
@@ -37,6 +39,7 @@ import com.vtc.event.common.dao.repository.LuckySpinBuyTurnHistoryRepository;
 import com.vtc.event.common.dao.repository.LuckySpinHistoryFakeRepository;
 import com.vtc.event.common.dao.repository.LuckySpinHistoryRepository;
 import com.vtc.event.common.dto.request.AbstractResquest;
+import com.vtc.event.common.dto.response.GetLuckySpinHistoryResponse;
 import com.vtc.event.common.dto.response.GiftQuantityExistResponse;
 import com.vtc.event.common.dto.response.LuckySpinTurnBuyHistoryResponse;
 import com.vtc.event.common.dto.response.LuckySpinTurnHistoryResponse;
@@ -76,81 +79,107 @@ public class LuckySpinHistoryServiceImpl
     private int TOTAL_SPIN_HISTORY_ALL;
 
     @Override
-    public List<SpinHistoryGetLuckyResponse> getSpinHistory(Long luckySpinId, String typeItem, AbstractResquest request) throws ScoinBusinessException {
-        if (ObjectUtils.isEmpty(luckySpinId)) throw new ScoinInvalidDataRequestException();
-        
-        Pageable pageable = PageRequest.of(0, 1);
-        List<LuckySpin> luckySpins = luckySpinService.findLuckySpin(luckySpinId, Constant.STATUS_ACTIVE,pageable);
-        if (CollectionUtils.isEmpty(luckySpins)) {
-            throw new ScoinNotFoundEntityException("Not fount Item of this lucky spin");
+    public GetLuckySpinHistoryResponse getSpinGiftHistory(Long luckySpinId, AbstractResquest request) throws ScoinBusinessException {
+        if (ObjectUtils.isEmpty(luckySpinId)) {
+            throw new ScoinInvalidDataRequestException();
         }
         
-        if(CollectionUtils.isEmpty(luckySpins)) throw new ScoinNotFoundEntityException("Not found LuckySpin");
-        LuckySpin luckySpin = luckySpins.get(0);
-        
-        List<SpinHistoryGetLuckyResponse> responses = new ArrayList<SpinHistoryGetLuckyResponse>();
+        LuckySpin luckySpin = luckySpinService.findByType(Constant.LUCKYSPIN_TYPE_GHEP_CHU);
+
+        GetLuckySpinHistoryResponse response = new GetLuckySpinHistoryResponse();
+        List<SpinHistoryGetLuckyResponse> responseScoins = new ArrayList<SpinHistoryGetLuckyResponse>();
+        List<SpinHistoryGetLuckyResponse> responseGolds = new ArrayList<SpinHistoryGetLuckyResponse>();
         List<LuckySpinHistory> spinHistories = new ArrayList<LuckySpinHistory>();
-        List<String> spinType = new ArrayList<String>();
-        if (luckySpin.getBuyTurnType().equals(Constant.LUCKYSPIN_TOPUP_TYPE_ALL)) {
-            spinType.add(Constant.LUCKYSPIN_TOPUP_TYPE_SCOIN);
-            spinType.add(Constant.LUCKYSPIN_TOPUP_TYPE_CARD);
-        } else {
-            spinType.add(luckySpin.getBuyTurnType());
-        }
         
-        spinHistories = repo.
-                getByLuckySpinAndUserInfoAndTypeGift(luckySpin, null, null, spinType,null);
+        List<String> spinTypeGolds = new ArrayList<String>();
+        spinTypeGolds.add(Constant.LUCKYSPIN_GIFT_GOLD);
+        spinHistories = repo.getByLuckySpinAndUserInfoAndTypeGift(luckySpin, 
+                null, //user
+                null, //limited date
+                spinTypeGolds, // type of gift
+                Constant.LUCKYSPIN_TURN_TYPE_GIFT,
+                null);
         
         if (!CollectionUtils.isEmpty(spinHistories)) {
-            responses = toResponse(spinHistories, null);
+            responseGolds = toResponse(spinHistories);
+        }
+        
+        List<LuckySpinHistoryFake> historyFakes = spinHistoryFakeRepo.
+        		findByLuckySpinId(luckySpinId);
+        if(!CollectionUtils.isEmpty(historyFakes)) {
+        	for (LuckySpinHistoryFake historyFake : historyFakes) {
+        		if(historyFake.getItemType().equals(Constant.LUCKYSPIN_GIFT_GOLD)) {
+        			SpinHistoryGetLuckyResponse responseGoldFace = new SpinHistoryGetLuckyResponse();
+        			responseGoldFace.setDate(DateUtils.toStringFormDate(historyFake.getCreateOn(), "HH:mm:ss dd-MM-yyyy"));
+        			responseGoldFace.setItemName(historyFake.getItemName());
+        			responseGoldFace.setUserName(StringUtils.hiddenCharString(historyFake.getUserName(), 3));
+        			
+        			responseGolds.add(responseGoldFace);
+        		}
+        	};
+        }
+        
+        response.setGolds(responseGolds);
+        
+        List<String> spinTypeScoins = new ArrayList<String>();
+        spinTypeScoins.add(Constant.LUCKYSPIN_GIFT_SCOIN);
+        spinHistories = repo.getByLuckySpinAndUserInfoAndTypeGift(luckySpin, 
+                null, //user
+                null, //limited date
+                spinTypeScoins, // type of gift
+                Constant.LUCKYSPIN_TURN_TYPE_GIFT,
+                null);
+
+        if(!CollectionUtils.isEmpty(historyFakes)) {
+        	for (LuckySpinHistoryFake historyFake : historyFakes) {
+        		if(historyFake.getItemType().equals(Constant.LUCKYSPIN_GIFT_SCOIN)) {
+        			SpinHistoryGetLuckyResponse responseScoinFace = new SpinHistoryGetLuckyResponse();
+        			responseScoinFace.setDate(DateUtils.toStringFormDate(historyFake.getCreateOn(), "HH:mm:ss dd-MM-yyyy"));
+        			responseScoinFace.setItemName(historyFake.getItemName());
+        			responseScoinFace.setUserName(StringUtils.hiddenCharString(historyFake.getUserName(), 3));
+        			
+        			responseScoins.add(responseScoinFace);
+        		}
+        	};
+        }
+        
+        if (!CollectionUtils.isEmpty(spinHistories)) {
+            responseScoins = toResponse(spinHistories);
         }
         
         List<LuckySpinHistoryFake> spinHistoryFakes = spinHistoryFakeRepo.findByLuckySpinId(luckySpin.getId());
         if (!CollectionUtils.isEmpty(spinHistoryFakes)) {
             for (LuckySpinHistoryFake spinHistoryFake : spinHistoryFakes) {
-                SpinHistoryGetLuckyResponse response = new SpinHistoryGetLuckyResponse();
-                response.setDate(DateUtils.toStringFormDate(spinHistoryFake.getCreateOn(), "HH:mm:ss dd-MM-yyyy"));
-                response.setItemName(spinHistoryFake.getItemName());
-                response.setUserName(StringUtils.hiddenCharString(spinHistoryFake.getUserName(), 3));
-                if(!StringUtils.isEmpty(spinHistoryFake.getPhone()))
-                    response.setPhone(StringUtils.hiddenCharString(spinHistoryFake.getPhone(), 3));
-                if (spinHistoryFake.isHighlights()) response.setDescription(Constant.STATUS_HIGHLIGHTS);
-                responses.add(response);
+                SpinHistoryGetLuckyResponse responseScoin = new SpinHistoryGetLuckyResponse();
+                responseScoin.setDate(DateUtils.toStringFormDate(spinHistoryFake.getCreateOn(), "HH:mm:ss dd-MM-yyyy"));
+                responseScoin.setItemName(spinHistoryFake.getItemName());
+                responseScoin.setUserName(StringUtils.hiddenCharString(spinHistoryFake.getUserName(), 3));
+                
+                responseScoins.add(responseScoin);
             }
         }
-        TOTAL_SPIN_HISTORY_ALL = responses.size();
+        TOTAL_SPIN_HISTORY_ALL = responseScoins.size();
         
-        responses.sort((o1, o2) -> Long
-                .valueOf(DateUtils.toDateFromStr(o2.getDate(), "HH:mm:ss dd-MM-yyyy").getTime())
-                .compareTo(Long.valueOf(
-                        DateUtils.toDateFromStr(o1.getDate(), "HH:mm:ss dd-MM-yyyy").getTime())));
+        //sort response follow date
+        Collections.sort(responseScoins, new Comparator<SpinHistoryGetLuckyResponse>() {
+            @Override
+            public int compare(SpinHistoryGetLuckyResponse o1, SpinHistoryGetLuckyResponse o2) {
+                Long o1Date = DateUtils.toDateFromStr(o1.getDate(), "HH:mm:ss dd-MM-yyyy").getTime();
+                Long o2Date = DateUtils.toDateFromStr(o2.getDate(), "HH:mm:ss dd-MM-yyyy").getTime();
+                return o2Date.compareTo(o1Date);
+            }
+        });
         
         // limit and offset
         if (request.getLimit() <= 0
-                || request.getOffset() > Math.round(responses.size()/request.getLimit())) {
-            return new ArrayList<SpinHistoryGetLuckyResponse>();
+                || request.getOffset() > Math.round(responseScoins.size()/request.getLimit())) {
+            return new GetLuckySpinHistoryResponse();
         }
         
-        // Item highlights 
-        if (!StringUtils.isEmpty(typeItem) 
-                && typeItem.equals(Constant.STATUS_HIGHLIGHTS)) {
-            List<SpinHistoryGetLuckyResponse> highlights = new ArrayList<SpinHistoryGetLuckyResponse>();
-            responses.forEach(honor -> {
-                if (!StringUtils.isEmpty(honor.getDescription())
-                        && honor.getDescription().equals(Constant.STATUS_HIGHLIGHTS)) {
-                    highlights.add(honor);
-                }
-            });
-            
-            responses = highlights;
-            TOTAL_SPIN_HISTORY_ALL = responses.size();
-        }
-        
-        if (!CollectionUtils.isEmpty(responses))
-            responses = (responses.stream().skip(request.getOffset() * request.getLimit())
-                    .limit(request.getLimit()).collect(Collectors.toList()));
-        
-        return responses;
+        responseScoins = responseScoins.stream().skip(request.getOffset() * request.getLimit())
+                .limit(request.getLimit()).collect(Collectors.toList());
+        response.setScoin(responseScoins);
+        return response;
     }
     
     @Override
@@ -176,15 +205,18 @@ public class LuckySpinHistoryServiceImpl
         List<LuckySpinHistory> spinHistories = new ArrayList<LuckySpinHistory>();
         List<String> spinTypes = new ArrayList<String>();
         spinTypes.add(typeGift);
-        spinHistories = repo.getByLuckySpinAndUserInfoAndTypeGift(luckySpins.get(0), userInfo, null, spinTypes, pageable);
+        spinHistories = repo.getByLuckySpinAndUserInfoAndTypeGift(luckySpins.get(0), 
+                userInfo, 
+                null, spinTypes, Constant.LUCKYSPIN_TURN_TYPE_GIFT, pageable);
         if (CollectionUtils.isEmpty(spinHistories))
             return new ArrayList<SpinHistoryGetLuckyResponse>();
         
-        return toResponse(spinHistories, typeGift);
+        return toResponse(spinHistories);
     }
     
     @Override
-    public List<SpinHistoryGetLuckyResponse> getSpinTudo(Long luckySpinId, AbstractResquest request) throws ScoinBusinessException {
+    public List<SpinHistoryGetLuckyResponse> getSpinTudo(Long luckySpinId, List<String> typeGifts,
+                                                         AbstractResquest request) throws ScoinBusinessException {
         UserInfo userInfo = verifyAccessTokenUser();
         
 //        if (ObjectUtils.isEmpty(luckySpinId)) throw new ScoinInvalidDataRequestException();
@@ -199,29 +231,26 @@ public class LuckySpinHistoryServiceImpl
         if(CollectionUtils.isEmpty(luckySpins)) throw new ScoinNotFoundEntityException("Not found LuckySpin");
         
         Pageable pageable = PageRequest.of(request.getOffset(), request.getLimit());
-        List<String> spinType = new ArrayList<String>();
-        spinType.add(Constant.LUCKYSPIN_GIFT_SCOIN_CARD);
-        spinType.add(Constant.LUCKYSPIN_GIFT_SCOIN);
-        List<LuckySpinHistory> spinHistories = repo.getByLuckySpinAndUserInfoAndTypeGift(luckySpins.get(0), 
+        List<LuckySpinHistory> spinHistories = repo.getByLuckySpinAndUserInfoAndTypeGift(
+                                                      luckySpins.get(0), 
                                                       userInfo, 
-                                                      null, 
-                                                      spinType, 
+                                                      null,
+                                                      typeGifts,
+                                                      Constant.LUCKYSPIN_TURN_TYPE_GIFT,
                                                       pageable);
         List<LuckySpinHistory> spinHistoriesResponse = new ArrayList<LuckySpinHistory>();
         spinHistories.forEach(spinHistorie -> {
-            if (spinHistorie.getItem().getType().equals(Constant.LUCKYSPIN_GIFT_SCOIN_CARD)) {
-                spinHistoriesResponse.add(spinHistorie);
-            }
+            spinHistoriesResponse.add(spinHistorie);
         });
         
         if (CollectionUtils.isEmpty(spinHistories))
             return new ArrayList<SpinHistoryGetLuckyResponse>();
         
-        return toResponse(spinHistories, Constant.LUCKYSPIN_GIFT_SCOIN_CARD);
+        return toResponse(spinHistories);
     }
     
     @Override
-    public List<LuckySpinTurnHistoryResponse> getTurnSpinHistory(Long luckySpinId,
+    public List<LuckySpinTurnHistoryResponse> getOpenWordSpinHistory(Long luckySpinId,
                                                                  AbstractResquest request) {
         UserInfo userInfo = verifyAccessTokenUser();
         
@@ -235,14 +264,15 @@ public class LuckySpinHistoryServiceImpl
         
         Pageable pageable = PageRequest.of(request.getOffset(), request.getLimit());
         List<LuckySpinHistory> spinHistories = repo.
-                findByUserInfoAndLuckySpinOrderByCreateOnDesc(userInfo, luckySpins.get(0), pageable);
+                findByUserInfoAndLuckySpinAndDescriptionOrderByCreateOnDesc(userInfo, 
+                                                                luckySpins.get(0),
+                                                                Constant.LUCKYSPIN_GIFT_WORD,
+                                                                pageable);
         
         List<LuckySpinTurnHistoryResponse> responses = new ArrayList<LuckySpinTurnHistoryResponse>();
-        long stt = (request.getOffset() *request.getLimit()) + 1;
         for (LuckySpinHistory spinHistory : spinHistories) {
             String date = DateUtils.toStringFormDate(spinHistory.getCreateOn(), "HH:mm:ss dd-MM-yyyy");
-            responses.add(new LuckySpinTurnHistoryResponse(stt, spinHistory.getItem().getName(), date));
-            stt +=1;
+            responses.add(new LuckySpinTurnHistoryResponse(spinHistory.getItem().getName(), date));
         }
         return responses;
     }
@@ -262,14 +292,14 @@ public class LuckySpinHistoryServiceImpl
         if (ObjectUtils.isEmpty(turnBuyHistories)) return new ArrayList<LuckySpinTurnBuyHistoryResponse>();
         
         turnBuyHistories.forEach(turnBuyHistory -> {
-//            String sourceBuyturn = "";
-//            if (turnBuyHistory.getBuyType().equals(Constant.LUCKYSPIN_TOPUP_TYPE_CARD)) {
-//                sourceBuyturn = Constant.LUCKYSPIN_TOPUP_TYPE_CARD_DES;
-//            } else if (turnBuyHistory.getBuyType().equals(Constant.LUCKYSPIN_TOPUP_TYPE_SCOIN)) {
-//                sourceBuyturn = Constant.LUCKYSPIN_TOPUP_TYPE_SCOIN_DES;
-//            }
+            String sourceBuyturn = "";
+            if (turnBuyHistory.getBuyType().equals(Constant.LUCKYSPIN_BUY_TURN_TYPE_TOPUP_GAME)) {
+                sourceBuyturn = "Nạp Game";
+            } else if (turnBuyHistory.getBuyType().equals(Constant.LUCKYSPIN_BUY_TURN_TYPE_CROSS_CARD)) {
+                sourceBuyturn = "Mua";
+            }
             
-            responses.add(new LuckySpinTurnBuyHistoryResponse("Nhận Chìa Khóa", 
+            responses.add(new LuckySpinTurnBuyHistoryResponse(sourceBuyturn, 
                           turnBuyHistory.getSpinTurn(), 
                           DateUtils.toStringFormDate(turnBuyHistory.getCreateOn(), "HH:mm:ss dd-MM-yyyy")));
         });
@@ -288,9 +318,9 @@ public class LuckySpinHistoryServiceImpl
         if(!ObjectUtils.isEmpty(day)) 
             day = DateUtils.toDateChangeFormatFromDate(day, DateUtils.DATE_MYSQL_FORMAT);
         if (!ObjectUtils.isEmpty(value)) 
-            return repo.countByLuckySpinAndUserInfoAndTypeGift(luckySpins.get(0),null, null, typeGifts, value, day);
+            return repo.countBySpinEventAndUserInfoAndTypeGift(luckySpins.get(0),null, null, typeGifts, value, day);
         
-        return repo.countByLuckySpinAndUserInfoAndTypeGift(luckySpins.get(0),null, null, typeGifts, null, day);
+        return repo.countBySpinEventAndUserInfoAndTypeGift(luckySpins.get(0),null, null, typeGifts, null, day);
     }
     
     @Override
@@ -302,7 +332,7 @@ public class LuckySpinHistoryServiceImpl
         
         List<LuckySpin> luckySpins = luckySpinService.getAll();
         if(CollectionUtils.isEmpty(luckySpins)) throw new ScoinNotFoundEntityException("Not found LuckySpin");
-        return repo.countByLuckySpinAndUserInfoAndTypeGift(luckySpins.get(0), userInfo, null, typeGifts, null, null);
+        return repo.countBySpinEventAndUserInfoAndTypeGift(luckySpins.get(0), userInfo, null, typeGifts, null, null);
     }
   
     @Override
@@ -315,7 +345,7 @@ public class LuckySpinHistoryServiceImpl
         List<LuckySpin> luckySpins = luckySpinService.getAll();
         if(CollectionUtils.isEmpty(luckySpins)) throw new ScoinNotFoundEntityException("Not found LuckySpin");
         
-        return repo.countByUserInfoAndLuckySpin(userInfo, luckySpins.get(0));
+        return repo.countByUserInfoAndLuckySpinAndDescriptionOrderByCreateOnDesc(userInfo, luckySpins.get(0), Constant.LUCKYSPIN_GIFT_WORD);
     }
     
     @Override
@@ -328,7 +358,7 @@ public class LuckySpinHistoryServiceImpl
         return luckySpinBuyTurnHistoryRepo.countByUserInfo(userInfo);
     }
     
-    private List<SpinHistoryGetLuckyResponse> toResponse(List<LuckySpinHistory> spinHistories, String typeGift){
+    private List<SpinHistoryGetLuckyResponse> toResponse(List<LuckySpinHistory> spinHistories){
         List<SpinHistoryGetLuckyResponse> historyResponses = new ArrayList<SpinHistoryGetLuckyResponse>();
         for (LuckySpinHistory spinHistory : spinHistories) {
 //            spinHistory.setUserInfo(null);
@@ -338,25 +368,19 @@ public class LuckySpinHistoryServiceImpl
                 spinHistory.setUserName(spinHistory.getUserInfo().getUserVTC().getUsername());
                 spinHistoryRepo.save(spinHistory);
             }
-            historyResponse.setUserName(StringUtils.hiddenCharString(spinHistory.getUserName(), 3));
             
-//            if (StringUtils.isEmpty(spinHistory.getPhoneNumber())) {
-//                if (!StringUtils.isEmpty(spinHistory.getUserInfo().getPhoneNumber())) {
-//                    spinHistory.setPhoneNumber(StringUtils.hiddenCharString(spinHistory.getUserInfo().getPhoneNumber(), 3));
-//                    LOGGER.info("spinHistory.getUserInfo().GET ID ===================== , {}", spinHistory.getUserInfo().getId() );
-//                    spinHistoryRepo.save(spinHistory);
-//                }
-//            }
-            if (!StringUtils.isEmpty(spinHistory.getPhoneNumber()))
-                historyResponse.setPhone(spinHistory.getPhoneNumber());
-
-            historyResponse.setItemName(spinHistory.getItem().getName());
-            if (spinHistory.getItem().isHighLights()) historyResponse.setDescription(Constant.STATUS_HIGHLIGHTS);
-            
-            historyResponses.add(historyResponse);
-            if (StringUtils.isEmpty(typeGift)) {
-                continue;
+            if (spinHistory.getUserName().equals("- Chưa có -")) {
+                historyResponse.setUserName(spinHistory.getUserName());
+            } else {
+                historyResponse.setUserName(StringUtils.hiddenCharString(spinHistory.getUserName(), 3));
             }
+            
+            if (!ObjectUtils.isEmpty(spinHistory.getItem())) {
+                historyResponse.setItemName(spinHistory.getItem().getName());
+            } else {
+                historyResponse.setItemName(spinHistory.getGift().getName());
+            }
+            historyResponses.add(historyResponse);
         }
         return historyResponses;
     }
@@ -369,25 +393,30 @@ public class LuckySpinHistoryServiceImpl
         LuckySpin luckySpin = luckySpinService.get(luckySpinId).orElseThrow(
                 () -> new ScoinNotFoundEntityException("Not fount Lucky Spin by this id"));
         
-        List<LuckySpinItemOfLuckySpin> itemOfSpins = luckySpin.getSpinItems();
-        if (CollectionUtils.isEmpty(itemOfSpins)) {
+        List<LuckySpinItemOfLuckySpin> spinItems = luckySpin.getSpinItems();
+        if (CollectionUtils.isEmpty(spinItems)) {
             return new ArrayList<GiftQuantityExistResponse>();
         }
         
         List<GiftQuantityExistResponse> responses = new ArrayList<GiftQuantityExistResponse>();
         
-      //sort response follow value
-        itemOfSpins = itemOfSpins.stream().sorted(
-                (o1, o2) -> ((Long) o2.getItem().getValue()).compareTo(o1.getItem().getValue()))
-                .collect(Collectors.toList());
+      //sort response follow date
+        Collections.sort(spinItems, new Comparator<LuckySpinItemOfLuckySpin>() {
+            @Override
+            public int compare(LuckySpinItemOfLuckySpin o1, LuckySpinItemOfLuckySpin o2) {
+                Long o1Date = o1.getItem().getValue();
+                Long o2Date = o2.getItem().getValue();
+                return o2Date.compareTo(o1Date);
+            }
+        });
         
-        itemOfSpins.forEach(spinItem -> {
+        spinItems.forEach(spinItem -> {
             String itemType = spinItem.getItem().getType();
             if (!itemType.equals(Constant.LUCKYSPIN_GIFT_ACTION)) {
                 long itemValue = spinItem.getItem().getValue();
-//                int giftReceivedRael = repo.countByItemType(luckySpin, itemType, itemValue);
+                int giftReceivedRael = repo.countByItemType(luckySpin, itemType, itemValue);
                 int giftReceivedFake = spinHistoryFakeRepo.countByLuckySpinIdAndItemTypeAndItemValue(luckySpin.getId(), itemType, itemValue);
-                int giftExist = spinItem.getTotalQuantity() - giftReceivedFake;
+                int giftExist = spinItem.getTotalQuantity() - (giftReceivedRael + giftReceivedFake);
                 if (giftExist < 0) giftExist = 0;
                 
                 responses.add(new GiftQuantityExistResponse(spinItem.getItem().getName(), giftExist, itemType));

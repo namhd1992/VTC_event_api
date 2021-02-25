@@ -7,8 +7,8 @@ import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.vtc.event.common.dao.entity.LuckySpin;
+import com.vtc.event.common.dao.entity.LuckySpinItemOfUser;
 import com.vtc.event.common.dao.entity.LuckySpinSetting;
-import com.vtc.event.common.dao.entity.LuckySpinItem;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -24,13 +24,17 @@ import lombok.Setter;
 @NoArgsConstructor
 public class LuckySpinDetailResponse {
     
-    @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-    private List<LuckySpinItem>               itemOfSpin;
+    @JsonIgnoreProperties({ "hibernateLazyInitializer", "handler" })
+//    private List<LuckySpinItemOfLuckySpin> luckySpinItemOfLuckySpin;
 
-    private LuckySpin                         luckySpin;
+    private LuckySpin                      luckySpin;
 
-    private List<LuckySpinSetting>            settings;
+    private List<LuckySpinSetting>         settings;
 
-    private UserTurnSpinDetailResponse        userTurnSpin;
-    
+    private List<LuckySpinGiftResponse>    luckySpinGifts;
+
+    private List<LuckySpinItemOfUser>      itemOfUser;
+
+    private UserTurnSpinDetailResponse     userTurnSpin;
+
 }

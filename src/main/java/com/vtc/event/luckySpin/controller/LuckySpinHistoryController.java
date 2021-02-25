@@ -32,18 +32,16 @@ public class LuckySpinHistoryController extends AbstractController<LuckySpinHist
     
     @GetMapping("/anonymous/lucky-spin-history/all")
     public ResponseEntity<?> getSpinHistoryAno(@RequestParam(value = "lucky_spin_id") Long luckySpinId,
-                                               String type_item,
                                             AbstractResquest request) {
         LOGGER.info("===============REQUEST============== \n {}", JsonMapperUtils.toJson(luckySpinId));
-        return response(toResult(service.getSpinHistory(luckySpinId, type_item, request), service.countSpinHistory(null, null, null, null)));
+        return response(toResult(service.getSpinGiftHistory(luckySpinId, request), service.countSpinHistory(null, null, null, null)));
     }
     
     @GetMapping("/lucky-spin-history/all")
     public ResponseEntity<?> getSpinHistory(@RequestParam(value = "lucky_spin_id") Long luckySpinId,
-                                            String type_item,
                                             AbstractResquest request) {
         LOGGER.info("===============REQUEST============== \n {}", JsonMapperUtils.toJson(luckySpinId));
-        return response(toResult(service.getSpinHistory(luckySpinId, type_item, request), service.countSpinHistory(null, null, null, null)));
+        return response(toResult(service.getSpinGiftHistory(luckySpinId, request), service.countSpinHistory(null, null, null, null)));
     }
     
     @GetMapping("/lucky-spin-history")
@@ -62,17 +60,17 @@ public class LuckySpinHistoryController extends AbstractController<LuckySpinHist
                                          AbstractResquest request) {
         LOGGER.info("===============REQUEST============== \n {}", JsonMapperUtils.toJson(luckySpinId));
         List<String> typeGifts = new ArrayList<String>();
-        typeGifts.add(Constant.LUCKYSPIN_GIFT_SCOIN_CARD);
         typeGifts.add(Constant.LUCKYSPIN_GIFT_SCOIN);
-        return response(toResult(service.getSpinTudo(luckySpinId, request),
+        typeGifts.add(Constant.LUCKYSPIN_GIFT_GOLD);
+        return response(toResult(service.getSpinTudo(luckySpinId,typeGifts, request),
                 service.countSpinHistoryHasUser(luckySpinId, typeGifts)));
     }
     
-    @GetMapping("/lucky-spin-history/turn")
+    @GetMapping("/lucky-spin-history/open")
     public ResponseEntity<?> getSpinTurn(@RequestParam(value = "lucky_spin_id") Long luckySpinId,
                                          AbstractResquest request) {
         LOGGER.info("===============REQUEST============== \n {}", JsonMapperUtils.toJson(luckySpinId));
-        return response(toResult(service.getTurnSpinHistory(luckySpinId, request),
+        return response(toResult(service.getOpenWordSpinHistory(luckySpinId, request),
                 service.countTurnSpinHistory(luckySpinId)));
     }
     

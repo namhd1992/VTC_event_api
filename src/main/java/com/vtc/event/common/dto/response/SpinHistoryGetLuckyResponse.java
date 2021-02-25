@@ -21,12 +21,8 @@ public class SpinHistoryGetLuckyResponse {
 
     private String date;
 
-    private String UserName;
+    private String userName;
 
     private String itemName;
-
-    private String phone;
-
-    private String description;
 
 }

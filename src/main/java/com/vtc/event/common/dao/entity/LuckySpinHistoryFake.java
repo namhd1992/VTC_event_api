@@ -41,14 +41,10 @@ public class LuckySpinHistoryFake {
 
     private String itemName;
 
-    private String phone;
-
     private String itemType;
 
     private long   itemValue;
 
     private String description;
-    
-    private boolean highlights;
 
 }

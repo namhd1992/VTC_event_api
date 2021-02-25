@@ -31,11 +31,9 @@ public class UserTurnSpinDetailResponse implements Serializable{
 
     private long                turnsFree;
 
-    private Long                balanceLP;
+    private Long                scoin;
 
     private String              currName;
-
-    private Long                rewardPoint;
 
     private UserBuyTurnResponse turnsBuyInfo;
 

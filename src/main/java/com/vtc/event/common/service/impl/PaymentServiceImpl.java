@@ -46,13 +46,13 @@ public class PaymentServiceImpl
     @Autowired
     UserVTCRepository userVTCRepo;
     
-    private String SCOIN_XU_API_URL;
-    private String SCOIN_XU_API_KEY;
-    private String SCOIN_XU_SECRET_KEY;
-    private String SCOIN_BALANCE_SCOIN_URL;
-    private String SCOIN_SCOIN_API_URL;
-    private String SCOIN_SCOIN_API_KEY;
-    private String SCOIN_SCOIN_SECRET_KEY;
+    private transient String SCOIN_XU_API_URL;
+    private transient String SCOIN_XU_API_KEY;
+    private transient String SCOIN_XU_SECRET_KEY;
+    private transient String SCOIN_BALANCE_SCOIN_URL;
+    private transient String SCOIN_SCOIN_API_URL;
+    private transient String SCOIN_SCOIN_API_KEY;
+    private transient String SCOIN_SCOIN_SECRET_KEY;
 
     public PaymentServiceImpl(Environment env) {
         SCOIN_XU_API_URL = env.getProperty(EnvironmentKey.SANDBOX_SCOIN_XU_API_URL.getKey());
@@ -66,7 +66,7 @@ public class PaymentServiceImpl
     }
     
     @Override
-    public long updateBalanceSoin(UserInfo userInfo) throws ScoinBusinessException {
+    public long updateBalanceSoin(UserInfo userInfo) {
         String url = SCOIN_BALANCE_SCOIN_URL + userInfo.getScoinToken();
         ScoinBasicResponse<ScoinBalanceResponse> getScoinBalanceResponse = ApiExchangeServiceUtil
                 .get(url, new TypeReference<ScoinBasicResponse<ScoinBalanceResponse>>() {});

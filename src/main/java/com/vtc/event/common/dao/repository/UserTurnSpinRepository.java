@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
 
 import com.vtc.event.common.dao.entity.LuckySpin;
 import com.vtc.event.common.dao.entity.UserInfo;
-import com.vtc.event.common.dao.entity.LuckySpinUser;
+import com.vtc.event.common.dao.entity.UserTurnSpin;
 
 /**
  * Author : Dat Le Quang
@@ -18,8 +18,8 @@ import com.vtc.event.common.dao.entity.LuckySpinUser;
  * May 7, 2019
  */
 @Repository
-public interface LuckySpinUserRepository extends JpaRepository<LuckySpinUser, Long> {
+public interface UserTurnSpinRepository extends JpaRepository<UserTurnSpin, Long> {
     
-    Optional<LuckySpinUser> findByUserInfoAndLuckySpin(UserInfo userInfo, LuckySpin luckySpin);
+    Optional<UserTurnSpin> findByUserInfoAndLuckySpin(UserInfo userInfo, LuckySpin luckySpin);
   
 }

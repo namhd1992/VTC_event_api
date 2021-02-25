@@ -3,10 +3,6 @@
  **************************************************************************/
 package com.vtc.event.common.dto.response;
 
-import com.fasterxml.jackson.databind.PropertyNamingStrategy;
-import com.fasterxml.jackson.databind.annotation.JsonNaming;
-
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -14,17 +10,27 @@ import lombok.Setter;
 /**
  * Author : Dat Le Quang
  * Email: Quangdat0993@gmail.com
- * Oct 23, 2019
+ * Jan 8, 2020
  */
 @Setter
 @Getter
 @NoArgsConstructor
-@AllArgsConstructor
-@JsonNaming(PropertyNamingStrategy.SnakeCaseStrategy.class)
-public class LuckySpinTurnHistoryResponse {
+public class LuckySpinGiftResponse {
     
-    private String itemName;
+    private Long    luckySpinGiftId;
 
-    private String date;
+    private String  name;
+
+    private Integer maxQuantity;
+
+    private int     setPoint;
+
+    private String  typeGift;
+
+    private long    value;
+
+    private int     quantity;
+
+    private String  description;
 
 }

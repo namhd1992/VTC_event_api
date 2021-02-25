@@ -3,7 +3,6 @@
  **************************************************************************/
 package com.vtc.event.common.dao.repository;
 
-import java.util.Date;
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -22,10 +21,5 @@ public interface LuckySpinHistoryFakeRepository extends JpaRepository<LuckySpinH
     List<LuckySpinHistoryFake> findByLuckySpinId(Long luckySpinId);
     
     int countByLuckySpinIdAndItemTypeAndItemValue(Long luckySpinId, String itemType, long itemValue);
-    
-    int countByLuckySpinIdAndItemValueAndCreateOnBetween(Long luckySpinId, 
-                                                         long itemValue, 
-                                                         Date startDate,
-                                                         Date endDate);
 
 }

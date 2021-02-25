@@ -15,10 +15,6 @@ public class Constant {
     public static final String FILE_PRIVATE_KEY_SCOIN_CARD = "card_scoin_key/merchant_privateKey.der";
     public static final String PROJECT_BASE_URL            = "https://api.simba-app.com/resources/";
     public static final String PROJECT_UPLOAD_FILE         = "src/main/webapp/upload/";
-    public static final String IMAGE_NULL_SOURCE           = "http://171.244.14.44:9091/resources/image/image-null.jpg";
-    
-    //Service game id
-    public static final long            SERVICE_GAME_ID_PHONG_MA_CHIEN = 330333;
     
     //Authorization signin
     public static final String CLIENT_ID                        = "vtcmobile";
@@ -32,27 +28,27 @@ public class Constant {
     public static final String LUCKYSPIN_SETTING_TYPE_LIMIT_BUYTURN = "LIMIT_BUY_TURN";
     
     // Type gift luckyspin
-    public static final String LUCKYSPIN_GIFT_XU                 = "XU";
-    public static final String LUCKYSPIN_GIFT_SCOIN              = "SCOIN";
-    public static final String LUCKYSPIN_GIFT_SCOIN_PACKAGE      = "SCOIN_PACKAGE";
-    public static final String LUCKYSPIN_GIFT_JACKPOT            = "JACKPOT";
-    public static final String LUCKYSPIN_GIFT_ACTION             = "ACTION";
-    public static final String LUCKYSPIN_GIFT_GIFTCODE           = "GIFTCODE";
-    public static final String LUCKYSPIN_GIFT_REALITY            = "REALITY";
-    public static final String LUCKYSPIN_GIFT_LUCKY_NUMBER       = "LUCKY_NUMBER";
-    public static final String LUCKYSPIN_GIFT_SCOIN_CARD         = "SCOIN_CARD";
-    public static final String LUCKYSPIN_TYPE_VONG_QUAY          = "VONG_QUAY";
-    public static final String LUCKYSPIN_TYPE_LAT_THE            = "LAT_THE";
-    public static final String LUCKYSPIN_BUY_TURN_TYPE_TOPUP_GAME= "TOPUP_GAME";
-    public static final String LUCKYSPIN_BUY_TURN_TYPE_CROSS_CARD= "BUY_TURN";
-    public static final String LUCKYSPIN_TOPUP_TYPE_CARD         = "CARD";
-    public static final String LUCKYSPIN_TOPUP_TYPE_CARD_DES     = "Thẻ Scoin";
-    public static final String LUCKYSPIN_TOPUP_TYPE_SCOIN        = "SCOIN";
-    public static final String LUCKYSPIN_TOPUP_TYPE_SCOIN_DES    = "Ví Scoin";
-    public static final String LUCKYSPIN_TOPUP_TYPE_ALL          = "ALL";
-    public static final String LUCKYSPIN_TURNOVER_KEYNAME_TOTAL  = "TOTAL_TURNOVER";
-    public static final String LUCKYSPIN_TURNOVER_LIMIT_TYPE_DAY = "DAY";
-    
+    public static final String LUCKYSPIN_GIFT_XU                    = "XU";
+    public static final String LUCKYSPIN_GIFT_SCOIN                 = "SCOIN";
+    public static final String LUCKYSPIN_GIFT_GOLD                  = "GOLD";
+    public static final String LUCKYSPIN_GIFT_JACKPOT               = "JACKPOT";
+    public static final String LUCKYSPIN_GIFT_ACTION                = "ACTION";
+    public static final String LUCKYSPIN_GIFT_GIFTCODE              = "GIFTCODE";
+    public static final String LUCKYSPIN_GIFT_REALITY               = "REALITY";
+    public static final String LUCKYSPIN_GIFT_LUCKY_NUMBER          = "LUCKY_NUMBER";
+    public static final String LUCKYSPIN_GIFT_SCOIN_CARD            = "SCOIN_CARD";
+    public static final String LUCKYSPIN_GIFT_WORD                  = "WORD";
+    public static final String LUCKYSPIN_TYPE_VONG_QUAY             = "VONG_QUAY";
+    public static final String LUCKYSPIN_TYPE_LAT_THE               = "LAT_THE";
+    public static final String LUCKYSPIN_TYPE_GHEP_CHU              = "GHEP_CHU";
+    public static final String LUCKYSPIN_BUY_TURN_TYPE_TOPUP_GAME   = "TOPUP_GAME";
+    public static final String LUCKYSPIN_BUY_TURN_TYPE_CROSS_CARD   = "BUY_TURN";
+    public static final String LUCKYSPIN_TURNOVER_KEYNAME_TOTAL     = "TOTAL_TURNOVER";
+    public static final String LUCKYSPIN_TURNOVER_LIMIT_TYPE_DAY    = "DAY";
+    public static final String LUCKYSPIN_TURNOVER_LIMIT_TYPE_EVENT  = "EVENT";
+    public static final String LUCKYSPIN_TURN_TYPE_ITEM             = "ITEM";
+    public static final String LUCKYSPIN_TURN_TYPE_GIFT             = "GIFT";
+
     //Type Action Mission
     public static final int    ACTION_LUCKY_SPIN               = 1;
     public static final int    ACTION_CHECKIN_DAYLY            = 2;
@@ -69,9 +65,6 @@ public class Constant {
     // Type limit gift
     public static final String DAY                             = "DAY";
     public static final String EVENT                           = "EVENT";
-    
-    //Giftcode
-    public static final String GIFTCODE_EVENT_TYPE_GAME_RANKING = "GAME_RANKING";
     
     //URL Call To Other Server
     public static final String URL_LOGIN_SERVICE_HISTORY         = "https://graph.vtcmobile.vn/accountapi/server/get_accountservice.aspx?";
@@ -91,6 +84,7 @@ public class Constant {
     public static final String SCOIN_CARD_TEXT_START_RESPONSE    = "<RequestTransactionResult>";
     public static final String SCOIN_CARD_TYPE_CARD_SCOIN        = "SCOIN";
     public static final String SCOIN_CARD_TYPE_CARD_SCOIN_CROSS  = "CARD";
+    public static final String SCOIN_CARD_TYPE_CARD_SCOIN_TO_GAME= "CARD";
     public static final String SCOIN_CARD_TOPUP_HISTORY          = "topup_card_scoin_history"; //66dedf9b5451dfe1b51815c3e9b41164
     public static final String SCOIN_LIVE_CARD_TOPUP_HISTORY     = "VTC_MOBILE_topup_card_scoin_history"; //49decc386bcb5c3fa715b04c012e4aa1
     
@@ -119,7 +113,6 @@ public class Constant {
     public static final String STATUS_SUCCESS                  = "success";
     public static final String STATUS_FAILURE                  = "failure";
     public static final String STATUS_RECIEVED                 = "recieved";
-    public static final String STATUS_HIGHLIGHTS               = "highlights";
 
     public static final String SERVICE_TYPE_DEDUCT             = "DEDUCT";
     public static final String SERVICE_TYPE_TOPUP              = "TOPUP";
@@ -133,16 +126,5 @@ public class Constant {
 
     public static final int    LENGHT_FILE_OF_FOLDER_EMPTY     = 0;
     public static final String LEAGUE_CURRENCY                 = "XU";
-    
-    // Game Ranking
-    public static final String GAME_RANKING_THIS_WEEK                = "THIS_WEEK";
-    public static final String GAME_RANKING_WEEK_BEFORE_LAST         = "WEEK_BEFORE_LAST";
-    public static final String GAME_RANKING_ITEM_TYPE_GIFTCODE       = "GIFTCODE";
-    public static final String GAME_RANKING_ITEM_TYPE_INGAME         = "INGAME";
-    public static final String GAME_RANKING_ITEM_TYPE_REAL           = "REAL";
-    public static final String GAME_RANKING_ITEM_TYPE_TURN_LUCKYSPIN = "TURN_LUCKYSPIN";
-    public static final String GAME_RANKING_ITEM_TYPE_XU             = "XU";
-    public static final String GAME_RANKING_ITEM_TYPE_SCOIN          = "SCOIN";
-    public static final String GAME_RANKING_ITEM_TYPE_CARD           = "CARD";
 
 }
